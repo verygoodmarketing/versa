@@ -4,15 +4,26 @@ import { NextResponse, type NextRequest } from "next/server";
 /**
  * Supabase auth proxy — refreshes sessions and protects routes.
  * Runs on every request (except static assets).
+ *
+ * When Supabase env vars are not configured (e.g. during initial deployment
+ * before credentials are set), the proxy passes through without auth checks.
  */
 export async function proxy(request: NextRequest) {
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+
+  // Pass through if Supabase is not configured yet
+  if (!supabaseUrl || !supabaseAnonKey) {
+    return NextResponse.next({ request });
+  }
+
   let supabaseResponse = NextResponse.next({
     request,
   });
 
   const supabase = createServerClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+    supabaseUrl,
+    supabaseAnonKey,
     {
       cookies: {
         getAll() {
