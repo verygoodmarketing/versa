@@ -2,10 +2,10 @@ import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 
 /**
- * Supabase auth middleware — refreshes sessions and protects routes.
+ * Supabase auth proxy — refreshes sessions and protects routes.
  * Runs on every request (except static assets).
  */
-export async function middleware(request: NextRequest) {
+export async function proxy(request: NextRequest) {
   let supabaseResponse = NextResponse.next({
     request,
   });
