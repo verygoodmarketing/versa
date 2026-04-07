@@ -35,6 +35,7 @@ jobs:
         run: npm ci
 
       - name: Run database migrations
+        if: hashFiles('prisma/migrations/**/*.sql') != ''
         run: npx prisma migrate deploy
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
