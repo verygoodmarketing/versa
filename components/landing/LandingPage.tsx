@@ -11,6 +11,7 @@ const BRAND = {
 
 const NAV_LINKS = [
   { label: "Features", href: "#features" },
+  { label: "Who We Help", href: "#who-we-help" },
   { label: "How it works", href: "#how-it-works" },
   { label: "Pricing", href: "#pricing" },
 ];
@@ -87,6 +88,51 @@ const FEATURES = [
       </svg>
     ),
     color: "emerald",
+  },
+];
+
+const WHO_WE_HELP = [
+  {
+    id: "plumbers",
+    title: "Plumbers",
+    emoji: "🔧",
+    pain: "You're booked by word-of-mouth, but when someone searches \"plumber near me\" at 11pm, they can't find you — and they call whoever comes up first.",
+    solution: "A Versa site gets you on Google Maps and search results so emergency customers call you, not your competitor.",
+  },
+  {
+    id: "electricians",
+    title: "Electricians",
+    emoji: "⚡",
+    pain: "Your reputation is your business, but online you're invisible — no reviews, no website, no Google listing that shows your real work.",
+    solution: "Versa builds you a professional site, integrates with Google Business Profile, and automates review requests so your reputation shows where customers look.",
+  },
+  {
+    id: "cleaners",
+    title: "House Cleaners",
+    emoji: "🧹",
+    pain: "Referrals slow down in off-seasons and you rely on a single app or lead marketplace that takes a cut of every job.",
+    solution: "Versa gives you your own website with lead capture so customers contact you directly — no middleman, no commission.",
+  },
+  {
+    id: "landscapers",
+    title: "Landscapers",
+    emoji: "🌿",
+    pain: "Your best work is in people's yards, not online — but new customers won't hire you unless they can see your work and trust you first.",
+    solution: "Versa's photo-forward templates let you showcase your work, collect testimonials, and capture seasonal leads all year round.",
+  },
+  {
+    id: "contractors",
+    title: "Contractors",
+    emoji: "🏗️",
+    pain: "Leads dry up between projects. You're losing bids to contractors with better-looking online profiles.",
+    solution: "Versa keeps you visible and credible online between jobs — so customers find you, vet you, and reach out before your competitors even know they exist.",
+  },
+  {
+    id: "trainers",
+    title: "Personal Trainers",
+    emoji: "💪",
+    pain: "You have the skills and results — but your Instagram isn't converting, and you have no website that makes it easy for potential clients to book.",
+    solution: "Versa gives you a clean, professional site with built-in contact forms and email marketing so you can grow beyond social media.",
   },
 ];
 
@@ -536,6 +582,61 @@ function FeaturesSection() {
   );
 }
 
+function WhoWeHelpSection() {
+  return (
+    <section id="who-we-help" className="py-28 bg-gray-50 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-16 max-w-2xl mx-auto">
+          <span className="inline-block text-xs font-bold uppercase tracking-widest text-indigo-600 mb-3">
+            Who We Help
+          </span>
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-4">
+            Built for the Businesses That Keep Your Town Running
+          </h2>
+          <p className="text-lg text-gray-500">
+            We built Versa specifically for trade and service businesses — people who are experts at their craft but didn&apos;t sign up to become web developers or marketers.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {WHO_WE_HELP.map((vertical) => (
+            <div
+              key={vertical.id}
+              className="bg-white rounded-2xl p-6 border border-gray-100 hover:border-indigo-100 hover:shadow-lg hover:shadow-indigo-50/50 transition-all duration-200"
+            >
+              <div className="text-3xl mb-4" aria-hidden="true">
+                {vertical.emoji}
+              </div>
+              <h3 className="text-base font-bold text-gray-900 mb-3">
+                {vertical.title}
+              </h3>
+              <p className="text-sm text-gray-500 leading-relaxed mb-3">
+                <span className="font-medium text-gray-700">The problem: </span>
+                {vertical.pain}
+              </p>
+              <p className="text-sm text-indigo-600 leading-relaxed font-medium">
+                {vertical.solution}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        <div className="text-center mt-12">
+          <a
+            href="#waitlist"
+            className="inline-flex items-center gap-2 bg-indigo-600 text-white font-semibold px-8 py-4 rounded-xl hover:bg-indigo-700 transition-colors shadow-md shadow-indigo-100"
+          >
+            Get your business online
+            <svg aria-hidden="true" className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function HowItWorksSection() {
   return (
     <section
@@ -913,6 +1014,7 @@ export function LandingPage() {
       <main className="flex-1">
         <HeroSection />
         <FeaturesSection />
+        <WhoWeHelpSection />
         <HowItWorksSection />
         <TestimonialsSection />
         <PricingSection />
