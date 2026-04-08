@@ -32,6 +32,17 @@ model Business {
   stripePlanId           String?
   stripeCurrentPeriodEnd DateTime?
 
+  // Onboarding
+  onboardingStep     Int     @default(1) // 1–5, tracks where user left off
+  onboardingComplete Boolean @default(false)
+
+  // Location
+  address           String?
+  city              String?
+  state             String?
+  zip               String?
+  serviceAreaRadius Int? // miles
+
   // Status
   isActive Boolean @default(true)
   isPro    Boolean @default(false)
@@ -82,6 +93,10 @@ model Site {
   // Site content (block-based JSON)
   config Json @default("{}") // theme colors, fonts, etc.
   blocks Json @default("[]") // ordered array of content blocks
+
+  // Contact form configuration
+  contactFormFields    Json    @default("[\"name\",\"email\",\"phone\",\"message\"]") // enabled fields
+  contactFormNotifyEmail String? // override email for lead notifications
 
   // SEO
   metaTitle       String?
