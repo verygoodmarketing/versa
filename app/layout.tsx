@@ -17,8 +17,11 @@ const inter = Inter({
   display: "swap",
 });
 
+const APP_URL =
+  process.env.NEXT_PUBLIC_APP_URL ?? "https://versa-kohl.vercel.app";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://default-bbodine1s-projects.vercel.app"),
+  metadataBase: new URL(APP_URL),
   title: {
     default: "Versa — Websites & Marketing for Local Service Businesses",
     template: "%s | Versa",
@@ -42,7 +45,7 @@ export const metadata: Metadata = {
     description:
       "The all-in-one marketing platform for local service businesses. Website builder, local SEO, lead capture, review requests, and email marketing — in one simple tool.",
     type: "website",
-    url: "https://default-bbodine1s-projects.vercel.app",
+    url: APP_URL,
     siteName: "Versa",
     locale: "en_US",
     images: [
@@ -74,7 +77,7 @@ const jsonLd = {
   description: "All-in-one marketing platform for local service businesses",
   applicationCategory: "BusinessApplication",
   operatingSystem: "Web",
-  url: "https://default-bbodine1s-projects.vercel.app",
+  url: APP_URL,
   offers: {
     "@type": "Offer",
     price: "0",

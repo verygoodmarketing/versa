@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { LandingPage } from "@/components/landing/LandingPage";
 
+const APP_URL =
+  process.env.NEXT_PUBLIC_APP_URL ?? "https://versa-kohl.vercel.app";
+
 export const metadata: Metadata = {
   title: "Versa — Websites & Marketing for Local Service Businesses",
   description:
@@ -10,7 +13,7 @@ export const metadata: Metadata = {
     description:
       "The all-in-one marketing platform for local service businesses. Website builder, local SEO, lead capture, review requests, and email marketing — in one simple tool.",
     type: "website",
-    url: "https://default-bbodine1s-projects.vercel.app",
+    url: APP_URL,
     siteName: "Versa",
     images: [
       {
