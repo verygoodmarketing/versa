@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { allPosts } from "@/lib/blog/posts";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const appUrl =
@@ -14,6 +15,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "contractors",
   ];
 
+  const blogPosts = allPosts.map((post) => ({
+    url: `${appUrl}/blog/${post.slug}`,
+    lastModified: new Date(post.publishedAt),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
   return [
     {
       url: appUrl,
@@ -27,11 +35,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    {
+      url: `${appUrl}/blog`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
     ...industryPages.map((slug) => ({
       url: `${appUrl}/for/${slug}`,
       lastModified: now,
       changeFrequency: "monthly" as const,
       priority: 0.9,
     })),
+    ...blogPosts,
   ];
 }
