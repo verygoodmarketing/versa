@@ -171,6 +171,17 @@ function SuccessScreen({
 
         {/* CTAs */}
         <div className="space-y-3">
+          <button
+            type="button"
+            onClick={() => router.push("/pricing")}
+            className="w-full flex items-center justify-center gap-2 rounded-lg px-4 py-3 text-sm font-semibold text-white font-body transition-colors"
+            style={{ background: C.brand }}
+            onMouseEnter={(e) => (e.currentTarget.style.background = C.brandHover)}
+            onMouseLeave={(e) => (e.currentTarget.style.background = C.brand)}
+          >
+            <Star className="w-4 h-4" />
+            Choose a plan — keep it live →
+          </button>
           <a
             href={siteUrl}
             target="_blank"
@@ -184,12 +195,10 @@ function SuccessScreen({
           <button
             type="button"
             onClick={() => router.push("/dashboard")}
-            className="w-full flex items-center justify-center gap-2 rounded-lg px-4 py-3 text-sm font-semibold text-white font-body transition-colors"
-            style={{ background: C.brand }}
-            onMouseEnter={(e) => (e.currentTarget.style.background = C.brandHover)}
-            onMouseLeave={(e) => (e.currentTarget.style.background = C.brand)}
+            className="w-full flex items-center justify-center gap-2 rounded-lg px-4 py-2 text-xs font-body transition-colors"
+            style={{ color: C.muted }}
           >
-            Go to Dashboard →
+            Go to Dashboard
           </button>
         </div>
 

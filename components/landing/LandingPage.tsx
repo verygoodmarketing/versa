@@ -23,7 +23,6 @@ import {
   CreditCard,
 } from "lucide-react";
 import { useInView } from "@/hooks/useInView";
-import { trpc } from "@/lib/trpc/client";
 
 // ─── Copy constants (easy for CMO/UX to update later) ────────────────────────
 
@@ -460,7 +459,7 @@ function Navbar() {
               href="/onboarding/step-1"
               className="bg-brand-600 text-white text-sm font-semibold px-4 py-2 rounded-xl hover:bg-brand-700 transition-colors shadow-[0_0_16px_rgba(22,163,74,0.35)]"
             >
-              Get early access
+              Get started free
             </a>
           </div>
 
@@ -505,7 +504,7 @@ function Navbar() {
                   window.location.href = "/onboarding/step-1";
                 }}
               >
-                Get early access
+                Get started free
               </button>
             </div>
           </div>
@@ -546,7 +545,7 @@ function HeroSection() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-400" />
               </span>
-              Now in early access — join the waitlist
+              Now live — 14-day free trial, no credit card
             </div>
 
             <h1
@@ -569,7 +568,7 @@ function HeroSection() {
                 className="inline-flex items-center justify-center gap-2 bg-brand-600 text-white font-semibold text-lg px-8 py-4 rounded-xl hover:bg-brand-700 transition-colors shadow-xl shadow-brand-600/30 active:scale-95"
                 style={{ fontFamily: "var(--font-display)" }}
               >
-                Get early access — it&apos;s free
+                Start for free — build my site
                 <svg aria-hidden="true" className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
@@ -1059,25 +1058,6 @@ function PricingSection() {
 }
 
 function WaitlistSection() {
-  const [email, setEmail] = useState("");
-  const [errorMessage, setErrorMessage] = useState<string | null>(null);
-
-  const joinMutation = trpc.waitlist.join.useMutation({
-    onSuccess: () => {
-      setErrorMessage(null);
-    },
-    onError: (err) => {
-      setErrorMessage(err.message || "Something went wrong. Please try again.");
-    },
-  });
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!email) return;
-    setErrorMessage(null);
-    joinMutation.mutate({ email });
-  };
-
   return (
     <section
       id="waitlist"
@@ -1104,57 +1084,30 @@ function WaitlistSection() {
           Ready to get more customers?
         </h2>
         <p className="text-lg text-brand-100 mb-10">
-          Join hundreds of local business owners getting early access to Groundwork. Free to try. No tech skills required.
+          Build your professional website in under an hour. Free to try — no credit card required. No tech skills needed.
         </p>
 
-        {joinMutation.isSuccess ? (
-          <div className="bg-white/10 rounded-2xl p-10 ring-1 ring-white/20">
-            <div className="w-14 h-14 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg aria-hidden="true" className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-              </svg>
-            </div>
-            <h3 className="text-2xl font-bold text-white mb-2" style={{ fontFamily: "var(--font-display)" }}>You&apos;re on the list!</h3>
-            <p className="text-brand-100">
-              We&apos;ll be in touch soon with your early access invite. Keep an eye on your inbox.
-            </p>
-          </div>
-        ) : (
-          <form
-            onSubmit={handleSubmit}
-            className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
-            noValidate
+        <div className="flex flex-col sm:flex-row gap-3 justify-center">
+          <a
+            href="/onboarding/step-1"
+            className="inline-flex items-center justify-center gap-2 bg-brand-600 text-white font-semibold px-8 py-4 rounded-xl hover:bg-brand-700 transition-colors shadow-xl shadow-brand-600/30 active:scale-95 text-lg"
+            style={{ fontFamily: "var(--font-display)" }}
           >
-            <label htmlFor="waitlist-email" className="sr-only">
-              Email address
-            </label>
-            <input
-              id="waitlist-email"
-              type="email"
-              required
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Enter your email address"
-              className="flex-1 bg-white text-gray-900 placeholder-gray-400 px-4 py-3.5 rounded-xl text-sm font-medium focus:outline-none focus:ring-2 focus:ring-brand-500 shadow-lg"
-            />
-            <button
-              type="submit"
-              disabled={joinMutation.isPending}
-              className="bg-surface-950 text-white font-semibold px-6 py-3.5 rounded-xl hover:bg-surface-800 transition-colors disabled:opacity-70 whitespace-nowrap shadow-lg active:scale-95"
-            >
-              {joinMutation.isPending ? "Joining..." : "Get early access"}
-            </button>
-          </form>
-        )}
-
-        {errorMessage && (
-          <p className="text-sm text-red-300 mt-3" role="alert">
-            {errorMessage}
-          </p>
-        )}
+            Start for free — build my site
+            <svg aria-hidden="true" className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+          </a>
+          <a
+            href="/pricing"
+            className="inline-flex items-center justify-center gap-2 bg-white/10 text-white font-semibold px-8 py-4 rounded-xl border border-white/10 hover:bg-white/15 transition-colors text-lg"
+          >
+            See pricing
+          </a>
+        </div>
 
         <p className="text-xs text-brand-200/80 mt-5">
-          No spam. Unsubscribe anytime. We respect your privacy.
+          14-day free trial. No credit card required. Cancel anytime.
         </p>
       </div>
     </section>
