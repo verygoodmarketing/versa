@@ -79,6 +79,10 @@ const data: IndustryPageData = {
         "Everything you need to grow online: professional website, local SEO, lead capture forms, click-to-call, 200 email contacts, Google Business integration, and basic analytics. Free 14-day trial included.",
     },
   ],
+  blogPost: {
+    href: "/blog/best-website-for-electricians",
+    title: "The Best Website for Electricians in 2026",
+  },
 };
 
 export const metadata: Metadata = {

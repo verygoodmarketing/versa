@@ -79,6 +79,10 @@ const data: IndustryPageData = {
         "Click 'Get started free' above. You'll pick a template, enter your business info, upload some project photos, and go live — all in under an hour. No credit card needed for the 14-day trial.",
     },
   ],
+  blogPost: {
+    href: "/blog/best-website-for-contractors",
+    title: "The Best Website for Contractors in 2026",
+  },
 };
 
 export const metadata: Metadata = {
