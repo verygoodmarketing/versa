@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import Stripe from "stripe";
 import { stripe } from "@/lib/stripe/client";
 import { prisma } from "@/lib/db/client";
+import { sendEmail } from "@/lib/email/send";
 import type { BillingStatus, PlanTier } from "@prisma/client";
 
 /**
@@ -138,7 +139,7 @@ async function handleCheckoutCompleted(session: Stripe.Checkout.Session) {
       ? session.customer
       : (session.customer as Stripe.Customer | null)?.id;
 
-  await prisma.business.update({
+  const business = await prisma.business.update({
     where: { id: businessId },
     data: {
       stripeSubscriptionId: subscriptionId,
@@ -149,6 +150,15 @@ async function handleCheckoutCompleted(session: Stripe.Checkout.Session) {
       subscriptionStatus: subscription.status === "trialing" ? "TRIAL" : "ACTIVE",
     },
   });
+
+  // Send post-conversion welcome email (only for non-trial checkouts)
+  if (subscription.status !== "trialing" && business.email) {
+    await sendEmail(business.email, "post_conversion_welcome", {
+      firstName: business.name.split(" ")[0] ?? "there",
+    }).catch((err) =>
+      console.error("[stripe/webhook] post_conversion_welcome email failed:", err)
+    );
+  }
 }
 
 async function handleInvoicePaid(invoice: Stripe.Invoice) {
@@ -186,6 +196,7 @@ async function handleSubscriptionUpdated(subscription: Stripe.Subscription) {
     return;
   }
 
+  const previousStatus = business.subscriptionStatus;
   const planKey = subscription.metadata?.planKey as PlanTier | undefined;
   const currentPeriodEnd = getCurrentPeriodEnd(subscription);
 
@@ -217,6 +228,28 @@ async function handleSubscriptionUpdated(subscription: Stripe.Subscription) {
       ...(planKey ? { planTier: planKey } : {}),
     },
   });
+
+  // Send trial-expired email when trial transitions to cancelled/expired (not converted)
+  const wasOnTrial = previousStatus === "TRIAL" || previousStatus == null;
+  const isNowCancelled = billingStatus === "CANCELLED";
+  if (wasOnTrial && isNowCancelled && business.email) {
+    await sendEmail(business.email, "trial_expired", {
+      firstName: business.name.split(" ")[0] ?? "there",
+    }).catch((err) =>
+      console.error("[stripe/webhook] trial_expired email failed:", err)
+    );
+  }
+
+  // Send post-conversion welcome when transitioning from trial → active
+  const wasTrialing = previousStatus === "TRIAL" || previousStatus == null;
+  const isNowActive = billingStatus === "ACTIVE";
+  if (wasTrialing && isNowActive && business.email) {
+    await sendEmail(business.email, "post_conversion_welcome", {
+      firstName: business.name.split(" ")[0] ?? "there",
+    }).catch((err) =>
+      console.error("[stripe/webhook] post_conversion_welcome email failed:", err)
+    );
+  }
 }
 
 async function handleSubscriptionDeleted(subscription: Stripe.Subscription) {
