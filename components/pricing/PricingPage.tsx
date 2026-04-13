@@ -70,8 +70,9 @@ function PlanCard({ plan }: { plan: Plan }) {
     }
 
     if (!isAuthenticated) {
-      // Unauthenticated: redirect to sign-in, then user can return to /pricing
-      window.location.href = `/onboarding/step-1`;
+      // Unauthenticated: redirect to sign-in/sign-up, then return to /pricing
+      // so the user can complete checkout after authenticating.
+      window.location.href = `/onboarding/step-1?next=/pricing`;
       return;
     }
 

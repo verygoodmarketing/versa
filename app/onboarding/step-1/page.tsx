@@ -60,6 +60,7 @@ function Step1Form() {
 
     try {
       if (mode === "signup") {
+        const nextParam = searchParams.get("next");
         const { error } = await supabase.auth.signUp({
           email,
           password,
@@ -68,15 +69,21 @@ function Step1Form() {
           },
         });
         if (error) throw error;
+        // Store `next` in sessionStorage so after email confirmation the user
+        // can be bounced to /pricing (or wherever) post-step-2 completion.
+        if (nextParam) {
+          sessionStorage.setItem("postOnboardingNext", nextParam);
+        }
         setSuccessMessage(
           "Check your email — we sent you a confirmation link. Once confirmed you'll continue to step 2."
         );
       } else {
         const { error } = await supabase.auth.signInWithPassword({ email, password });
         if (error) throw error;
-        // Route through the smart hub so returning users (onboardingComplete=true)
-        // land on /dashboard instead of being dropped back into onboarding.
-        router.push("/onboarding");
+        // If a `next` param was provided (e.g. from /pricing CTA), redirect there.
+        // Otherwise route through the smart hub so returning users land on /dashboard.
+        const nextParam = searchParams.get("next");
+        router.push(nextParam ?? "/onboarding");
       }
     } catch (err: unknown) {
       setError(
@@ -93,12 +100,12 @@ function Step1Form() {
     setGoogleLoading(true);
     setError(null);
     try {
+      const nextParam = searchParams.get("next");
       const { error } = await supabase.auth.signInWithOAuth({
         provider: "google",
         options: {
-          // No `next` param — let the callback check onboardingComplete and
-          // route returning users to /dashboard or new users into onboarding.
-          redirectTo: `${window.location.origin}/auth/callback`,
+          // Pass `next` param so returning users from /pricing land back there after OAuth.
+          redirectTo: `${window.location.origin}/auth/callback${nextParam ? `?next=${encodeURIComponent(nextParam)}` : ""}`,
         },
       });
       if (error) throw error;
