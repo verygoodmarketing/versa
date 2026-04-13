@@ -4,6 +4,8 @@ import { prisma } from "@/lib/db/client";
 import Link from "next/link";
 import { Globe, Settings, MessageSquare, BarChart3, CreditCard, AlertCircle } from "lucide-react";
 import { isSubscriptionActive } from "@/lib/stripe/client";
+import { TrialNudgeBanner } from "@/components/dashboard/TrialNudgeBanner";
+import { computeBannerState } from "@/lib/dashboard/trial-nudge";
 
 /**
  * /dashboard — post-onboarding home page.
@@ -38,6 +40,13 @@ export default async function DashboardPage() {
   const hasActiveSub = isSubscriptionActive(business.subscriptionStatus);
   const isPastDue = business.subscriptionStatus === "PAST_DUE";
 
+  const nudgeBannerState = computeBannerState({
+    onboardingComplete: business.onboardingComplete,
+    onboardingStep: business.onboardingStep,
+    subscriptionStatus: business.subscriptionStatus,
+    businessCreatedAt: business.createdAt,
+  });
+
   return (
     <div className="min-h-screen bg-[var(--background)]">
       {/* Header */}
@@ -56,6 +65,9 @@ export default async function DashboardPage() {
       </header>
 
       <main className="max-w-4xl mx-auto px-4 py-10 space-y-8">
+        {/* Trial / onboarding nudge banner */}
+        <TrialNudgeBanner state={nudgeBannerState} />
+
         {/* Past due alert */}
         {isPastDue && (
           <div className="rounded-xl bg-red-50 border border-red-200 p-4 flex items-start gap-3">
