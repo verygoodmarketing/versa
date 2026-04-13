@@ -1,6 +1,63 @@
 import Link from "next/link";
 import { type LucideIcon } from "lucide-react";
 
+// ─── JSON-LD ──────────────────────────────────────────────────────────────────
+
+const APP_URL =
+  process.env.NEXT_PUBLIC_APP_URL ?? "https://versa-kohl.vercel.app";
+
+function JsonLd({ data }: { data: IndustryPageData }) {
+  const pageUrl = `${APP_URL}/for/${data.slug}`;
+
+  const softwareApplicationSchema = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: "Versa",
+    applicationCategory: "BusinessApplication",
+    description: `Professional website builder for ${data.industryLabel.toLowerCase()}s`,
+    operatingSystem: "Web",
+    offers: [
+      {
+        "@type": "Offer",
+        name: "Free Trial",
+        price: "0",
+        priceCurrency: "USD",
+        description: "14-day free trial, no credit card required",
+      },
+      {
+        "@type": "Offer",
+        name: "Paid Plan",
+        price: "49",
+        priceCurrency: "USD",
+        billingIncrement: "P1M",
+        description: "Full access to all Versa features",
+      },
+    ],
+    url: APP_URL,
+  };
+
+  const webPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: data.pageTitle,
+    description: data.metaDescription,
+    url: pageUrl,
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareApplicationSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+      />
+    </>
+  );
+}
+
 // ─── Types ────────────────────────────────────────────────────────────────────
 
 export interface IndustryFeature {
@@ -421,17 +478,20 @@ function Footer() {
 
 export function IndustryLandingPage({ data }: { data: IndustryPageData }) {
   return (
-    <div className="min-h-screen flex flex-col">
-      <Navbar />
-      <main className="flex-1">
-        <HeroSection data={data} />
-        <FeaturesSection data={data} />
-        <HowItWorksSection data={data} />
-        <TestimonialSection data={data} />
-        <FAQSection data={data} />
-        <CtaSection data={data} />
-      </main>
-      <Footer />
-    </div>
+    <>
+      <JsonLd data={data} />
+      <div className="min-h-screen flex flex-col">
+        <Navbar />
+        <main className="flex-1">
+          <HeroSection data={data} />
+          <FeaturesSection data={data} />
+          <HowItWorksSection data={data} />
+          <TestimonialSection data={data} />
+          <FAQSection data={data} />
+          <CtaSection data={data} />
+        </main>
+        <Footer />
+      </div>
+    </>
   );
 }
