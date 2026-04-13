@@ -19,7 +19,7 @@ export const PLANS = {
     price: 4900, // cents
     interval: "month" as const,
     paymentLinkUrl: process.env.STRIPE_PAYMENT_LINK_STARTER ?? null,
-    priceId: process.env.STRIPE_PRICE_ID_STARTER ?? null,
+    priceId: process.env.STRIPE_STARTER_PRICE_ID ?? null,
     features: [
       "1 professional website",
       "Versa subdomain (yourbiz.versa.app)",
@@ -36,7 +36,7 @@ export const PLANS = {
     price: 9900, // cents
     interval: "month" as const,
     paymentLinkUrl: process.env.STRIPE_PAYMENT_LINK_PRO ?? null,
-    priceId: process.env.STRIPE_PRICE_ID_PRO ?? null,
+    priceId: process.env.STRIPE_PRO_PRICE_ID ?? null,
     features: [
       "Everything in Starter",
       "Custom domain support",
@@ -53,7 +53,7 @@ export const PLANS = {
     price: 19900, // cents
     interval: "month" as const,
     paymentLinkUrl: process.env.STRIPE_PAYMENT_LINK_BUSINESS ?? null,
-    priceId: process.env.STRIPE_PRICE_ID_BUSINESS ?? null,
+    priceId: process.env.STRIPE_BUSINESS_PRICE_ID ?? null,
     features: [
       "Everything in Pro",
       "Unlimited email contacts",

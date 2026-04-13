@@ -58,6 +58,8 @@ export const businessRouter = router({
           ...input,
           // Fall back to auth email if not explicitly provided
           email: input.email ?? ctx.user.email ?? "",
+          // Advance to step 2 so returning users resume at the correct step
+          onboardingStep: 2,
           owners: {
             create: {
               userId: ctx.user.id,
