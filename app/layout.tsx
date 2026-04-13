@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, Inter } from "next/font/google";
 import "./globals.css";
 import { TRPCProvider } from "@/lib/trpc/provider";
+import { Analytics } from "@vercel/analytics/react";
 
 const jakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -104,6 +105,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-full flex flex-col">
         <TRPCProvider>{children}</TRPCProvider>
+        <Analytics />
       </body>
     </html>
   );

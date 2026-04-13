@@ -1,6 +1,7 @@
 import { z } from "zod";
 import { router, protectedProcedure, publicProcedure } from "@/server/trpc";
 import { TRPCError } from "@trpc/server";
+import { track } from "@vercel/analytics/server";
 
 export const businessRouter = router({
   /**
@@ -204,6 +205,13 @@ export const businessRouter = router({
           onboardingComplete: isComplete ? true : owner.business.onboardingComplete,
         },
       });
+
+      // Fire analytics event when onboarding is fully completed.
+      if (isComplete) {
+        track("onboarding_completed").catch(() => {
+          // Non-blocking — analytics failure must not break onboarding.
+        });
+      }
 
       // Handle site updates (steps 3 & 4 & 5)
       if (templateId || themeColor || themeFont || contactFormFields || contactFormNotifyEmail !== undefined || publish !== undefined) {

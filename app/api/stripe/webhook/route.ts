@@ -4,6 +4,7 @@ import { stripe } from "@/lib/stripe/client";
 import { prisma } from "@/lib/db/client";
 import { sendEmail } from "@/lib/email/send";
 import type { BillingStatus, PlanTier } from "@prisma/client";
+import { track } from "@vercel/analytics/server";
 
 /**
  * POST /api/stripe/webhook
@@ -151,6 +152,13 @@ async function handleCheckoutCompleted(session: Stripe.Checkout.Session) {
     },
   });
 
+  // Fire analytics events — no PII, anonymous subscription metadata only.
+  if (subscription.status === "trialing") {
+    track("trial_started", { planTier: planKey ?? null }).catch(() => {});
+  } else {
+    track("subscription_activated", { planTier: planKey ?? null }).catch(() => {});
+  }
+
   // Send post-conversion welcome email (only for non-trial checkouts)
   if (subscription.status !== "trialing" && business.email) {
     await sendEmail(business.email, "post_conversion_welcome", {
@@ -244,6 +252,7 @@ async function handleSubscriptionUpdated(subscription: Stripe.Subscription) {
   const wasTrialing = previousStatus === "TRIAL" || previousStatus == null;
   const isNowActive = billingStatus === "ACTIVE";
   if (wasTrialing && isNowActive && business.email) {
+    track("subscription_activated", { planTier: planKey ?? null }).catch(() => {});
     await sendEmail(business.email, "post_conversion_welcome", {
       firstName: business.name.split(" ")[0] ?? "there",
     }).catch((err) =>

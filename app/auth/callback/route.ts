@@ -2,6 +2,7 @@ import { createServerClient } from "@/lib/supabase/server";
 import { prisma } from "@/lib/db/client";
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
+import { track } from "@vercel/analytics/server";
 
 /**
  * Supabase Auth callback — handles OAuth redirects (e.g. Google).
@@ -39,8 +40,11 @@ export async function GET(request: NextRequest) {
         // If the DB check fails for any reason, fall through to the default.
       }
 
-      // New user or incomplete onboarding — use the smart hub which will
-      // resume at the correct step.
+      // New user or incomplete onboarding — fire signup_completed and redirect
+      // to the onboarding hub which resumes at the correct step.
+      track("signup_completed").catch(() => {
+        // Non-blocking — analytics failure must not break auth flow.
+      });
       return NextResponse.redirect(`${origin}/onboarding`);
     }
   }

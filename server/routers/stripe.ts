@@ -2,6 +2,7 @@ import { z } from "zod";
 import { router, protectedProcedure } from "@/server/trpc";
 import { TRPCError } from "@trpc/server";
 import { stripe, PLANS } from "@/lib/stripe/client";
+import { track } from "@vercel/analytics/server";
 
 const APP_URL =
   process.env.NEXT_PUBLIC_APP_URL ?? "https://versa-kohl.vercel.app";
@@ -101,6 +102,10 @@ export const stripeRouter = router({
           message: "Failed to create Stripe checkout session",
         });
       }
+
+      track("checkout_initiated", { planTier: input.planKey }).catch(() => {
+        // Non-blocking — analytics failure must not break checkout flow.
+      });
 
       return { url: session.url };
     }),
