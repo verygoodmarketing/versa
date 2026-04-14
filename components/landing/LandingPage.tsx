@@ -516,8 +516,8 @@ function HeroSection() {
           <div className="hidden lg:block">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl ring-1 ring-gray-200 mx-auto max-w-5xl">
               <img
-                src="/mockups/versa-dashboard-mockup.svg"
-                alt="Versa dashboard showing Rivera Plumbing — site visits, leads, reviews"
+                src="/mockups/groundwork-dashboard-mockup.svg"
+                alt="Groundwork dashboard showing Rivera Plumbing stats"
                 width={900}
                 height={580}
                 className="w-full"
@@ -594,7 +594,7 @@ function FeaturesSection() {
         {/* Mobile mockup preview */}
         <div className="mt-16 flex justify-center">
           <img
-            src="/mockups/versa-mobile-mockup.svg"
+            src="/mockups/groundwork-mobile-mockup.svg"
             alt="Rivera Plumbing mobile website on phone"
             width={480}
             height={720}
@@ -742,7 +742,7 @@ function HowItWorksSection() {
         {/* Onboarding mockup */}
         <div className="mt-16">
           <img
-            src="/mockups/versa-onboarding-mockup.svg"
+            src="/mockups/groundwork-onboarding-mockup.svg"
             alt="3-step onboarding: enter name, pick trade, go live"
             width={920}
             height={400}

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 580" width="900" height="580" font-family="Arial, Helvetica, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 580" width="900" height="580" font-family="'Montserrat', Arial, sans-serif">
   <!-- Shadow -->
   <defs>
     <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
@@ -8,8 +8,8 @@
       <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="rgba(0,0,0,0.08)"/>
     </filter>
     <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#4F46E5" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="#4F46E5" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#D97706" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#D97706" stop-opacity="0"/>
     </linearGradient>
   </defs>
 
@@ -28,7 +28,7 @@
   <!-- URL bar -->
   <rect x="200" y="30" width="500" height="24" rx="6" fill="#EDEDF0"/>
   <text x="263" y="47" font-size="12" fill="#6B7280" font-family="Arial">
-    <tspan fill="#4F46E5">&#x1F512;</tspan> app.versalocal.com/dashboard
+    <tspan fill="#D97706">&#x1F512;</tspan> app.groundworklocal.com/dashboard
   </text>
 
   <!-- Divider -->
@@ -41,14 +41,14 @@
   <line x1="200" y1="64" x2="200" y2="560" stroke="#E5E7EB" stroke-width="1"/>
   
   <!-- Logo in sidebar -->
-  <rect x="36" y="84" width="24" height="24" rx="6" fill="#4F46E5"/>
+  <rect x="36" y="84" width="24" height="24" rx="6" fill="#D97706"/>
   <text x="44" y="101" font-size="12" font-weight="bold" fill="white">V</text>
-  <text x="66" y="100" font-size="14" font-weight="700" fill="#111827">Versa</text>
+  <text x="66" y="100" font-size="14" font-weight="700" fill="#111827">Groundwork</text>
   
   <!-- Nav items -->
   <!-- Dashboard (active) -->
-  <rect x="28" y="124" width="156" height="34" rx="7" fill="#EEF2FF"/>
-  <text x="46" y="146" font-size="13" fill="#4F46E5" font-weight="600">&#9632; Dashboard</text>
+  <rect x="28" y="124" width="156" height="34" rx="7" fill="#FEF3C7"/>
+  <text x="46" y="146" font-size="13" fill="#D97706" font-weight="600">&#9632; Dashboard</text>
   
   <!-- Other nav items -->
   <text x="46" y="184" font-size="13" fill="#6B7280">&#9633; My Website</text>
@@ -61,7 +61,7 @@
   
   <!-- Business name at bottom of sidebar -->
   <rect x="28" y="510" width="156" height="36" rx="8" fill="white" filter="url(#cardshadow)"/>
-  <circle cx="46" cy="528" r="10" fill="#4F46E5"/>
+  <circle cx="46" cy="528" r="10" fill="#D97706"/>
   <text x="43" y="532" font-size="10" font-weight="bold" fill="white">R</text>
   <text x="62" y="526" font-size="11" font-weight="600" fill="#111827">Rivera Plumbing</text>
   <text x="62" y="540" font-size="10" fill="#9CA3AF">Pro Plan</text>
@@ -79,7 +79,7 @@
   <text x="383" y="102" font-size="12" fill="#166534" font-weight="600">Website is Live</text>
 
   <!-- View site link -->
-  <text x="506" y="102" font-size="12" fill="#4F46E5" font-weight="500" text-decoration="underline">rivieraplumbing.versalocal.com ›</text>
+  <text x="506" y="102" font-size="12" fill="#D97706" font-weight="500" text-decoration="underline">rivieraplumbing.groundworklocal.com ›</text>
   
   <!-- Date range -->
   <text x="790" y="102" font-size="12" fill="#6B7280">Last 30 days ▾</text>
@@ -132,7 +132,7 @@
   <text x="228" y="353" font-size="9" fill="#9CA3AF" text-anchor="middle">20</text>
 
   <!-- Chart line path - realistic visitor data curve -->
-  <polyline points="255,340 288,328 321,318 354,308 387,295 420,283 453,275 486,268 519,262 552,270 585,265 618,258 651,255" fill="none" stroke="#4F46E5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="255,340 288,328 321,318 354,308 387,295 420,283 453,275 486,268 519,262 552,270 585,265 618,258 651,255" fill="none" stroke="#D97706" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
   <!-- Area fill under chart -->
   <polygon points="255,350 255,340 288,328 321,318 354,308 387,295 420,283 453,275 486,268 519,262 552,270 585,265 618,258 651,255 651,350" fill="url(#chartGrad)"/>
 
@@ -159,8 +159,8 @@
   <line x1="708" y1="258" x2="844" y2="258" stroke="#F3F4F6" stroke-width="1"/>
   
   <!-- Lead 1 -->
-  <circle cx="720" cy="278" r="12" fill="#EEF2FF"/>
-  <text x="715" y="282" font-size="11" fill="#4F46E5" font-weight="600">JM</text>
+  <circle cx="720" cy="278" r="12" fill="#FEF3C7"/>
+  <text x="715" y="282" font-size="11" fill="#D97706" font-weight="600">JM</text>
   <text x="738" y="275" font-size="11" font-weight="600" fill="#111827">James M.</text>
   <text x="738" y="289" font-size="10" fill="#6B7280">Pipe repair</text>
   <text x="808" y="275" font-size="10" fill="#9CA3AF">2h ago</text>
@@ -183,7 +183,7 @@
   <text x="738" y="373" font-size="10" fill="#6B7280">Drain cleaning</text>
   <text x="808" y="359" font-size="10" fill="#9CA3AF">1d ago</text>
   
-  <text x="776" y="412" font-size="11" fill="#4F46E5" font-weight="500" text-anchor="middle">View all leads →</text>
+  <text x="776" y="412" font-size="11" fill="#D97706" font-weight="500" text-anchor="middle">View all leads →</text>
 
   <!-- ============ BOTTOM SECTION ============ -->
 
@@ -191,7 +191,7 @@
   <rect x="226" y="440" width="218" height="100" rx="10" fill="white" filter="url(#cardshadow)" stroke="#E5E7EB" stroke-width="1"/>
   <text x="242" y="464" font-size="13" font-weight="600" fill="#111827">Quick Actions</text>
   
-  <rect x="242" y="474" width="90" height="28" rx="6" fill="#4F46E5"/>
+  <rect x="242" y="474" width="90" height="28" rx="6" fill="#D97706"/>
   <text x="287" y="493" font-size="11" fill="white" font-weight="600" text-anchor="middle">Edit Website</text>
   
   <rect x="342" y="474" width="90" height="28" rx="6" fill="white" stroke="#E5E7EB" stroke-width="1.5"/>
@@ -208,14 +208,14 @@
   <text x="472" y="464" font-size="13" font-weight="600" fill="#111827">Review Requests</text>
   
   <text x="472" y="488" font-size="12" fill="#6B7280">Sent this month</text>
-  <text x="648" y="488" font-size="18" font-weight="700" fill="#4F46E5" text-anchor="end">12</text>
+  <text x="648" y="488" font-size="18" font-weight="700" fill="#D97706" text-anchor="end">12</text>
   
   <text x="472" y="512" font-size="12" fill="#6B7280">Responded</text>
   <text x="648" y="512" font-size="18" font-weight="700" fill="#111827" text-anchor="end">8</text>
   
   <!-- Progress bar -->
   <rect x="472" y="524" width="152" height="6" rx="3" fill="#E5E7EB"/>
-  <rect x="472" y="524" width="101" height="6" rx="3" fill="#4F46E5"/>
+  <rect x="472" y="524" width="101" height="6" rx="3" fill="#D97706"/>
   <text x="632" y="531" font-size="10" fill="#6B7280">67%</text>
 
   <!-- SEO score panel -->
@@ -224,7 +224,7 @@
   
   <!-- Score circle -->
   <circle cx="730" cy="500" r="26" fill="none" stroke="#E5E7EB" stroke-width="4"/>
-  <circle cx="730" cy="500" r="26" fill="none" stroke="#4F46E5" stroke-width="4" stroke-dasharray="131 163" stroke-dashoffset="41" stroke-linecap="round" transform="rotate(-90 730 500)"/>
+  <circle cx="730" cy="500" r="26" fill="none" stroke="#D97706" stroke-width="4" stroke-dasharray="131 163" stroke-dashoffset="41" stroke-linecap="round" transform="rotate(-90 730 500)"/>
   <text x="730" y="505" font-size="14" font-weight="700" fill="#111827" text-anchor="middle">82</text>
   
   <text x="772" y="490" font-size="11" fill="#111827" font-weight="600">Good</text>
@@ -232,6 +232,6 @@
   <text x="772" y="520" font-size="10" fill="#6B7280">3 improvements</text>
   
   <!-- Bottom border line -->
-  <rect x="20" y="556" width="860" height="4" rx="0" fill="#4F46E5" opacity="0.08"/>
+  <rect x="20" y="556" width="860" height="4" rx="0" fill="#D97706" opacity="0.08"/>
 
 </svg>
