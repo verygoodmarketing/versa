@@ -51,6 +51,9 @@ model Business {
   isActive Boolean @default(true)
   isPro    Boolean @default(false)
 
+  // Email preferences — CAN-SPAM compliance
+  nurtureEmailsOptOut Boolean @default(false)
+
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
