@@ -28,6 +28,7 @@ import {
   GroundworkIcon,
 } from "@/components/brand/GroundworkLogo";
 import { LeadMagnetOptIn } from "@/components/landing/LeadMagnetOptIn";
+import { UrgencyBanner } from "@/components/UrgencyBanner";
 
 // ─── Copy constants (easy for CMO/UX to update later) ────────────────────────
 
@@ -1109,6 +1110,7 @@ function Footer() {
 export function LandingPage() {
   return (
     <div className="min-h-screen flex flex-col">
+      <UrgencyBanner />
       <Navbar />
       <main className="flex-1">
         <HeroSection />

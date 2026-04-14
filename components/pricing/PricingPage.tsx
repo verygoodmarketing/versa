@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import { FileX, RefreshCcw, Clock } from "lucide-react";
 import { trpc } from "@/lib/trpc/client";
 import { createClient } from "@/lib/supabase/client";
+import { UrgencyBanner } from "@/components/UrgencyBanner";
 
 type Plan = {
   key: "STARTER" | "PRO" | "BUSINESS";
@@ -229,6 +230,7 @@ const FAQ = [
 export function PricingPage({ plans }: Props) {
   return (
     <div className="min-h-screen flex flex-col">
+      <UrgencyBanner />
       {/* Nav */}
       <nav className="sticky top-0 z-50 bg-[#161b22]/95 backdrop-blur-md border-b border-white/5">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
