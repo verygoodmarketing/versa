@@ -15,17 +15,17 @@ import { useState, useEffect } from "react";
  * Avoids hydration mismatch by only rendering after mount.
  */
 export function FreeTrialCTABanner() {
-  const [dismissed, setDismissed] = useState(false);
-  const [mounted, setMounted] = useState(false);
+  // null = not yet mounted (SSR / hydration guard), true = visible, false = dismissed
+  const [visible, setVisible] = useState<boolean | null>(null);
 
   useEffect(() => {
-    setMounted(true);
-    if (sessionStorage.getItem("free-trial-banner-dismissed") === "true") {
-      setDismissed(true);
-    }
+    const dismissed =
+      sessionStorage.getItem("free-trial-banner-dismissed") === "true";
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setVisible(!dismissed);
   }, []);
 
-  if (!mounted || dismissed) return null;
+  if (!visible) return null;
 
   return (
     <aside
@@ -70,7 +70,7 @@ export function FreeTrialCTABanner() {
               type="button"
               onClick={() => {
                 sessionStorage.setItem("free-trial-banner-dismissed", "true");
-                setDismissed(true);
+                setVisible(false);
               }}
               aria-label="Dismiss free trial banner"
               className="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-lg text-gray-400 hover:text-gray-600 hover:bg-gray-100 transition-colors text-lg leading-none"
