@@ -36,7 +36,13 @@ jobs:
 
       - name: Run database migrations
         if: hashFiles('prisma/migrations/**/*.sql') != ''
-        run: npx prisma migrate deploy
+        run: |
+          if [ -z "$DATABASE_URL" ] || [ -z "$DIRECT_URL" ]; then
+            echo "::warning::DATABASE_URL or DIRECT_URL secret is not configured — skipping migrations."
+            echo "Add DATABASE_URL and DIRECT_URL to GitHub repository secrets to enable automatic migrations."
+            exit 0
+          fi
+          npx prisma migrate deploy
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
           DIRECT_URL: ${{ secrets.DIRECT_URL }}
