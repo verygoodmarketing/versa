@@ -142,7 +142,7 @@ export function LeadMagnetOptIn({ sourcePage }: LeadMagnetOptInProps) {
         </h3>
         <p className="text-gray-600 mb-6 leading-relaxed">
           Your checklist is on its way. While you wait, take a look at how
-          Groundwork helps local service businesses handle the hard parts:
+          GroundWork helps local service businesses handle the hard parts:
           building a site that gets found, capturing leads, and following up
           automatically.
         </p>

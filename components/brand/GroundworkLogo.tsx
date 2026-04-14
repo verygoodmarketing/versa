@@ -1,13 +1,17 @@
 /**
- * Groundwork Brand Logo Components
+ * GroundWork Brand Logo Components
  *
  * Using final PNG assets from /public/brand/
  * Assets delivered: VER-163 (replaces SVG-based approach from VER-122/VER-123)
+ *
+ * Naming convention:
+ *   *-light.png  = dark text/marks → use on LIGHT backgrounds
+ *   *-dark.png   = light/white text/marks → use on DARK backgrounds
  */
 
 import Image from "next/image";
 
-// ─── Full Lockup — Light variant (for dark backgrounds) ──────────────────────
+// ─── Full Lockup — for DARK backgrounds (white text) ─────────────────────────
 
 export function GroundworkLogoFullLight({
   width = 220,
@@ -20,7 +24,7 @@ export function GroundworkLogoFullLight({
 }) {
   return (
     <Image
-      src="/brand/logo-horizontal-light.png"
+      src="/brand/logo-horizontal-dark.png"
       alt="GroundWork"
       width={width}
       height={height}
@@ -30,7 +34,7 @@ export function GroundworkLogoFullLight({
   );
 }
 
-// ─── Full Lockup (for light backgrounds) ─────────────────────────────────────
+// ─── Full Lockup — for LIGHT backgrounds (dark text) ─────────────────────────
 
 export function GroundworkLogoFull({
   width = 220,
@@ -82,18 +86,16 @@ export function GroundworkWordmark({
   width = 200,
   height = 52,
   className = "",
-  color = "light",
+  color = "dark",
 }: {
   width?: number;
   height?: number;
   className?: string;
-  /** "light" = white wordmark for dark backgrounds, "dark" = dark wordmark for light backgrounds */
+  /** "dark" = white wordmark for dark backgrounds, "light" = dark wordmark for light backgrounds */
   color?: string;
 }) {
-  const src =
-    color === "dark"
-      ? "/brand/logo-wordmark-tagline-dark.png"
-      : "/brand/logo-wordmark-tagline-dark.png";
+  // logo-wordmark-tagline-dark.png = light/white text → for dark backgrounds
+  const src = "/brand/logo-wordmark-tagline-dark.png";
   return (
     <Image
       src={src}

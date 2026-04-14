@@ -20,9 +20,9 @@ export interface BlogPost {
 const plumbersPost: BlogPost = {
   slug: "best-website-for-plumbers",
   title: "The Best Website for Plumbers in 2026",
-  metaTitle: "The Best Website for Plumbers in 2026 | Groundwork",
+  metaTitle: "The Best Website for Plumbers in 2026 | GroundWork",
   metaDescription:
-    "Looking for the best website builder for your plumbing business? See what plumbers actually need in a website — and why Groundwork is built specifically for the trades.",
+    "Looking for the best website builder for your plumbing business? See what plumbers actually need in a website — and why GroundWork is built specifically for the trades.",
   publishedAt: "2026-04-13",
   excerpt:
     "When a pipe bursts at 9 PM, the first thing a homeowner does is reach for their phone and search \u2018plumber near me.\u2019 If your business isn\u2019t showing up, you\u2019re handing that job to a competitor.",
@@ -74,7 +74,7 @@ const plumbersPost: BlogPost = {
     { type: "divider" },
     {
       type: "heading2",
-      text: "Why Groundwork Is Built for Plumbers (Not Generic Like Wix or Squarespace)",
+      text: "Why GroundWork Is Built for Plumbers (Not Generic Like Wix or Squarespace)",
     },
     {
       type: "paragraph",
@@ -82,7 +82,7 @@ const plumbersPost: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "Groundwork is different. It\u2019s made specifically for service businesses like plumbing, HVAC, electrical, and cleaning. That means:",
+      text: "GroundWork is different. It\u2019s made specifically for service businesses like plumbing, HVAC, electrical, and cleaning. That means:",
     },
     {
       type: "list",
@@ -102,7 +102,7 @@ const plumbersPost: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "When you\u2019re running a plumbing business, you don\u2019t have time to wrestle with drag-and-drop editors or figure out SEO plugins. Groundwork handles the hard stuff so you can focus on the job.",
+      text: "When you\u2019re running a plumbing business, you don\u2019t have time to wrestle with drag-and-drop editors or figure out SEO plugins. GroundWork handles the hard stuff so you can focus on the job.",
     },
     { type: "divider" },
     { type: "heading2", text: "How to Get Started in 5 Minutes" },
@@ -136,7 +136,7 @@ const plumbersPost: BlogPost = {
         },
         {
           bold: "How much does a plumber website cost?",
-          rest: " A custom website from a web design agency can run $2,000\u2013$8,000 upfront, plus ongoing hosting fees. Groundwork gives you a professional site for a flat monthly rate \u2014 a fraction of the cost, and you own it from day one. No waiting weeks for a developer to make changes.",
+          rest: " A custom website from a web design agency can run $2,000\u2013$8,000 upfront, plus ongoing hosting fees. GroundWork gives you a professional site for a flat monthly rate \u2014 a fraction of the cost, and you own it from day one. No waiting weeks for a developer to make changes.",
         },
         {
           bold: "Will a website actually get me more customers?",
@@ -148,7 +148,7 @@ const plumbersPost: BlogPost = {
     {
       type: "cta",
       linkText:
-        "Build your plumber website with Groundwork \u2014 free trial, no credit card needed.",
+        "Build your plumber website with GroundWork \u2014 free trial, no credit card needed.",
       href: "/for/plumbers",
     },
   ],
@@ -157,9 +157,9 @@ const plumbersPost: BlogPost = {
 const landscapersPost: BlogPost = {
   slug: "best-website-for-landscapers",
   title: "The Best Website for Landscapers in 2026",
-  metaTitle: "The Best Website for Landscapers in 2026 | Groundwork",
+  metaTitle: "The Best Website for Landscapers in 2026 | GroundWork",
   metaDescription:
-    "Looking for the best website builder for your landscaping business? Here\u2019s what landscapers actually need in a website \u2014 and why Groundwork is purpose-built for the trades.",
+    "Looking for the best website builder for your landscaping business? Here\u2019s what landscapers actually need in a website \u2014 and why GroundWork is purpose-built for the trades.",
   publishedAt: "2026-04-13",
   excerpt:
     "Spring rolls around and homeowners start Googling \u201classcapers near me.\u201d If your business isn\u2019t showing up with a professional website, you\u2019re invisible \u2014 and your competitor two towns over is getting that call.",
@@ -217,7 +217,7 @@ const landscapersPost: BlogPost = {
     { type: "divider" },
     {
       type: "heading2",
-      text: "Why Groundwork Is Built for Landscapers (Not Generic Like Wix or Squarespace)",
+      text: "Why GroundWork Is Built for Landscapers (Not Generic Like Wix or Squarespace)",
     },
     {
       type: "paragraph",
@@ -225,7 +225,7 @@ const landscapersPost: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "Groundwork is built specifically for service businesses like landscaping, HVAC, plumbing, and cleaning. The difference shows:",
+      text: "GroundWork is built specifically for service businesses like landscaping, HVAC, plumbing, and cleaning. The difference shows:",
     },
     {
       type: "list",
@@ -244,7 +244,7 @@ const landscapersPost: BlogPost = {
         },
         {
           bold: "Review request tools",
-          rest: " \u2014 after you finish a job, Groundwork can automatically ask happy customers to leave a Google review",
+          rest: " \u2014 after you finish a job, GroundWork can automatically ask happy customers to leave a Google review",
         },
         {
           bold: "No coding required",
@@ -254,7 +254,7 @@ const landscapersPost: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "Landscapers are busy people. You\u2019re managing crews, equipment, and a full job schedule. The last thing you need is to spend hours wrestling with a website builder. Groundwork handles the hard stuff so you can focus on the work.",
+      text: "Landscapers are busy people. You\u2019re managing crews, equipment, and a full job schedule. The last thing you need is to spend hours wrestling with a website builder. GroundWork handles the hard stuff so you can focus on the work.",
     },
     { type: "divider" },
     { type: "heading2", text: "How to Get Started in 5 Minutes" },
@@ -291,7 +291,7 @@ const landscapersPost: BlogPost = {
         },
         {
           bold: "How do I show off my work on a website?",
-          rest: " A photo gallery is the most effective thing a landscaper can have on their website. Groundwork makes it easy to upload photos of completed projects \u2014 before and after shots, seasonal cleanups, patio installations \u2014 so potential customers can see exactly what you do before they ever call.",
+          rest: " A photo gallery is the most effective thing a landscaper can have on their website. GroundWork makes it easy to upload photos of completed projects \u2014 before and after shots, seasonal cleanups, patio installations \u2014 so potential customers can see exactly what you do before they ever call.",
         },
         {
           bold: "Will a website help me get more jobs in the off-season?",
@@ -303,7 +303,7 @@ const landscapersPost: BlogPost = {
     {
       type: "cta",
       linkText:
-        "Build your landscaping website with Groundwork \u2014 free trial, no credit card needed.",
+        "Build your landscaping website with GroundWork \u2014 free trial, no credit card needed.",
       href: "/for/landscapers",
     },
   ],
@@ -312,9 +312,9 @@ const landscapersPost: BlogPost = {
 const cleanersPost: BlogPost = {
   slug: "best-website-for-cleaning-businesses",
   title: "The Best Website for Cleaning Businesses in 2026",
-  metaTitle: "The Best Website for Cleaning Businesses in 2026 | Groundwork",
+  metaTitle: "The Best Website for Cleaning Businesses in 2026 | GroundWork",
   metaDescription:
-    "Looking for the best website builder for your cleaning business? Here\u2019s what house cleaners and cleaning companies actually need in a website \u2014 and why Groundwork is built for the trades.",
+    "Looking for the best website builder for your cleaning business? Here\u2019s what house cleaners and cleaning companies actually need in a website \u2014 and why GroundWork is built for the trades.",
   publishedAt: "2026-04-13",
   excerpt:
     "When someone moves into a new neighborhood and needs a house cleaner, they don\u2019t ask around \u2014 they Google it. If you\u2019re not showing up, you don\u2019t exist to those potential customers.",
@@ -372,7 +372,7 @@ const cleanersPost: BlogPost = {
     { type: "divider" },
     {
       type: "heading2",
-      text: "Why Groundwork Is Built for Cleaning Businesses (Not Generic Like Wix or Squarespace)",
+      text: "Why GroundWork Is Built for Cleaning Businesses (Not Generic Like Wix or Squarespace)",
     },
     {
       type: "paragraph",
@@ -380,7 +380,7 @@ const cleanersPost: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "Groundwork is purpose-built for service businesses like cleaning, landscaping, plumbing, and HVAC. That means:",
+      text: "GroundWork is purpose-built for service businesses like cleaning, landscaping, plumbing, and HVAC. That means:",
     },
     {
       type: "list",
@@ -409,7 +409,7 @@ const cleanersPost: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "Running a cleaning business means long days, early mornings, and managing schedules. You don\u2019t have time to figure out website platforms. Groundwork is designed to be set up once and work for you automatically.",
+      text: "Running a cleaning business means long days, early mornings, and managing schedules. You don\u2019t have time to figure out website platforms. GroundWork is designed to be set up once and work for you automatically.",
     },
     { type: "divider" },
     { type: "heading2", text: "How to Get Started in 5 Minutes" },
@@ -442,7 +442,7 @@ const cleanersPost: BlogPost = {
       items: [
         {
           bold: "How do I get more cleaning clients from my website?",
-          rest: " The most important thing is showing up when people search for cleaners in your area \u2014 that requires local SEO. Groundwork handles the technical side automatically: your business gets the right metadata, local structured data, and service area targeting so Google can match you with nearby customers. Beyond that, a clear quote request form converts browsers into leads.",
+          rest: " The most important thing is showing up when people search for cleaners in your area \u2014 that requires local SEO. GroundWork handles the technical side automatically: your business gets the right metadata, local structured data, and service area targeting so Google can match you with nearby customers. Beyond that, a clear quote request form converts browsers into leads.",
         },
         {
           bold: "Do I need a website if I\u2019m already on Google Business Profile?",
@@ -450,7 +450,7 @@ const cleanersPost: BlogPost = {
         },
         {
           bold: "What should I put on my cleaning business website?",
-          rest: " At minimum: your services, your service area, your contact info, and a way to request a quote or book. Photos of your work and a handful of customer reviews will set you apart from competitors who just have a basic listing. Groundwork gives you a template designed specifically for cleaning businesses \u2014 so you\u2019re not starting from scratch.",
+          rest: " At minimum: your services, your service area, your contact info, and a way to request a quote or book. Photos of your work and a handful of customer reviews will set you apart from competitors who just have a basic listing. GroundWork gives you a template designed specifically for cleaning businesses \u2014 so you\u2019re not starting from scratch.",
         },
       ],
     },
@@ -458,7 +458,7 @@ const cleanersPost: BlogPost = {
     {
       type: "cta",
       linkText:
-        "Build your cleaning business website with Groundwork \u2014 free trial, no credit card needed.",
+        "Build your cleaning business website with GroundWork \u2014 free trial, no credit card needed.",
       href: "/for/cleaners",
     },
   ],
@@ -467,9 +467,9 @@ const cleanersPost: BlogPost = {
 const hvacPost: BlogPost = {
   slug: "best-website-for-hvac-companies",
   title: "The Best Website for HVAC Companies in 2026",
-  metaTitle: "The Best Website for HVAC Companies in 2026 | Groundwork",
+  metaTitle: "The Best Website for HVAC Companies in 2026 | GroundWork",
   metaDescription:
-    "Looking for the best website builder for your HVAC business? Here\u2019s what HVAC contractors actually need in a website \u2014 and why Groundwork is purpose-built for service businesses.",
+    "Looking for the best website builder for your HVAC business? Here\u2019s what HVAC contractors actually need in a website \u2014 and why GroundWork is purpose-built for service businesses.",
   publishedAt: "2026-04-13",
   excerpt:
     "It\u2019s July. A homeowner\u2019s AC stops working at 8 PM. They\u2019re not calling their neighbor for a referral \u2014 they\u2019re searching \u201cHVAC company near me\u201d and calling the first business that looks trustworthy.",
@@ -527,7 +527,7 @@ const hvacPost: BlogPost = {
     { type: "divider" },
     {
       type: "heading2",
-      text: "Why Groundwork Is Built for HVAC Companies (Not Generic Like Wix or Squarespace)",
+      text: "Why GroundWork Is Built for HVAC Companies (Not Generic Like Wix or Squarespace)",
     },
     {
       type: "paragraph",
@@ -535,7 +535,7 @@ const hvacPost: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "Groundwork is built specifically for service businesses: HVAC, plumbing, electrical, landscaping, and cleaning. That means:",
+      text: "GroundWork is built specifically for service businesses: HVAC, plumbing, electrical, landscaping, and cleaning. That means:",
     },
     {
       type: "list",
@@ -554,7 +554,7 @@ const hvacPost: BlogPost = {
         },
         {
           bold: "Review request automation",
-          rest: " \u2014 after a job is complete, Groundwork can ask your customers to leave a Google review",
+          rest: " \u2014 after a job is complete, GroundWork can ask your customers to leave a Google review",
         },
         {
           bold: "No coding, no design background required",
@@ -564,7 +564,7 @@ const hvacPost: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "HVAC technicians are running jobs, managing service calls, and keeping customers\u2019 homes comfortable. The last thing you need is to spend hours building a website. Groundwork is designed so you can set it up once and let it work for you.",
+      text: "HVAC technicians are running jobs, managing service calls, and keeping customers\u2019 homes comfortable. The last thing you need is to spend hours building a website. GroundWork is designed so you can set it up once and let it work for you.",
     },
     { type: "divider" },
     { type: "heading2", text: "How to Get Started in 5 Minutes" },
@@ -601,7 +601,7 @@ const hvacPost: BlogPost = {
         },
         {
           bold: "Should I list pricing on my HVAC website?",
-          rest: " Most HVAC contractors don\u2019t list exact pricing because jobs vary too much. What you should have is a way to request a quote quickly. A clear \u201cGet a Free Estimate\u201d form or phone number does more than a price list \u2014 it starts the conversation. Groundwork makes it easy to add a quote request form to every page.",
+          rest: " Most HVAC contractors don\u2019t list exact pricing because jobs vary too much. What you should have is a way to request a quote quickly. A clear \u201cGet a Free Estimate\u201d form or phone number does more than a price list \u2014 it starts the conversation. GroundWork makes it easy to add a quote request form to every page.",
         },
         {
           bold: "Do I need a website if I\u2019m already on Yelp and Google Business?",
@@ -613,7 +613,7 @@ const hvacPost: BlogPost = {
     {
       type: "cta",
       linkText:
-        "Build your HVAC company website with Groundwork \u2014 free trial, no credit card needed.",
+        "Build your HVAC company website with GroundWork \u2014 free trial, no credit card needed.",
       href: "/for/hvac",
     },
   ],
@@ -622,9 +622,9 @@ const hvacPost: BlogPost = {
 const electriciansPost: BlogPost = {
   slug: "best-website-for-electricians",
   title: "The Best Website for Electricians in 2026",
-  metaTitle: "The Best Website for Electricians in 2026 | Groundwork",
+  metaTitle: "The Best Website for Electricians in 2026 | GroundWork",
   metaDescription:
-    "Looking for the best website builder for your electrical business? Here\u2019s what electricians actually need in a website \u2014 and why Groundwork is purpose-built for the trades.",
+    "Looking for the best website builder for your electrical business? Here\u2019s what electricians actually need in a website \u2014 and why GroundWork is purpose-built for the trades.",
   publishedAt: "2026-04-13",
   excerpt:
     "When a homeowner\u2019s circuit breaker trips or they need a panel upgrade before closing on a house, they don\u2019t flip through the Yellow Pages. They open Google and type \u201celectrician near me.\u201d If your business doesn\u2019t show up \u2014 or shows up but looks like a hobbyist built your site in 2009 \u2014 that job goes to someone else.",
@@ -682,7 +682,7 @@ const electriciansPost: BlogPost = {
     { type: "divider" },
     {
       type: "heading2",
-      text: "Why Groundwork Is Built for Electricians (Not Generic Like Wix or Squarespace)",
+      text: "Why GroundWork Is Built for Electricians (Not Generic Like Wix or Squarespace)",
     },
     {
       type: "paragraph",
@@ -690,7 +690,7 @@ const electriciansPost: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "Groundwork is different. It\u2019s purpose-built for service businesses \u2014 electricians, plumbers, HVAC contractors, cleaners \u2014 so everything is designed around how your business actually works:",
+      text: "GroundWork is different. It\u2019s purpose-built for service businesses \u2014 electricians, plumbers, HVAC contractors, cleaners \u2014 so everything is designed around how your business actually works:",
     },
     {
       type: "list",
@@ -709,7 +709,7 @@ const electriciansPost: BlogPost = {
         },
         {
           bold: "Review request tools",
-          rest: " \u2014 after each job, Groundwork can automatically prompt customers to leave a Google or Facebook review",
+          rest: " \u2014 after each job, GroundWork can automatically prompt customers to leave a Google or Facebook review",
         },
         {
           bold: "No coding, no web designer needed",
@@ -719,7 +719,7 @@ const electriciansPost: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "When you\u2019re running an electrical business, your time is better spent on the job than wrestling with a website editor. Groundwork makes it fast and keeps it running.",
+      text: "When you\u2019re running an electrical business, your time is better spent on the job than wrestling with a website editor. GroundWork makes it fast and keeps it running.",
     },
     { type: "divider" },
     { type: "heading2", text: "How to Get Started in 5 Minutes" },
@@ -756,11 +756,11 @@ const electriciansPost: BlogPost = {
         },
         {
           bold: "What does it cost to have an electrician website built?",
-          rest: " Hiring an agency or freelance designer typically runs $1,500\u2013$6,000 upfront, plus monthly hosting, plus fees every time you want to make changes. Groundwork is a flat monthly subscription \u2014 you get a professional site, SEO tools, and lead capture without the agency price tag. And you can update it yourself whenever your services or rates change.",
+          rest: " Hiring an agency or freelance designer typically runs $1,500\u2013$6,000 upfront, plus monthly hosting, plus fees every time you want to make changes. GroundWork is a flat monthly subscription \u2014 you get a professional site, SEO tools, and lead capture without the agency price tag. And you can update it yourself whenever your services or rates change.",
         },
         {
           bold: "Will a website help me rank on Google Maps?",
-          rest: " Yes, but it works best in combination with a Google Business Profile. Your website builds the content signals Google uses to understand what you do and where you do it. Groundwork\u2019s local SEO features are specifically designed to support that \u2014 service area pages, proper structured data, and fast load speeds all contribute to better local rankings over time.",
+          rest: " Yes, but it works best in combination with a Google Business Profile. Your website builds the content signals Google uses to understand what you do and where you do it. GroundWork\u2019s local SEO features are specifically designed to support that \u2014 service area pages, proper structured data, and fast load speeds all contribute to better local rankings over time.",
         },
       ],
     },
@@ -768,7 +768,7 @@ const electriciansPost: BlogPost = {
     {
       type: "cta",
       linkText:
-        "Try Groundwork free \u2014 no credit card needed.",
+        "Try GroundWork free \u2014 no credit card needed.",
       href: "/for/electricians",
     },
   ],
@@ -777,9 +777,9 @@ const electriciansPost: BlogPost = {
 const contractorsPost: BlogPost = {
   slug: "best-website-for-contractors",
   title: "The Best Website for Contractors in 2026",
-  metaTitle: "The Best Website for Contractors in 2026 | Groundwork",
+  metaTitle: "The Best Website for Contractors in 2026 | GroundWork",
   metaDescription:
-    "Looking for the best website builder for your contracting business? Here\u2019s what general contractors actually need in a website \u2014 and why Groundwork is purpose-built for the trades.",
+    "Looking for the best website builder for your contracting business? Here\u2019s what general contractors actually need in a website \u2014 and why GroundWork is purpose-built for the trades.",
   publishedAt: "2026-04-13",
   excerpt:
     "Homeowners don\u2019t hire contractors the way they used to. Word-of-mouth still matters, but the first thing someone does after getting a referral is look you up online. If they can\u2019t find a website \u2014 or they find one that looks outdated and thin \u2014 doubt creeps in. They start calling other contractors.",
@@ -841,7 +841,7 @@ const contractorsPost: BlogPost = {
     { type: "divider" },
     {
       type: "heading2",
-      text: "Why Groundwork Is Built for Contractors (Not Generic Like Wix or Squarespace)",
+      text: "Why GroundWork Is Built for Contractors (Not Generic Like Wix or Squarespace)",
     },
     {
       type: "paragraph",
@@ -849,7 +849,7 @@ const contractorsPost: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "Groundwork is built specifically for service businesses \u2014 contractors, electricians, plumbers, HVAC companies \u2014 so the features you actually need are already there:",
+      text: "GroundWork is built specifically for service businesses \u2014 contractors, electricians, plumbers, HVAC companies \u2014 so the features you actually need are already there:",
     },
     {
       type: "list",
@@ -868,7 +868,7 @@ const contractorsPost: BlogPost = {
         },
         {
           bold: "Review request tools",
-          rest: " \u2014 Groundwork can automatically follow up after a job and ask happy customers to leave a Google review",
+          rest: " \u2014 GroundWork can automatically follow up after a job and ask happy customers to leave a Google review",
         },
         {
           bold: "No developers, no designers, no coding",
@@ -898,7 +898,7 @@ const contractorsPost: BlogPost = {
     },
     {
       type: "cta",
-      linkText: "Build your contractor website with Groundwork \u2192",
+      linkText: "Build your contractor website with GroundWork \u2192",
       href: "/for/contractors",
     },
     { type: "divider" },
@@ -915,11 +915,11 @@ const contractorsPost: BlogPost = {
         },
         {
           bold: "What does a contractor website actually cost?",
-          rest: " A custom-built site from a web design agency can run $3,000\u2013$10,000 or more, plus ongoing hosting and maintenance fees. Groundwork is a flat monthly subscription \u2014 no upfront build cost, no developer fees when you need to update a page, and you can make changes yourself anytime. It\u2019s built to cost less than a single lost job.",
+          rest: " A custom-built site from a web design agency can run $3,000\u2013$10,000 or more, plus ongoing hosting and maintenance fees. GroundWork is a flat monthly subscription \u2014 no upfront build cost, no developer fees when you need to update a page, and you can make changes yourself anytime. It\u2019s built to cost less than a single lost job.",
         },
         {
           bold: "How long does it take to start ranking on Google?",
-          rest: " SEO takes time \u2014 typically 3\u20136 months before you see significant organic traffic for competitive terms. That\u2019s true no matter what website builder you use. But the faster you start, the faster you compound. Groundwork\u2019s local SEO features \u2014 service area targeting, structured data, clean URLs, and fast load speeds \u2014 set you up correctly from day one so every month builds on the last.",
+          rest: " SEO takes time \u2014 typically 3\u20136 months before you see significant organic traffic for competitive terms. That\u2019s true no matter what website builder you use. But the faster you start, the faster you compound. GroundWork\u2019s local SEO features \u2014 service area targeting, structured data, clean URLs, and fast load speeds \u2014 set you up correctly from day one so every month builds on the last.",
         },
       ],
     },
@@ -927,7 +927,7 @@ const contractorsPost: BlogPost = {
     {
       type: "cta",
       linkText:
-        "Try Groundwork free \u2014 no credit card needed.",
+        "Try GroundWork free \u2014 no credit card needed.",
       href: "/for/contractors",
     },
   ],
@@ -936,7 +936,7 @@ const contractorsPost: BlogPost = {
 const plumberSchedulingPost: BlogPost = {
   slug: "best-scheduling-software-for-plumbers",
   title: "Best Scheduling Software for Plumbers in 2026",
-  metaTitle: "Best Scheduling Software for Plumbers in 2026 | Groundwork",
+  metaTitle: "Best Scheduling Software for Plumbers in 2026 | GroundWork",
   metaDescription:
     "Looking for the best scheduling software for your plumbing business? See what plumbers actually need to manage jobs, dispatch techs, and never miss a booking — without expensive enterprise tools.",
   publishedAt: "2026-04-14",
@@ -1008,7 +1008,7 @@ const plumberSchedulingPost: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "That's the problem Groundwork is built to solve. It's not just a scheduler — it's a website and marketing platform that gets you found first, then makes it easy for the customer to book or contact you immediately.",
+      text: "That's the problem GroundWork is built to solve. It's not just a scheduler — it's a website and marketing platform that gets you found first, then makes it easy for the customer to book or contact you immediately.",
     },
     { type: "divider" },
     {
@@ -1035,8 +1035,8 @@ const plumberSchedulingPost: BlogPost = {
           rest: " General-purpose booking tools — not built for plumbing. Fine for appointment-based businesses but lack dispatch, job routing, and field crew features.",
         },
         {
-          bold: "Groundwork.",
-          rest: " Combines a professional plumbing website with built-in lead capture and contact forms. When a customer fills out a service request on your Groundwork site, it goes straight to you — so you never miss a lead. Pair it with Housecall Pro or Jobber for full scheduling, and you have a complete system starting at $49/month.",
+          bold: "GroundWork.",
+          rest: " Combines a professional plumbing website with built-in lead capture and contact forms. When a customer fills out a service request on your GroundWork site, it goes straight to you — so you never miss a lead. Pair it with Housecall Pro or Jobber for full scheduling, and you have a complete system starting at $49/month.",
         },
       ],
     },
@@ -1048,7 +1048,7 @@ const plumberSchedulingPost: BlogPost = {
     {
       type: "orderedList",
       items: [
-        "Get a professional website with a lead capture form and click-to-call (Groundwork handles this)",
+        "Get a professional website with a lead capture form and click-to-call (GroundWork handles this)",
         "Set up online booking or a service request form — so customers can reach you 24/7",
         "Add automated text/email reminders for confirmed appointments",
         "Use a dispatch tool if you have multiple techs (Housecall Pro or Jobber)",
@@ -1082,7 +1082,7 @@ const plumberSchedulingPost: BlogPost = {
         },
         {
           bold: "Can scheduling software help me get more reviews?",
-          rest: " Yes — many scheduling tools include post-job follow-up features that automatically ask customers to leave a Google review after the appointment closes. Groundwork also includes review request tools. More reviews means better local search rankings and more trust for new customers.",
+          rest: " Yes — many scheduling tools include post-job follow-up features that automatically ask customers to leave a Google review after the appointment closes. GroundWork also includes review request tools. More reviews means better local search rankings and more trust for new customers.",
         },
       ],
     },
@@ -1090,7 +1090,7 @@ const plumberSchedulingPost: BlogPost = {
     {
       type: "cta",
       linkText:
-        "Build your plumbing website with Groundwork \u2014 free trial, no credit card needed.",
+        "Build your plumbing website with GroundWork \u2014 free trial, no credit card needed.",
       href: "/for/plumbers",
     },
   ],
@@ -1099,7 +1099,7 @@ const plumberSchedulingPost: BlogPost = {
 const hvacDispatchPost: BlogPost = {
   slug: "hvac-dispatch-software",
   title: "HVAC Dispatch Software: What Actually Works for Small HVAC Companies",
-  metaTitle: "Best HVAC Dispatch Software for Small Companies in 2026 | Groundwork",
+  metaTitle: "Best HVAC Dispatch Software for Small Companies in 2026 | GroundWork",
   metaDescription:
     "Looking for HVAC dispatch software? Here's what small HVAC companies actually need to route techs, manage jobs, and stop missing service calls — without paying for enterprise tools.",
   publishedAt: "2026-04-14",
@@ -1167,7 +1167,7 @@ const hvacDispatchPost: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "That's what Groundwork provides — a website and marketing platform built specifically for HVAC companies. Local SEO, lead capture, review tools. When someone searches \"HVAC company near me,\" you need to show up looking credible.",
+      text: "That's what GroundWork provides — a website and marketing platform built specifically for HVAC companies. Local SEO, lead capture, review tools. When someone searches \"HVAC company near me,\" you need to show up looking credible.",
     },
     { type: "divider" },
     {
@@ -1194,7 +1194,7 @@ const hvacDispatchPost: BlogPost = {
           rest: " HVAC-specific software with service history tracking, flat-rate pricing integration, and equipment tracking. Good option if you do a lot of warranty and maintenance contract work.",
         },
         {
-          bold: "Groundwork.",
+          bold: "GroundWork.",
           rest: " Not a dispatch tool, but the front end of your HVAC business — the website that captures leads and turns searches into service calls. Pair it with Housecall Pro or Jobber for a complete operations stack starting under $150/month.",
         },
       ],
@@ -1211,7 +1211,7 @@ const hvacDispatchPost: BlogPost = {
     {
       type: "orderedList",
       items: [
-        "Professional website with lead capture and click-to-call — so you get found and customers can reach you immediately (Groundwork, $49–$99/month)",
+        "Professional website with lead capture and click-to-call — so you get found and customers can reach you immediately (GroundWork, $49–$99/month)",
         "Field service + dispatch software for job management, routing, and customer notifications (Housecall Pro or Jobber, $49–$65/month)",
         "Google Business Profile, fully filled out with photos, services, and hours — free, and critical for local search",
         "Review request follow-up after every completed job — builds the rating that drives future calls",
@@ -1223,7 +1223,7 @@ const hvacDispatchPost: BlogPost = {
     },
     {
       type: "cta",
-      linkText: "Get your HVAC company website started with Groundwork \u2192",
+      linkText: "Get your HVAC company website started with GroundWork \u2192",
       href: "/for/hvac",
     },
     { type: "divider" },
@@ -1252,7 +1252,7 @@ const hvacDispatchPost: BlogPost = {
     {
       type: "cta",
       linkText:
-        "Build your HVAC website with Groundwork \u2014 free trial, no credit card needed.",
+        "Build your HVAC website with GroundWork \u2014 free trial, no credit card needed.",
       href: "/for/hvac",
     },
   ],
@@ -1261,9 +1261,9 @@ const hvacDispatchPost: BlogPost = {
 const bestWebsiteBuilderForContractorsPost: BlogPost = {
   slug: "best-website-builder-for-contractors",
   title: "Best Website Builder for Contractors (2026)",
-  metaTitle: "Best Website Builder for Contractors (2026) | Groundwork",
+  metaTitle: "Best Website Builder for Contractors (2026) | GroundWork",
   metaDescription:
-    "Comparing Wix, Squarespace, GoDaddy, and Groundwork for contractors \u2014 find out which website builder is actually built for the trades.",
+    "Comparing Wix, Squarespace, GoDaddy, and GroundWork for contractors \u2014 find out which website builder is actually built for the trades.",
   publishedAt: "2026-04-13",
   excerpt:
     "You\u2019re good at your craft. You show up on time, do solid work, and your customers refer you to their neighbors. But if a potential customer searches for a contractor in your area and your name doesn\u2019t show up \u2014 or they land on a website that looks like it was built in 2009 \u2014 you\u2019re losing jobs.",
@@ -1345,11 +1345,11 @@ const bestWebsiteBuilderForContractorsPost: BlogPost = {
     { type: "divider" },
     {
       type: "heading2",
-      text: "What Makes Groundwork Different",
+      text: "What Makes GroundWork Different",
     },
     {
       type: "paragraph",
-      text: "Groundwork was built specifically for trade and home service businesses. That means you\u2019re not adapting a generic template \u2014 you\u2019re starting with a structure that\u2019s already optimized for how contractors get found and how customers make hiring decisions.",
+      text: "GroundWork was built specifically for trade and home service businesses. That means you\u2019re not adapting a generic template \u2014 you\u2019re starting with a structure that\u2019s already optimized for how contractors get found and how customers make hiring decisions.",
     },
     {
       type: "list",
@@ -1371,7 +1371,7 @@ const bestWebsiteBuilderForContractorsPost: BlogPost = {
     },
     {
       type: "cta",
-      linkText: "Try Groundwork free \u2014 no credit card required, live in under 30 minutes.",
+      linkText: "Try GroundWork free \u2014 no credit card required, live in under 30 minutes.",
       href: "/for/contractors",
     },
   ],
@@ -1380,7 +1380,7 @@ const bestWebsiteBuilderForContractorsPost: BlogPost = {
 const howToGetMorePlumbingCustomersPost: BlogPost = {
   slug: "how-to-get-more-plumbing-customers",
   title: "How to Get More Customers as a Local Plumber",
-  metaTitle: "How to Get More Customers as a Local Plumber | Groundwork",
+  metaTitle: "How to Get More Customers as a Local Plumber | GroundWork",
   metaDescription:
     "A practical 5-step guide for plumbers who want more calls, more bookings, and more word-of-mouth \u2014 without spending a fortune on ads.",
   publishedAt: "2026-04-13",
@@ -1445,7 +1445,7 @@ const howToGetMorePlumbingCustomersPost: BlogPost = {
     },
     {
       type: "cta",
-      linkText: "Groundwork gives plumbers a professional website with all of this built in \u2192",
+      linkText: "GroundWork gives plumbers a professional website with all of this built in \u2192",
       href: "/for/plumbers",
     },
     {
@@ -1519,7 +1519,7 @@ const howToGetMorePlumbingCustomersPost: BlogPost = {
     },
     {
       type: "cta",
-      linkText: "See how Groundwork works for plumbers \u2192",
+      linkText: "See how GroundWork works for plumbers \u2192",
       href: "/for/plumbers",
     },
   ],
@@ -1528,7 +1528,7 @@ const howToGetMorePlumbingCustomersPost: BlogPost = {
 const doesCleaningBusinessNeedWebsitePost: BlogPost = {
   slug: "does-a-cleaning-business-need-a-website",
   title: "Does My Cleaning Business Need a Website?",
-  metaTitle: "Does My Cleaning Business Need a Website? | Groundwork",
+  metaTitle: "Does My Cleaning Business Need a Website? | GroundWork",
   metaDescription:
     "Short answer: yes. Here\u2019s why a website is the single most important marketing asset for your cleaning business \u2014 and how to get one without the hassle.",
   publishedAt: "2026-04-13",
@@ -1574,7 +1574,7 @@ const doesCleaningBusinessNeedWebsitePost: BlogPost = {
         },
         {
           bold: "\u201cI don\u2019t have the budget.\u201d",
-          rest: " Professional websites used to cost thousands. Today, tools like Groundwork let you launch a professional cleaning business website for free. No developer, no designer, no big upfront cost.",
+          rest: " Professional websites used to cost thousands. Today, tools like GroundWork let you launch a professional cleaning business website for free. No developer, no designer, no big upfront cost.",
         },
         {
           bold: "\u201cI don\u2019t have time to deal with tech.\u201d",
@@ -1636,7 +1636,7 @@ const doesCleaningBusinessNeedWebsitePost: BlogPost = {
     {
       type: "orderedList",
       items: [
-        "Sign up for Groundwork \u2014 free, no credit card required",
+        "Sign up for GroundWork \u2014 free, no credit card required",
         "Choose a cleaning business template \u2014 pre-built for your industry",
         "Fill in your business details \u2014 name, services, location, contact info",
         "Go live \u2014 your site is published and ready in under 30 minutes",
@@ -1644,7 +1644,7 @@ const doesCleaningBusinessNeedWebsitePost: BlogPost = {
     },
     {
       type: "paragraph",
-      text: "Groundwork includes a quote request form, local SEO structure, and review integration out of the box \u2014 everything a cleaning business needs to start showing up online.",
+      text: "GroundWork includes a quote request form, local SEO structure, and review integration out of the box \u2014 everything a cleaning business needs to start showing up online.",
     },
     { type: "divider" },
     {
@@ -1661,7 +1661,7 @@ const doesCleaningBusinessNeedWebsitePost: BlogPost = {
     },
     {
       type: "cta",
-      linkText: "Start your free Groundwork website today \u2192",
+      linkText: "Start your free GroundWork website today \u2192",
       href: "/for/cleaners",
     },
   ],

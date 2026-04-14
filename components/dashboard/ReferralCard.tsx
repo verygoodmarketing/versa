@@ -9,7 +9,7 @@ import { Copy, Check, MessageSquare, Mail } from "lucide-react";
  *
  * CMO copy from spec:
  * - Headline: "Know another pro who could use more customers?"
- * - Subhead: "Share Groundwork with a fellow tradesperson. You both get a free month when they sign up."
+ * - Subhead: "Share GroundWork with a fellow tradesperson. You both get a free month when they sign up."
  * - Button: "Get My Referral Link"
  *
  * Surfaces the user's unique referral link, a copy-to-clipboard button,
@@ -43,7 +43,7 @@ export function ReferralCard() {
   function getSmsShareUrl() {
     if (!codeData?.url) return "#";
     const msg = encodeURIComponent(
-      `Hey, I use Groundwork to get more customers online. It's $49/mo — use my link and we both get a free month. ${codeData.url}`
+      `Hey, I use GroundWork to get more customers online. It's $49/mo — use my link and we both get a free month. ${codeData.url}`
     );
     return `sms:?body=${msg}`;
   }
@@ -54,7 +54,7 @@ export function ReferralCard() {
       "A tool that's been getting me more work — wanted to share"
     );
     const body = encodeURIComponent(
-      `I've been using a tool called Groundwork to help manage my online presence — website, reviews, leads. It's been worth it.\n\nI figured you might want to try it. Use my referral link and you'll get your first month free after your trial. I'll get a free month too, so it's a win for both of us.\n\n${codeData.url}\n\nNo pressure — just thought it'd be useful if you're trying to pick up more work online.`
+      `I've been using a tool called GroundWork to help manage my online presence — website, reviews, leads. It's been worth it.\n\nI figured you might want to try it. Use my referral link and you'll get your first month free after your trial. I'll get a free month too, so it's a win for both of us.\n\n${codeData.url}\n\nNo pressure — just thought it'd be useful if you're trying to pick up more work online.`
     );
     return `mailto:?subject=${subject}&body=${body}`;
   }
@@ -67,7 +67,7 @@ export function ReferralCard() {
           Know another pro who could use more customers?
         </h2>
         <p className="text-surface-400 font-body text-sm mt-1">
-          Share Groundwork with a fellow tradesperson. You both get a free month when they sign up.
+          Share GroundWork with a fellow tradesperson. You both get a free month when they sign up.
         </p>
       </div>
 

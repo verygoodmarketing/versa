@@ -7,16 +7,16 @@ const APP_URL =
   process.env.NEXT_PUBLIC_APP_URL ?? "https://groundworklocal.com";
 
 export const metadata: Metadata = {
-  title: "Blog — Tips & Guides for Local Service Businesses | Groundwork",
+  title: "Blog — Tips & Guides for Local Service Businesses | GroundWork",
   description:
     "Practical advice for plumbers, electricians, cleaners, and contractors on getting found online, building a professional website, and growing your customer base.",
   openGraph: {
-    title: "Blog — Groundwork",
+    title: "Blog — GroundWork",
     description:
       "Practical advice for local service businesses on websites, SEO, and getting more customers.",
     type: "website",
     url: `${APP_URL}/blog`,
-    siteName: "Groundwork",
+    siteName: "GroundWork",
   },
 };
 
@@ -29,7 +29,7 @@ export default function BlogPage() {
             href="/"
             className="text-sm font-medium text-brand-600 hover:text-brand-700 transition-colors"
           >
-            ← Back to Groundwork
+            ← Back to GroundWork
           </Link>
           <h1 className="mt-6 text-4xl font-bold text-gray-900 font-display">
             Blog

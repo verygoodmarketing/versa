@@ -31,7 +31,7 @@ export interface ComparisonPageData {
   intro: string;
   /** Comparison table rows */
   tableRows: ComparisonRow[];
-  /** 5 benefit sections (why Groundwork wins) */
+  /** 5 benefit sections (why GroundWork wins) */
   benefits: BenefitSection[];
   /** "Who should use X" section */
   whoShouldUse: {
@@ -207,7 +207,7 @@ function ComparisonTable({
             className="text-3xl sm:text-4xl font-extrabold text-gray-900"
             style={{ fontFamily: "var(--font-display)" }}
           >
-            Groundwork vs {competitorName}
+            GroundWork vs {competitorName}
           </h2>
         </div>
 
@@ -219,7 +219,7 @@ function ComparisonTable({
                   Feature
                 </th>
                 <th className="px-6 py-4 font-semibold text-brand-700 text-center">
-                  Groundwork
+                  GroundWork
                 </th>
                 <th className="px-6 py-4 font-semibold text-gray-500 text-center">
                   {competitorName}
@@ -272,13 +272,13 @@ function BenefitsSection({
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-14">
           <span className="inline-block text-xs font-bold uppercase tracking-widest text-brand-300 mb-3">
-            Why Groundwork Wins
+            Why GroundWork Wins
           </span>
           <h2
             className="text-3xl sm:text-4xl font-extrabold text-white"
             style={{ fontFamily: "var(--font-display)" }}
           >
-            5 Reasons Local Service Businesses Choose Groundwork Over{" "}
+            5 Reasons Local Service Businesses Choose GroundWork Over{" "}
             {competitorName}
           </h2>
         </div>
@@ -432,7 +432,7 @@ function Footer() {
           </Link>
         </div>
         <p className="text-xs text-gray-600">
-          &copy; {new Date().getFullYear()} Groundwork. All rights reserved.
+          &copy; {new Date().getFullYear()} GroundWork. All rights reserved.
         </p>
       </div>
     </footer>
@@ -460,7 +460,7 @@ function JsonLd({
   const softwareApplicationSchema = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    name: "Groundwork",
+    name: "GroundWork",
     applicationCategory: "BusinessApplication",
     description:
       "Website and marketing platform built for local service businesses",

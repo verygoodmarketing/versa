@@ -6,7 +6,7 @@ const APP_URL = process.env.NEXT_PUBLIC_APP_URL ?? "https://groundworklocal.com"
 
 const data: IndustryPageData = {
   slug: "landscapers",
-  pageTitle: "Website Builder for Landscapers — Win More Lawn & Landscaping Jobs | Groundwork",
+  pageTitle: "Website Builder for Landscapers — Win More Lawn & Landscaping Jobs | GroundWork",
   metaDescription:
     "Get a professional landscaping website live in under an hour. Show off your work with a photo gallery, capture quote requests, and rank in local search. Free to try.",
   h1: "The Website Builder Made for Landscapers",
@@ -40,7 +40,7 @@ const data: IndustryPageData = {
       icon: "📍",
       title: "Rank for 'landscapers near me'",
       description:
-        "Groundwork builds local SEO into every page — structured data, service area pages, and Google Business integration so you show up when homeowners search for landscapers in your area.",
+        "GroundWork builds local SEO into every page — structured data, service area pages, and Google Business integration so you show up when homeowners search for landscapers in your area.",
     },
     {
       icon: "⭐",
@@ -54,24 +54,24 @@ const data: IndustryPageData = {
     initials: "DR",
     business: "Ridge Line Landscaping",
     quote:
-      "My old website was from 2015. Groundwork made it stupid easy to get a new one up that actually looks professional. Customers tell me all the time it was what made them choose us.",
+      "My old website was from 2015. GroundWork made it stupid easy to get a new one up that actually looks professional. Customers tell me all the time it was what made them choose us.",
     color: "from-emerald-500 to-teal-600",
   },
   faqs: [
     {
       question: "Can I add photos of my landscaping work to my website?",
       answer:
-        "Absolutely. Groundwork has a built-in photo gallery that's perfect for landscaping before-and-afters, seasonal projects, and portfolio work. You can upload from your phone in seconds.",
+        "Absolutely. GroundWork has a built-in photo gallery that's perfect for landscaping before-and-afters, seasonal projects, and portfolio work. You can upload from your phone in seconds.",
     },
     {
       question: "Will my landscaping business show up in local Google searches?",
       answer:
-        "Yes. Groundwork sites include local SEO tooling that helps you rank for searches like 'landscapers near me', 'lawn care [city]', and 'landscaping company [city]'. We handle the technical SEO so you don't have to.",
+        "Yes. GroundWork sites include local SEO tooling that helps you rank for searches like 'landscapers near me', 'lawn care [city]', and 'landscaping company [city]'. We handle the technical SEO so you don't have to.",
     },
     {
-      question: "Can I use Groundwork seasonally?",
+      question: "Can I use GroundWork seasonally?",
       answer:
-        "Yes, you can cancel anytime. Many landscapers run Groundwork during peak season and pause during winter. You keep your domain and content no matter what.",
+        "Yes, you can cancel anytime. Many landscapers run GroundWork during peak season and pause during winter. You keep your domain and content no matter what.",
     },
     {
       question: "How do quote requests work?",
@@ -93,7 +93,7 @@ export const metadata: Metadata = {
     description: data.metaDescription,
     type: "website",
     url: `${APP_URL}/for/landscapers`,
-    siteName: "Groundwork",
+    siteName: "GroundWork",
   },
   twitter: {
     card: "summary_large_image",

@@ -53,7 +53,7 @@ export default async function DashboardPage() {
       {/* Header */}
       <header className="border-b border-surface-800/30">
         <div className="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
-          <span className="font-display font-bold text-xl text-[var(--foreground)]">Groundwork</span>
+          <span className="font-display font-bold text-xl text-[var(--foreground)]">GroundWork</span>
           <div className="flex items-center gap-3">
             <span className="text-sm text-surface-400 font-body">{business.name}</span>
             {business.planTier && (

@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: post.metaDescription,
       type: "article",
       url: `${APP_URL}/blog/${post.slug}`,
-      siteName: "Groundwork",
+      siteName: "GroundWork",
       publishedTime: post.publishedAt,
     },
     twitter: {

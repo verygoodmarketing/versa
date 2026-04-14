@@ -6,7 +6,7 @@ const APP_URL = process.env.NEXT_PUBLIC_APP_URL ?? "https://groundworklocal.com"
 
 const data: IndustryPageData = {
   slug: "plumbers",
-  pageTitle: "Website Builder for Plumbers — Get More Plumbing Jobs Online | Groundwork",
+  pageTitle: "Website Builder for Plumbers — Get More Plumbing Jobs Online | GroundWork",
   metaDescription:
     "Get a professional plumber website live in under an hour. Built-in local SEO, lead capture, click-to-call, and Google review tools — designed for plumbing businesses. Free to try.",
   h1: "The Website Builder Made for Plumbers",
@@ -34,7 +34,7 @@ const data: IndustryPageData = {
       icon: "📍",
       title: "Show up in 'plumber near me' searches",
       description:
-        "Groundwork auto-generates local SEO metadata, sitemaps, and Google Business Profile integrations so you rank for the searches that matter — plumber near me, emergency plumber, drain repair.",
+        "GroundWork auto-generates local SEO metadata, sitemaps, and Google Business Profile integrations so you rank for the searches that matter — plumber near me, emergency plumber, drain repair.",
     },
     {
       icon: "📋",
@@ -61,22 +61,22 @@ const data: IndustryPageData = {
     {
       question: "Do I need any tech skills to build a plumber website?",
       answer:
-        "None at all. Groundwork walks you through every step — business name, phone, services, photos. If you can fill out a form, you can build a website with Groundwork.",
+        "None at all. GroundWork walks you through every step — business name, phone, services, photos. If you can fill out a form, you can build a website with GroundWork.",
     },
     {
       question: "Will my plumbing website show up on Google?",
       answer:
-        "Yes. Groundwork sites are built with local SEO from the ground up — proper meta tags, structured data, sitemap submission, and Google Business Profile integration. Most Groundwork plumber sites start appearing in local search within 2-4 weeks.",
+        "Yes. GroundWork sites are built with local SEO from the ground up — proper meta tags, structured data, sitemap submission, and Google Business Profile integration. Most GroundWork plumber sites start appearing in local search within 2-4 weeks.",
     },
     {
       question: "What if I already have a website?",
       answer:
-        "You can migrate to Groundwork easily. Many plumbers switch because their old site has no lead forms, no local SEO, and hasn't been updated in years. Groundwork gives you a modern site that actually converts visitors into calls.",
+        "You can migrate to GroundWork easily. Many plumbers switch because their old site has no lead forms, no local SEO, and hasn't been updated in years. GroundWork gives you a modern site that actually converts visitors into calls.",
     },
     {
       question: "How much does it cost?",
       answer:
-        "Groundwork starts at $49/month with a 14-day free trial — no credit card required to get started. You can cancel anytime. Most plumbers make back their monthly fee from just one new job.",
+        "GroundWork starts at $49/month with a 14-day free trial — no credit card required to get started. You can cancel anytime. Most plumbers make back their monthly fee from just one new job.",
     },
   ],
   blogPost: {
@@ -93,7 +93,7 @@ export const metadata: Metadata = {
     description: data.metaDescription,
     type: "website",
     url: `${APP_URL}/for/plumbers`,
-    siteName: "Groundwork",
+    siteName: "GroundWork",
   },
   twitter: {
     card: "summary_large_image",

@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — Groundwork",
+  title: "Privacy Policy — GroundWork",
   description:
-    "Read Groundwork's Privacy Policy. Learn how we collect, use, and protect your personal information.",
+    "Read GroundWork's Privacy Policy. Learn how we collect, use, and protect your personal information.",
   robots: { index: true, follow: true },
 };
 
 const EFFECTIVE_DATE = "April 1, 2026";
-const COMPANY_NAME = "Groundwork";
+const COMPANY_NAME = "GroundWork";
 const COMPANY_EMAIL = "privacy@groundworklocal.com";
 
 export default function PrivacyPage() {
@@ -22,7 +22,7 @@ export default function PrivacyPage() {
             href="/"
             className="font-display font-bold text-lg text-surface-950 hover:text-brand-600 transition-colors"
           >
-            Groundwork
+            GroundWork
           </Link>
           <Link
             href="/onboarding/step-1"

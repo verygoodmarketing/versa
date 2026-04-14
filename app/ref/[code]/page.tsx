@@ -42,9 +42,9 @@ export default async function RefPage({ params }: Props) {
   return (
     <div className="min-h-screen bg-white flex flex-col items-center justify-center px-4">
       <div className="max-w-lg w-full text-center space-y-6">
-        {/* Groundwork wordmark */}
+        {/* GroundWork wordmark */}
         <div className="mb-8">
-          <span className="font-display font-bold text-2xl text-gray-900">Groundwork</span>
+          <span className="font-display font-bold text-2xl text-gray-900">GroundWork</span>
         </div>
 
         {/* CMO copy: thank-you message for new user */}

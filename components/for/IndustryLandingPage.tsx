@@ -15,7 +15,7 @@ function JsonLd({ data }: { data: IndustryPageData }) {
   const softwareApplicationSchema = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    name: "Groundwork",
+    name: "GroundWork",
     applicationCategory: "BusinessApplication",
     description: `Professional website builder for ${data.industryLabel.toLowerCase()}s`,
     operatingSystem: "Web",
@@ -33,7 +33,7 @@ function JsonLd({ data }: { data: IndustryPageData }) {
         price: "49",
         priceCurrency: "USD",
         billingIncrement: "P1M",
-        description: "Full access to all Groundwork features",
+        description: "Full access to all GroundWork features",
       },
     ],
     url: APP_URL,
@@ -265,7 +265,7 @@ function FeaturesSection({ data }: { data: IndustryPageData }) {
             Everything your {data.industryLabel.toLowerCase()} business needs online
           </h2>
           <p className="text-lg text-gray-500 max-w-2xl mx-auto">
-            Groundwork gives you the tools that actually matter for winning more local customers — without the complexity or the cost.
+            GroundWork gives you the tools that actually matter for winning more local customers — without the complexity or the cost.
           </p>
         </div>
 
@@ -494,7 +494,7 @@ function Footer({ data }: { data: IndustryPageData }) {
           )}
           <Link href="/onboarding/step-1" className="hover:text-brand-400 transition-colors">Get started</Link>
         </div>
-        <p className="text-xs text-gray-600">&copy; {new Date().getFullYear()} Groundwork. All rights reserved.</p>
+        <p className="text-xs text-gray-600">&copy; {new Date().getFullYear()} GroundWork. All rights reserved.</p>
       </div>
     </footer>
   );

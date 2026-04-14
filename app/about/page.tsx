@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About — Groundwork",
+  title: "About — GroundWork",
   description:
-    "Groundwork helps local service businesses — plumbers, cleaners, landscapers, and contractors — get a professional website and marketing tools live in under an hour.",
+    "GroundWork helps local service businesses — plumbers, cleaners, landscapers, and contractors — get a professional website and marketing tools live in under an hour.",
   robots: { index: true, follow: true },
 };
 
@@ -18,7 +18,7 @@ export default function AboutPage() {
             href="/"
             className="font-display font-bold text-lg text-surface-950 hover:text-brand-600 transition-colors"
           >
-            Groundwork
+            GroundWork
           </Link>
           <Link
             href="/onboarding/step-1"
@@ -33,7 +33,7 @@ export default function AboutPage() {
       <main className="max-w-3xl mx-auto px-6 py-16">
         <div className="mb-10">
           <h1 className="font-display text-4xl font-bold text-surface-950 mb-4">
-            About Groundwork
+            About GroundWork
           </h1>
           <p className="font-body text-surface-400 text-lg">
             We built the marketing platform we wish existed for local service businesses.
@@ -46,7 +46,7 @@ export default function AboutPage() {
               Our mission
             </h2>
             <p className="text-surface-600 leading-relaxed">
-              Groundwork exists to help local service businesses — plumbers, electricians, cleaners, landscapers, contractors, photographers, and everyone in between — build a professional online presence and grow their customer base without needing a web developer, a marketing agency, or a tech background.
+              GroundWork exists to help local service businesses — plumbers, electricians, cleaners, landscapers, contractors, photographers, and everyone in between — build a professional online presence and grow their customer base without needing a web developer, a marketing agency, or a tech background.
             </p>
           </section>
 
@@ -58,7 +58,7 @@ export default function AboutPage() {
               Local service businesses are the backbone of every community. Plumbers fix your pipes. Electricians keep the lights on. Cleaners make your home livable. These are skilled, hard-working people who are experts at their trade — but most of them are invisible online.
             </p>
             <p className="text-surface-600 leading-relaxed">
-              The tools that exist for marketing and websites were built for tech-savvy founders and enterprise teams. They&rsquo;re complex, expensive, and require too much time to learn. Groundwork is different: we built something that any business owner can set up in under an hour, without any tech skills, and that actually works for winning local jobs.
+              The tools that exist for marketing and websites were built for tech-savvy founders and enterprise teams. They&rsquo;re complex, expensive, and require too much time to learn. GroundWork is different: we built something that any business owner can set up in under an hour, without any tech skills, and that actually works for winning local jobs.
             </p>
           </section>
 
@@ -67,7 +67,7 @@ export default function AboutPage() {
               What we offer
             </h2>
             <p className="text-surface-600 leading-relaxed mb-3">
-              Groundwork bundles the five tools that local businesses actually need:
+              GroundWork bundles the five tools that local businesses actually need:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-surface-600">
               <li><strong>Professional website</strong> — live in under an hour, no code required</li>

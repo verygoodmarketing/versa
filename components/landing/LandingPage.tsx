@@ -35,7 +35,7 @@ import { UrgencyBanner } from "@/components/UrgencyBanner";
 // ─── Copy constants (easy for CMO/UX to update later) ────────────────────────
 
 const BRAND = {
-  name: "Groundwork",
+  name: "GroundWork",
   tagline: "Show up first. Win more work.",
 };
 
@@ -67,7 +67,7 @@ const FEATURES = [
     id: "seo",
     title: "Show up on Google",
     description:
-      "Groundwork sites are built for local SEO from day one — with auto-generated meta tags, sitemaps, and Google Business Profile integration so customers find you when they search nearby.",
+      "GroundWork sites are built for local SEO from day one — with auto-generated meta tags, sitemaps, and Google Business Profile integration so customers find you when they search nearby.",
     Icon: MapPin,
     colorKey: "violet",
   },
@@ -219,7 +219,7 @@ const TESTIMONIALS = [
     businessType: "Cleaning",
     color: "from-violet-500 to-purple-600",
     quote:
-      "I had no website for 6 years. I built mine on Groundwork in 45 minutes and got my first online lead within a week. Game changer.",
+      "I had no website for 6 years. I built mine on GroundWork in 45 minutes and got my first online lead within a week. Game changer.",
   },
   {
     name: "Dave R.",
@@ -228,7 +228,7 @@ const TESTIMONIALS = [
     businessType: "Landscaping",
     color: "from-emerald-500 to-teal-600",
     quote:
-      "My old website was from 2015. Groundwork made it stupid easy to get a new one up that actually looks professional. Customers tell me all the time.",
+      "My old website was from 2015. GroundWork made it stupid easy to get a new one up that actually looks professional. Customers tell me all the time.",
   },
   {
     name: "Sandra K.",
@@ -249,7 +249,7 @@ const PRICING = [
     description: "Everything you need to get online and start getting leads.",
     features: [
       "1 professional website",
-      "Groundwork subdomain (yourbiz.groundworklocal.com)",
+      "GroundWork subdomain (yourbiz.groundworklocal.com)",
       "Contact forms + lead inbox",
       "Click-to-call + mobile-optimized",
       "Basic SEO + sitemap",
@@ -442,7 +442,7 @@ function HeroSection() {
             {/* Brand lockup above headline */}
             <div className="mb-6">
               <Image
-                src="/brand/logo-horizontal-with-tagline-light.png"
+                src="/brand/logo-mark-tagline-dark.png"
                 alt="GroundWork — Show up first. Win more work."
                 width={320}
                 height={80}
@@ -469,7 +469,7 @@ function HeroSection() {
             </h1>
 
             <p className="text-xl text-[#c9d1d9] mb-8 leading-relaxed max-w-lg">
-              Groundwork helps local service businesses — plumbers, cleaners, landscapers, photographers, and more — get a professional website live in under an hour. No tech skills. No agencies. No nonsense.
+              GroundWork helps local service businesses — plumbers, cleaners, landscapers, photographers, and more — get a professional website live in under an hour. No tech skills. No agencies. No nonsense.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 mb-10">
@@ -513,7 +513,7 @@ function HeroSection() {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl ring-1 ring-gray-200 mx-auto max-w-5xl">
               <img
                 src="/mockups/groundwork-dashboard-mockup.svg"
-                alt="Groundwork dashboard showing Rivera Plumbing stats"
+                alt="GroundWork dashboard showing Rivera Plumbing stats"
                 width={900}
                 height={580}
                 className="w-full"
@@ -555,7 +555,7 @@ function FeaturesSection() {
             Everything you need. Nothing you don&apos;t.
           </h2>
           <p className="text-lg text-gray-500">
-            Groundwork bundles the 5 tools that local businesses actually need into one simple platform — so you can stop paying for 5 different subscriptions and start actually using them.
+            GroundWork bundles the 5 tools that local businesses actually need into one simple platform — so you can stop paying for 5 different subscriptions and start actually using them.
           </p>
         </div>
 
@@ -616,7 +616,7 @@ function WhoWeHelpSection() {
             Built for the Businesses That Keep Your Town Running
           </h2>
           <p className="text-lg text-gray-500">
-            We built Groundwork specifically for trade and service businesses — people who are experts at their craft but didn&apos;t sign up to become web developers or marketers.
+            We built GroundWork specifically for trade and service businesses — people who are experts at their craft but didn&apos;t sign up to become web developers or marketers.
           </p>
         </div>
 
@@ -775,7 +775,7 @@ function TrustSection() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-14 max-w-2xl mx-auto">
           <span className="inline-block text-xs font-bold uppercase tracking-widest text-brand-600 mb-3">
-            Why Groundwork
+            Why GroundWork
           </span>
           <h2
             id="trust-section-heading"
@@ -785,7 +785,7 @@ function TrustSection() {
             The simplest way to get your business online
           </h2>
           <p className="text-lg text-gray-500">
-            We built Groundwork so you can focus on your trade — not on tech.
+            We built GroundWork so you can focus on your trade — not on tech.
           </p>
         </div>
 
@@ -832,7 +832,7 @@ function TestimonialsSection() {
             Customer stories
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-4" style={{ fontFamily: "var(--font-display)" }}>
-            Local businesses love Groundwork
+            Local businesses love GroundWork
           </h2>
           <p className="text-lg text-gray-500 mb-6">
             Real results from real business owners.

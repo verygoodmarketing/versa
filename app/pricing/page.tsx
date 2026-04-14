@@ -5,7 +5,7 @@ const APP_URL =
   process.env.NEXT_PUBLIC_APP_URL ?? "https://groundworklocal.com";
 
 export const metadata: Metadata = {
-  title: "Pricing — Groundwork",
+  title: "Pricing — GroundWork",
   description:
     "Simple, transparent pricing for local service businesses. Get your professional website, lead capture, and marketing tools starting at $49/month. 14-day free trial.",
 };
@@ -13,13 +13,13 @@ export const metadata: Metadata = {
 const pricingJsonLd = {
   "@context": "https://schema.org",
   "@type": "Product",
-  name: "Groundwork",
+  name: "GroundWork",
   description:
     "All-in-one marketing platform for local service businesses — website builder, local SEO, lead capture, review requests, and email marketing.",
   url: `${APP_URL}/pricing`,
   brand: {
     "@type": "Brand",
-    name: "Groundwork",
+    name: "GroundWork",
   },
   offers: [
     {
@@ -114,7 +114,7 @@ export default function Pricing() {
         "Automated review requests — get more 5-star Google reviews",
         "Priority support — real humans, fast responses",
         "Advanced analytics — see which marketing is winning jobs",
-        "First access to every new Groundwork feature",
+        "First access to every new GroundWork feature",
       ],
       cta: "Start free trial",
       paymentLink: process.env.STRIPE_PAYMENT_LINK_PRO ?? null,

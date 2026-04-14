@@ -49,9 +49,9 @@ export function OnboardingLayout({ currentStep, hideStepper, children }: Onboard
                 )}
               </div>
 
-              {/* Groundwork wordmark */}
+              {/* GroundWork wordmark */}
               <span className="font-display font-bold text-lg" style={{ color: "#16a34a" }}>
-                Groundwork
+                GroundWork
               </span>
 
               {/* Step indicator */}

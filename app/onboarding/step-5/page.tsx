@@ -302,7 +302,7 @@ export default function Step5Page() {
           {/* Subdomain display — read-only */}
           <div className="space-y-1">
             <p className="text-sm font-medium font-body" style={{ color: C.text }}>
-              Your free Groundwork URL
+              Your free GroundWork URL
             </p>
             <div
               className="flex items-center rounded-lg border px-4 py-3 gap-2"

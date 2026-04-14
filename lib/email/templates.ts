@@ -1,5 +1,5 @@
 /**
- * Email template constants for the Groundwork trial lifecycle sequence and
+ * Email template constants for the GroundWork trial lifecycle sequence and
  * the Very Good Marketing trial nurture sequence (VER-145/VER-150).
  *
  * All copy is sourced from the CMO's trial-activation-emails document (VER-69)
@@ -88,7 +88,7 @@ export function buildEmailContent(
         subject: "You started something — let's finish it",
         text: `Hi ${firstName},
 
-You signed up for Groundwork yesterday — nice. But your site isn't live yet.
+You signed up for GroundWork yesterday — nice. But your site isn't live yet.
 
 It only takes a few minutes to get your business online. Here's where you left off:
 
@@ -96,13 +96,13 @@ Continue Setup → ${appUrl}/onboarding
 
 Once your site is live, local customers can find you. Every day offline is a day a competitor gets that customer instead.
 
-— The Groundwork Team`,
+— The GroundWork Team`,
         html: `<p>Hi ${firstName},</p>
-<p>You signed up for Groundwork yesterday — nice. But your site isn't live yet.</p>
+<p>You signed up for GroundWork yesterday — nice. But your site isn't live yet.</p>
 <p>It only takes a few minutes to get your business online. Here's where you left off:</p>
 <p><a href="${appUrl}/onboarding"><strong>Continue Setup →</strong></a></p>
 <p>Once your site is live, local customers can find you. Every day offline is a day a competitor gets that customer instead.</p>
-<p>— The Groundwork Team</p>`,
+<p>— The GroundWork Team</p>`,
       };
 
     case "onboarding_nudge_72h":
@@ -110,7 +110,7 @@ Once your site is live, local customers can find you. Every day offline is a day
         subject: "Your free site is waiting. Don't let it expire.",
         text: `Hi ${firstName},
 
-Three days ago you started building your Groundwork site.
+Three days ago you started building your GroundWork site.
 
 You have 11 days left in your free trial — but your site still isn't live.
 
@@ -120,14 +120,14 @@ Finish My Setup → ${appUrl}/onboarding
 
 Need help? Reply to this email.
 
-— The Groundwork Team`,
+— The GroundWork Team`,
         html: `<p>Hi ${firstName},</p>
-<p>Three days ago you started building your Groundwork site.</p>
+<p>Three days ago you started building your GroundWork site.</p>
 <p>You have 11 days left in your free trial — but your site still isn't live.</p>
 <p>Getting online is the single highest-ROI thing you can do for your business this week. Customers search for you. If they don't find you, they find someone else.</p>
 <p><a href="${appUrl}/onboarding"><strong>Finish My Setup →</strong></a></p>
 <p>Need help? Reply to this email.</p>
-<p>— The Groundwork Team</p>`,
+<p>— The GroundWork Team</p>`,
       };
 
     case "day7_mid_trial":
@@ -135,13 +135,13 @@ Need help? Reply to this email.
         subject: "You're halfway through your trial. Here's what you get with Pro.",
         text: `Hi ${firstName},
 
-You've had Groundwork for a week. Your site is live.
+You've had GroundWork for a week. Your site is live.
 
 You're halfway through your 14-day trial. Here's what happens on day 14:
 
-Free plan: Your site stays live with Groundwork branding. Lead capture, email marketing, and review requests are paused.
+Free plan: Your site stays live with GroundWork branding. Lead capture, email marketing, and review requests are paused.
 
-Pro plan (${planPrice}/mo): Everything stays on. No Groundwork branding. Leads keep coming in. Reviews keep getting collected. Your email list keeps growing.
+Pro plan (${planPrice}/mo): Everything stays on. No GroundWork branding. Leads keep coming in. Reviews keep getting collected. Your email list keeps growing.
 
 Most of our customers upgrade because they don't want to lose the leads they've already captured.
 
@@ -149,16 +149,16 @@ Upgrade to Pro — ${planPrice}/mo → ${pricingUrl}
 
 No pressure — but now you know what's at stake.
 
-— The Groundwork Team`,
+— The GroundWork Team`,
         html: `<p>Hi ${firstName},</p>
-<p>You've had Groundwork for a week. Your site is live.</p>
+<p>You've had GroundWork for a week. Your site is live.</p>
 <p>You're halfway through your 14-day trial. Here's what happens on day 14:</p>
-<p><strong>Free plan:</strong> Your site stays live with Groundwork branding. Lead capture, email marketing, and review requests are paused.</p>
-<p><strong>Pro plan (${planPrice}/mo):</strong> Everything stays on. No Groundwork branding. Leads keep coming in. Reviews keep getting collected. Your email list keeps growing.</p>
+<p><strong>Free plan:</strong> Your site stays live with GroundWork branding. Lead capture, email marketing, and review requests are paused.</p>
+<p><strong>Pro plan (${planPrice}/mo):</strong> Everything stays on. No GroundWork branding. Leads keep coming in. Reviews keep getting collected. Your email list keeps growing.</p>
 <p>Most of our customers upgrade because they don't want to lose the leads they've already captured.</p>
 <p><a href="${pricingUrl}"><strong>Upgrade to Pro — ${planPrice}/mo →</strong></a></p>
 <p>No pressure — but now you know what's at stake.</p>
-<p>— The Groundwork Team</p>`,
+<p>— The GroundWork Team</p>`,
       };
 
     case "day12_urgency":
@@ -166,14 +166,14 @@ No pressure — but now you know what's at stake.
         subject: "2 days left — upgrade to keep your site live",
         text: `Hi ${firstName},
 
-Your Groundwork trial expires in 2 days.
+Your GroundWork trial expires in 2 days.
 
 If you don't upgrade by ${trialExpiryDate ?? "soon"}, your lead capture, email marketing, and review requests will pause.
 
 Don't lose what you've built.
 
 What you'll keep on Pro:
-- Your live website (no Groundwork branding)
+- Your live website (no GroundWork branding)
 - All leads captured so far
 - Automated review requests
 - Email marketing to your list
@@ -183,14 +183,14 @@ Upgrade Now — ${planPrice}/mo → ${pricingUrl}
 
 Questions about pricing? Reply and I'll help.
 
-— The Groundwork Team`,
+— The GroundWork Team`,
         html: `<p>Hi ${firstName},</p>
-<p>Your Groundwork trial expires in <strong>2 days</strong>.</p>
+<p>Your GroundWork trial expires in <strong>2 days</strong>.</p>
 <p>If you don't upgrade by ${trialExpiryDate ?? "soon"}, your lead capture, email marketing, and review requests will pause.</p>
 <p>Don't lose what you've built.</p>
 <p><strong>What you'll keep on Pro:</strong></p>
 <ul>
-<li>Your live website (no Groundwork branding)</li>
+<li>Your live website (no GroundWork branding)</li>
 <li>All leads captured so far</li>
 <li>Automated review requests</li>
 <li>Email marketing to your list</li>
@@ -198,15 +198,15 @@ Questions about pricing? Reply and I'll help.
 </ul>
 <p><a href="${pricingUrl}"><strong>Upgrade Now — ${planPrice}/mo →</strong></a></p>
 <p>Questions about pricing? Reply and I'll help.</p>
-<p>— The Groundwork Team</p>`,
+<p>— The GroundWork Team</p>`,
       };
 
     case "trial_expired":
       return {
-        subject: "Your Groundwork trial has ended",
+        subject: "Your GroundWork trial has ended",
         text: `Hi ${firstName},
 
-Your Groundwork free trial has ended.
+Your GroundWork free trial has ended.
 
 Your site is still live, but lead capture, email marketing, and review requests are paused.
 
@@ -214,13 +214,13 @@ Don't lose what you've built — upgrade to Pro to re-activate everything.
 
 Upgrade Now → ${pricingUrl}
 
-— The Groundwork Team`,
+— The GroundWork Team`,
         html: `<p>Hi ${firstName},</p>
-<p>Your Groundwork free trial has ended.</p>
+<p>Your GroundWork free trial has ended.</p>
 <p>Your site is still live, but lead capture, email marketing, and review requests are paused.</p>
 <p>Don't lose what you've built — upgrade to Pro to re-activate everything.</p>
 <p><a href="${pricingUrl}"><strong>Upgrade Now →</strong></a></p>
-<p>— The Groundwork Team</p>`,
+<p>— The GroundWork Team</p>`,
       };
 
     case "post_conversion_welcome":
@@ -228,7 +228,7 @@ Upgrade Now → ${pricingUrl}
         subject: "You're on Pro. Here's what to do now.",
         text: `Hi ${firstName},
 
-You're in. Welcome to Groundwork Pro.
+You're in. Welcome to GroundWork Pro.
 
 Your site is fully live, your leads are flowing, and your reviews are on autopilot.
 
@@ -242,19 +242,19 @@ Make the most of your plan this week:
 
 Go to My Dashboard → ${appUrl}/dashboard
 
-Thank you for trusting Groundwork with your business.
+Thank you for trusting GroundWork with your business.
 
-— The Groundwork Team`,
+— The GroundWork Team`,
         html: `<p>Hi ${firstName},</p>
-<p>You're in. Welcome to Groundwork Pro.</p>
+<p>You're in. Welcome to GroundWork Pro.</p>
 <p>Your site is fully live, your leads are flowing, and your reviews are on autopilot.</p>
 <p><strong>Make the most of your plan this week:</strong></p>
 <p><strong>1. Launch your first email campaign.</strong> You have a list — use it. Go to Email → New Campaign. Takes 10 minutes.</p>
 <p><strong>2. Check your leads dashboard.</strong> See who's contacted you through your site. Follow up fast — leads go cold quick.</p>
 <p><strong>3. Verify your Google Business Profile.</strong> This is the single biggest thing you can do for local search visibility. Go to SEO → Google Profile.</p>
 <p><a href="${appUrl}/dashboard"><strong>Go to My Dashboard →</strong></a></p>
-<p>Thank you for trusting Groundwork with your business.</p>
-<p>— The Groundwork Team</p>`,
+<p>Thank you for trusting GroundWork with your business.</p>
+<p>— The GroundWork Team</p>`,
       };
 
     // ────────────────────────────────────────────────────────────────────────

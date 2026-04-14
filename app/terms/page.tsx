@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Terms of Service — Groundwork",
+  title: "Terms of Service — GroundWork",
   description:
-    "Read Groundwork's Terms of Service. Learn about the rules and guidelines for using the Groundwork platform.",
+    "Read GroundWork's Terms of Service. Learn about the rules and guidelines for using the GroundWork platform.",
   robots: { index: true, follow: true },
 };
 
 const EFFECTIVE_DATE = "April 1, 2026";
-const COMPANY_NAME = "Groundwork";
+const COMPANY_NAME = "GroundWork";
 const COMPANY_EMAIL = "legal@groundworklocal.com";
 
 export default function TermsPage() {
@@ -22,7 +22,7 @@ export default function TermsPage() {
             href="/"
             className="font-display font-bold text-lg text-surface-950 hover:text-brand-600 transition-colors"
           >
-            Groundwork
+            GroundWork
           </Link>
           <Link
             href="/onboarding/step-1"
