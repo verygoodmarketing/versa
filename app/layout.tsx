@@ -41,6 +41,13 @@ export const metadata: Metadata = {
     "local business website",
     "service business marketing",
   ],
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+    apple: "/favicon.svg",
+  },
   openGraph: {
     title: "Groundwork — Get Found Online. Get More Customers.",
     description:

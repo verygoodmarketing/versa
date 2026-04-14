@@ -23,6 +23,10 @@ import {
   CreditCard,
 } from "lucide-react";
 import { useInView } from "@/hooks/useInView";
+import {
+  GroundworkLogoFullLight,
+  GroundworkIcon,
+} from "@/components/brand/GroundworkLogo";
 
 // ─── Copy constants (easy for CMO/UX to update later) ────────────────────────
 
@@ -304,24 +308,6 @@ const featureColorMap: Record<string, { ring: string; bg: string; icon: string; 
   sky:    { ring: "ring-sky-200",    bg: "bg-sky-50",     icon: "text-sky-600",    border: "border-l-sky-500" },
 };
 
-// ─── Logo Mark ────────────────────────────────────────────────────────────────
-
-function LogoMark({ size = "default" }: { size?: "default" | "sm" }) {
-  const dim = size === "sm" ? "w-7 h-7" : "w-8 h-8";
-  return (
-    <div
-      className={`${dim} bg-brand-50 rounded-lg flex items-center justify-center flex-shrink-0`}
-    >
-      <span
-        className="text-brand-700 text-sm font-bold"
-        style={{ fontFamily: "var(--font-display)" }}
-      >
-        V
-      </span>
-    </div>
-  );
-}
-
 // ─── SVG Illustrations ────────────────────────────────────────────────────────
 
 function HeroIllustration() {
@@ -427,10 +413,14 @@ function Navbar() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center gap-2">
-            <LogoMark />
-            <span className="text-xl font-bold text-white tracking-tight" style={{ fontFamily: "var(--font-display)" }}>
-              {BRAND.name}
+          <div className="flex items-center flex-shrink-0">
+            {/* Mobile: icon only */}
+            <span className="sm:hidden">
+              <GroundworkIcon width={36} height={36} />
+            </span>
+            {/* Desktop: full lockup */}
+            <span className="hidden sm:block">
+              <GroundworkLogoFullLight width={220} height={57} />
             </span>
           </div>
 
@@ -540,6 +530,24 @@ function HeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left: copy */}
           <div>
+            {/* Brand lockup above headline */}
+            <div className="mb-6 flex items-center gap-3">
+              <GroundworkIcon width={52} height={52} />
+              <div className="flex flex-col">
+                <span
+                  className="text-2xl font-black text-white leading-none tracking-tight"
+                  style={{ fontFamily: "Arial Black, sans-serif", letterSpacing: "-0.04em" }}
+                >
+                  Groundwork
+                </span>
+                <span
+                  className="text-[9px] font-semibold tracking-[0.28em] text-[#D97706] uppercase mt-0.5"
+                >
+                  FOR LOCAL BUSINESS
+                </span>
+              </div>
+            </div>
+
             <div className="inline-flex items-center gap-2 bg-brand-500/15 text-brand-300 text-xs font-semibold px-3 py-1.5 rounded-full mb-6 ring-1 ring-brand-500/30">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75" />
@@ -1120,9 +1128,8 @@ function Footer() {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start gap-10">
           <div className="max-w-xs">
-            <div className="flex items-center gap-2 mb-3">
-              <LogoMark />
-              <span className="text-xl font-bold text-white tracking-tight" style={{ fontFamily: "var(--font-display)" }}>{BRAND.name}</span>
+            <div className="mb-3">
+              <GroundworkLogoFullLight width={200} height={52} />
             </div>
             <p className="text-sm text-surface-400 leading-relaxed">
               {BRAND.tagline}

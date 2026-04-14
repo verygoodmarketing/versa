@@ -33,6 +33,12 @@
   --color-accent-400: #fbbf24;
   --color-accent-500: #f59e0b;
   --color-accent-600: #d97706;
+
+  /* ── Groundwork Brand Identity Tokens (B1 — The Strata, Polished) ── */
+  --color-gw-amber: #D97706;
+  --color-gw-slate: #1E293B;
+  --color-gw-amber-light: #FEF3C7;
+  --color-gw-amber-muted: #B45309;
 }
 
 :root {
