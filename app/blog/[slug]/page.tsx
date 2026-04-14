@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { allPosts, getPostBySlug, type BlogPostSection } from "@/lib/blog/posts";
 import { LeadMagnetOptIn } from "@/components/landing/LeadMagnetOptIn";
+import { FreeTrialCTABanner } from "@/components/FreeTrialCTABanner";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -168,7 +169,7 @@ export default async function BlogPostPage({ params }: Props) {
 
   return (
     <main className="min-h-screen bg-white">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16 sm:py-24 pb-24 sm:pb-32">
         <nav className="mb-10">
           <Link
             href="/blog"
@@ -209,6 +210,7 @@ export default async function BlogPostPage({ params }: Props) {
           </Link>
         </footer>
       </div>
+      <FreeTrialCTABanner />
     </main>
   );
 }

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { type LucideIcon } from "lucide-react";
 import { LeadMagnetOptIn } from "@/components/landing/LeadMagnetOptIn";
+import { FreeTrialCTABanner } from "@/components/FreeTrialCTABanner";
 
 // ─── JSON-LD ──────────────────────────────────────────────────────────────────
 
@@ -524,6 +525,7 @@ export function IndustryLandingPage({ data }: { data: IndustryPageData }) {
         </main>
         <Footer data={data} />
       </div>
+      <FreeTrialCTABanner />
     </>
   );
 }

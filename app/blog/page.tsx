@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { allPosts } from "@/lib/blog/posts";
+import { FreeTrialCTABanner } from "@/components/FreeTrialCTABanner";
 
 const APP_URL =
   process.env.NEXT_PUBLIC_APP_URL ?? "https://groundworklocal.com";
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
 export default function BlogPage() {
   return (
     <main className="min-h-screen bg-white">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16 sm:py-24 pb-24 sm:pb-32">
         <header className="mb-12">
           <Link
             href="/"
@@ -66,6 +67,7 @@ export default function BlogPage() {
           ))}
         </div>
       </div>
+      <FreeTrialCTABanner />
     </main>
   );
 }
