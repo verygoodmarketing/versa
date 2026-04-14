@@ -308,101 +308,6 @@ const featureColorMap: Record<string, { ring: string; bg: string; icon: string; 
   sky:    { ring: "ring-sky-200",    bg: "bg-sky-50",     icon: "text-sky-600",    border: "border-l-sky-500" },
 };
 
-// ─── SVG Illustrations ────────────────────────────────────────────────────────
-
-function HeroIllustration() {
-  return (
-    <div className="relative mx-auto max-w-2xl" aria-hidden="true">
-      {/* Browser chrome mockup */}
-      <div className="rounded-2xl overflow-hidden shadow-2xl shadow-brand-900/30 ring-1 ring-white/10">
-        {/* Browser bar */}
-        <div className="bg-[#161b22] px-4 py-3 flex items-center gap-2">
-          <div className="flex gap-1.5">
-            <div className="w-3 h-3 rounded-full bg-red-400/70" />
-            <div className="w-3 h-3 rounded-full bg-yellow-400/70" />
-            <div className="w-3 h-3 rounded-full bg-green-400/70" />
-          </div>
-          <div className="flex-1 mx-4">
-            <div className="bg-white/10 rounded-md px-3 py-1 text-xs text-white/50 font-mono truncate">
-              ridgelinelandscaping.groundworklocal.com
-            </div>
-          </div>
-        </div>
-        {/* Website preview */}
-        <div className="bg-white">
-          {/* Hero area of mock site */}
-          <div className="bg-gradient-to-r from-emerald-600 to-teal-700 px-6 py-8">
-            <div className="w-24 h-3 bg-white/30 rounded mb-2" />
-            <div className="w-40 h-5 bg-white/80 rounded mb-1" />
-            <div className="w-32 h-3 bg-white/40 rounded mb-4" />
-            <div className="w-28 h-8 bg-white rounded-lg" />
-          </div>
-          {/* Services strip */}
-          <div className="px-6 py-5 grid grid-cols-3 gap-3">
-            {["Lawn Care", "Landscaping", "Snow Removal"].map((s) => (
-              <div key={s} className="bg-gray-50 rounded-lg p-3">
-                <div className="w-6 h-6 bg-brand-100 rounded mb-2" />
-                <div className="w-full h-2 bg-gray-200 rounded mb-1" />
-                <div className="w-3/4 h-2 bg-gray-100 rounded" />
-              </div>
-            ))}
-          </div>
-          {/* Contact row */}
-          <div className="px-6 py-3 border-t border-gray-100 flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <div className="w-4 h-4 bg-brand-100 rounded-full" />
-              <div className="w-24 h-2 bg-gray-200 rounded" />
-            </div>
-            <div className="bg-brand-600 text-white text-xs px-3 py-1.5 rounded-lg font-medium">Call Now</div>
-          </div>
-        </div>
-      </div>
-
-      {/* Floating badge: leads */}
-      <div className="absolute -left-6 bottom-16 bg-white rounded-xl shadow-lg shadow-gray-200/80 px-3 py-2.5 flex items-center gap-2.5 border border-gray-100">
-        <div className="w-8 h-8 bg-brand-600 rounded-lg flex items-center justify-center flex-shrink-0">
-          <svg aria-hidden="true" className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-          </svg>
-        </div>
-        <div>
-          <div className="text-xs font-bold text-gray-900">3 new leads</div>
-          <div className="text-xs text-gray-400">Last 24 hours</div>
-        </div>
-      </div>
-
-      {/* Floating badge: review */}
-      <div className="absolute -right-4 top-12 bg-white rounded-xl shadow-lg shadow-gray-200/80 px-3 py-2.5 flex items-center gap-2.5 border border-gray-100">
-        <div className="flex gap-0.5">
-          {[1,2,3,4,5].map((i) => (
-            <svg key={i} aria-hidden="true" className="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-            </svg>
-          ))}
-        </div>
-        <div>
-          <div className="text-xs font-bold text-gray-900">New 5-star review!</div>
-          <div className="text-xs text-gray-400">Google Business</div>
-        </div>
-      </div>
-
-      {/* Floating badge: reviews count */}
-      <div className="absolute left-1/2 -translate-x-1/2 -bottom-4 bg-white rounded-xl shadow-lg shadow-gray-200/80 px-3 py-2.5 flex items-center gap-2.5 border border-gray-100">
-        <div className="w-8 h-8 bg-accent-500 rounded-lg flex items-center justify-center flex-shrink-0">
-          <svg aria-hidden="true" className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-          </svg>
-        </div>
-        <div>
-          <div className="text-xs font-bold text-gray-900">47 reviews</div>
-          <div className="text-xs text-gray-400">Google Business</div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
 // ─── Components ───────────────────────────────────────────────────────────────
 
 function Navbar() {
@@ -606,9 +511,17 @@ function HeroSection() {
             </div>
           </div>
 
-          {/* Right: illustration */}
+          {/* Right: dashboard mockup */}
           <div className="hidden lg:block">
-            <HeroIllustration />
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl ring-1 ring-gray-200 mx-auto max-w-5xl">
+              <img
+                src="/mockups/versa-dashboard-mockup.svg"
+                alt="Versa dashboard showing Rivera Plumbing — site visits, leads, reviews"
+                width={900}
+                height={580}
+                className="w-full"
+              />
+            </div>
           </div>
         </div>
 
@@ -675,6 +588,17 @@ function FeaturesSection() {
               </div>
             );
           })}
+        </div>
+
+        {/* Mobile mockup preview */}
+        <div className="mt-16 flex justify-center">
+          <img
+            src="/mockups/versa-mobile-mockup.svg"
+            alt="Rivera Plumbing mobile website on phone"
+            width={480}
+            height={720}
+            className="w-full max-w-xs mx-auto block"
+          />
         </div>
       </div>
     </section>
@@ -812,6 +736,17 @@ function HowItWorksSection() {
               </div>
             ))}
           </div>
+        </div>
+
+        {/* Onboarding mockup */}
+        <div className="mt-16">
+          <img
+            src="/mockups/versa-onboarding-mockup.svg"
+            alt="3-step onboarding: enter name, pick trade, go live"
+            width={920}
+            height={400}
+            className="w-full max-w-4xl mx-auto block"
+          />
         </div>
 
         {/* CTA */}
