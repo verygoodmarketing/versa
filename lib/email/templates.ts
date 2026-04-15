@@ -70,6 +70,22 @@ function buildUnsubscribeHtml(unsubscribeUrl: string): string {
 </p>`;
 }
 
+/**
+ * Wrap email body HTML in a branded layout featuring the Groundwork logo,
+ * a consistent card container, and a footer copyright line.
+ */
+function wrapInBrandedLayout(bodyHtml: string, appUrl: string): string {
+  return `<div style="font-family:Inter,Helvetica,Arial,sans-serif;max-width:600px;margin:0 auto;background:#ffffff;border:1px solid #e5e7eb;border-radius:8px;overflow:hidden;">
+  <div style="padding:24px 32px 16px;border-bottom:1px solid #e5e7eb;">
+    <a href="${appUrl}"><img src="${appUrl}/groundwork-logo-email.png" alt="Groundwork" width="160" style="display:block;" /></a>
+  </div>
+  <div style="padding:32px;">${bodyHtml}</div>
+  <div style="padding:16px 32px;border-top:1px solid #e5e7eb;">
+    <p style="color:#9ca3af;font-size:12px;margin:0;">You're receiving this because you signed up for Groundwork. &copy; Groundwork</p>
+  </div>
+</div>`;
+}
+
 export function buildEmailContent(
   template: EmailTemplate,
   data: TemplateData
@@ -97,12 +113,12 @@ Continue Setup → ${appUrl}/onboarding
 Once your site is live, local customers can find you. Every day offline is a day a competitor gets that customer instead.
 
 — The GroundWork Team`,
-        html: `<p>Hi ${firstName},</p>
+        html: wrapInBrandedLayout(`<p>Hi ${firstName},</p>
 <p>You signed up for GroundWork yesterday — nice. But your site isn't live yet.</p>
 <p>It only takes a few minutes to get your business online. Here's where you left off:</p>
 <p><a href="${appUrl}/onboarding"><strong>Continue Setup →</strong></a></p>
 <p>Once your site is live, local customers can find you. Every day offline is a day a competitor gets that customer instead.</p>
-<p>— The GroundWork Team</p>`,
+<p>— The GroundWork Team</p>`, appUrl),
       };
 
     case "onboarding_nudge_72h":
@@ -121,13 +137,13 @@ Finish My Setup → ${appUrl}/onboarding
 Need help? Reply to this email.
 
 — The GroundWork Team`,
-        html: `<p>Hi ${firstName},</p>
+        html: wrapInBrandedLayout(`<p>Hi ${firstName},</p>
 <p>Three days ago you started building your GroundWork site.</p>
 <p>You have 11 days left in your free trial — but your site still isn't live.</p>
 <p>Getting online is the single highest-ROI thing you can do for your business this week. Customers search for you. If they don't find you, they find someone else.</p>
 <p><a href="${appUrl}/onboarding"><strong>Finish My Setup →</strong></a></p>
 <p>Need help? Reply to this email.</p>
-<p>— The GroundWork Team</p>`,
+<p>— The GroundWork Team</p>`, appUrl),
       };
 
     case "day7_mid_trial":
@@ -150,7 +166,7 @@ Upgrade to Pro — ${planPrice}/mo → ${pricingUrl}
 No pressure — but now you know what's at stake.
 
 — The GroundWork Team`,
-        html: `<p>Hi ${firstName},</p>
+        html: wrapInBrandedLayout(`<p>Hi ${firstName},</p>
 <p>You've had GroundWork for a week. Your site is live.</p>
 <p>You're halfway through your 14-day trial. Here's what happens on day 14:</p>
 <p><strong>Free plan:</strong> Your site stays live with GroundWork branding. Lead capture, email marketing, and review requests are paused.</p>
@@ -158,7 +174,7 @@ No pressure — but now you know what's at stake.
 <p>Most of our customers upgrade because they don't want to lose the leads they've already captured.</p>
 <p><a href="${pricingUrl}"><strong>Upgrade to Pro — ${planPrice}/mo →</strong></a></p>
 <p>No pressure — but now you know what's at stake.</p>
-<p>— The GroundWork Team</p>`,
+<p>— The GroundWork Team</p>`, appUrl),
       };
 
     case "day12_urgency":
@@ -184,7 +200,7 @@ Upgrade Now — ${planPrice}/mo → ${pricingUrl}
 Questions about pricing? Reply and I'll help.
 
 — The GroundWork Team`,
-        html: `<p>Hi ${firstName},</p>
+        html: wrapInBrandedLayout(`<p>Hi ${firstName},</p>
 <p>Your GroundWork trial expires in <strong>2 days</strong>.</p>
 <p>If you don't upgrade by ${trialExpiryDate ?? "soon"}, your lead capture, email marketing, and review requests will pause.</p>
 <p>Don't lose what you've built.</p>
@@ -198,7 +214,7 @@ Questions about pricing? Reply and I'll help.
 </ul>
 <p><a href="${pricingUrl}"><strong>Upgrade Now — ${planPrice}/mo →</strong></a></p>
 <p>Questions about pricing? Reply and I'll help.</p>
-<p>— The GroundWork Team</p>`,
+<p>— The GroundWork Team</p>`, appUrl),
       };
 
     case "trial_expired":
@@ -215,12 +231,12 @@ Don't lose what you've built — upgrade to Pro to re-activate everything.
 Upgrade Now → ${pricingUrl}
 
 — The GroundWork Team`,
-        html: `<p>Hi ${firstName},</p>
+        html: wrapInBrandedLayout(`<p>Hi ${firstName},</p>
 <p>Your GroundWork free trial has ended.</p>
 <p>Your site is still live, but lead capture, email marketing, and review requests are paused.</p>
 <p>Don't lose what you've built — upgrade to Pro to re-activate everything.</p>
 <p><a href="${pricingUrl}"><strong>Upgrade Now →</strong></a></p>
-<p>— The GroundWork Team</p>`,
+<p>— The GroundWork Team</p>`, appUrl),
       };
 
     case "post_conversion_welcome":
@@ -245,7 +261,7 @@ Go to My Dashboard → ${appUrl}/dashboard
 Thank you for trusting GroundWork with your business.
 
 — The GroundWork Team`,
-        html: `<p>Hi ${firstName},</p>
+        html: wrapInBrandedLayout(`<p>Hi ${firstName},</p>
 <p>You're in. Welcome to GroundWork Pro.</p>
 <p>Your site is fully live, your leads are flowing, and your reviews are on autopilot.</p>
 <p><strong>Make the most of your plan this week:</strong></p>
@@ -254,7 +270,7 @@ Thank you for trusting GroundWork with your business.
 <p><strong>3. Verify your Google Business Profile.</strong> This is the single biggest thing you can do for local search visibility. Go to SEO → Google Profile.</p>
 <p><a href="${appUrl}/dashboard"><strong>Go to My Dashboard →</strong></a></p>
 <p>Thank you for trusting GroundWork with your business.</p>
-<p>— The GroundWork Team</p>`,
+<p>— The GroundWork Team</p>`, appUrl),
       };
 
     // ────────────────────────────────────────────────────────────────────────
@@ -288,7 +304,7 @@ Any questions, just reply to this email. I read every one.
 Very Good Marketing
 
 P.S. If you run into anything confusing, hit reply and tell me. Seriously. Your feedback makes the product better.${unsubText}`,
-        html: `<p>Hey ${firstName},</p>
+        html: wrapInBrandedLayout(`<p>Hey ${firstName},</p>
 <p>Welcome to Very Good Marketing — really glad you're here.</p>
 <p>You signed up because you want more customers finding your business online. That's exactly what we're going to help you do.</p>
 <p>But here's the honest truth: most people sign up, poke around for 10 minutes, and don't come back. I don't want that for you.</p>
@@ -300,7 +316,7 @@ P.S. If you run into anything confusing, hit reply and tell me. Seriously. Your 
 <p>Any questions, just reply to this email. I read every one.</p>
 <p>— ${founderName}<br>Very Good Marketing</p>
 <p><em>P.S. If you run into anything confusing, hit reply and tell me. Seriously. Your feedback makes the product better.</em></p>
-${unsubHtml}`,
+${unsubHtml}`, appUrl),
       };
 
     case "vgm_nurture_day3":
@@ -331,7 +347,7 @@ Talk soon,
 — ${founderName}
 
 P.S. I've seen this work for a cleaning crew who went from 0 to 12 new monthly leads in their first 30 days. Setup was the unlock.${unsubText}`,
-        html: `<p>Hey ${firstName},</p>
+        html: wrapInBrandedLayout(`<p>Hey ${firstName},</p>
 <p>Quick check-in.</p>
 <p>If you set up your profile on day one — nice work. You're already ahead of most people.</p>
 <p>If you haven't yet, no stress. Here's why it matters: right now, when someone in your area searches for your service, your competitors are showing up and you're not. Let's fix that.</p>
@@ -347,7 +363,7 @@ P.S. I've seen this work for a cleaning crew who went from 0 to 12 new monthly l
 <p>Talk soon,</p>
 <p>— ${founderName}</p>
 <p><em>P.S. I've seen this work for a cleaning crew who went from 0 to 12 new monthly leads in their first 30 days. Setup was the unlock.</em></p>
-${unsubHtml}`,
+${unsubHtml}`, appUrl),
       };
 
     case "vgm_nurture_day7":
@@ -381,7 +397,7 @@ A business with 50 reviews beats a business with 5 every time, even if the servi
 — ${founderName}
 
 P.S. Still have questions? Reply here or book a 15-minute call — I personally do onboarding calls for new customers.${unsubText}`,
-        html: `<p>Hey ${firstName},</p>
+        html: wrapInBrandedLayout(`<p>Hey ${firstName},</p>
 <p>You've been on the platform for a week. I want to show you something.</p>
 <p>Every time someone in your area searches for the services you offer, your business has a chance to show up. If you've set up your profile and got your site live — that's already happening.</p>
 <p><strong>Here's what our customers typically see by week two:</strong></p>
@@ -399,7 +415,7 @@ P.S. Still have questions? Reply here or book a 15-minute call — I personally 
 <p>A business with 50 reviews beats a business with 5 every time, even if the service is identical.</p>
 <p>— ${founderName}</p>
 <p><em>P.S. Still have questions? Reply here or book a 15-minute call — I personally do onboarding calls for new customers.</em></p>
-${unsubHtml}`,
+${unsubHtml}`, appUrl),
       };
 
     case "vgm_nurture_day14": {
@@ -444,7 +460,7 @@ If now isn't the right time, just reply and tell me. I'd rather know than lose y
 — ${founderName}
 
 P.S. Questions about pricing or what's included? Reply here and I'll give you a straight answer.${unsubText}`,
-        html: `<p>Hey ${firstName},</p>
+        html: wrapInBrandedLayout(`<p>Hey ${firstName},</p>
 <p>Your free trial ends in <strong>${daysLabel}</strong>.</p>
 <p>I'm not going to pretend that's not coming. But I do want to be straight with you about what that actually means.</p>
 <p><strong>When your trial ends, here's what pauses:</strong></p>
@@ -465,7 +481,7 @@ P.S. Questions about pricing or what's included? Reply here and I'll give you a 
 <p>If now isn't the right time, just reply and tell me. I'd rather know than lose you quietly.</p>
 <p>— ${founderName}</p>
 <p><em>P.S. Questions about pricing or what's included? Reply here and I'll give you a straight answer.</em></p>
-${unsubHtml}`,
+${unsubHtml}`, appUrl),
       };
     }
 
@@ -490,7 +506,7 @@ Thank you for trusting Very Good Marketing with your business.
 
 — ${founderName}
 Very Good Marketing${unsubText}`,
-        html: `<p>Hey ${firstName},</p>
+        html: wrapInBrandedLayout(`<p>Hey ${firstName},</p>
 <p>You upgraded — welcome aboard.</p>
 <p>Your website is live, your leads are flowing, and your review requests are on autopilot. Here's what to focus on this week:</p>
 <p><strong>1. Complete your business profile</strong> if you haven't already. The more detail you add, the better your local search visibility.</p>
@@ -499,7 +515,7 @@ Very Good Marketing${unsubText}`,
 <p><a href="${appUrl}/dashboard"><strong>Go to Your Dashboard →</strong></a></p>
 <p>Thank you for trusting Very Good Marketing with your business.</p>
 <p>— ${founderName}<br>Very Good Marketing</p>
-${unsubHtml}`,
+${unsubHtml}`, appUrl),
       };
 
     default: {
