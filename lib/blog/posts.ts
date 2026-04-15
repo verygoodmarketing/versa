@@ -2604,6 +2604,1095 @@ const howToAdvertisePressureWashingForFreePost: BlogPost = {
   ],
 };
 
+const googleBusinessProfileForPlumbersPost: BlogPost = {
+  slug: "google-business-profile-for-plumbing-company",
+  title: "How to Create a Google Business Profile for Your Plumbing Company",
+  metaTitle:
+    "How to Create a Google Business Profile for Your Plumbing Company | GroundWork",
+  metaDescription:
+    "Step-by-step guide to setting up and optimizing a Google Business Profile for plumbers. Get found in local search, show up in Google Maps, and turn more searchers into customers.",
+  publishedAt: "2026-04-15",
+  excerpt:
+    "When a homeowner searches \u201cplumber near me,\u201d the businesses that appear in the Map Pack get over 40% of the clicks. Your Google Business Profile is what gets you in that box \u2014 here\u2019s how to set it up and make it work.",
+  sections: [
+    {
+      type: "heading2",
+      text: "Why Google Business Profile Matters More Than Almost Anything Else",
+    },
+    {
+      type: "paragraph",
+      text: "When a homeowner searches \u201cplumber near me,\u201d the first thing they see isn\u2019t a list of websites. It\u2019s a map with three local businesses highlighted in what Google calls the \u201cMap Pack.\u201d Those three listings get the majority of the clicks. Everything below them is an afterthought.",
+    },
+    {
+      type: "paragraph",
+      text: "Your Google Business Profile (formerly Google My Business) is what determines whether you\u2019re in that box. It\u2019s free, it\u2019s powerful, and most plumbers either haven\u2019t claimed it or have set it up halfway.",
+    },
+    {
+      type: "paragraph",
+      text: "This guide walks you through exactly how to create, verify, and optimize your Google Business Profile so your plumbing company shows up when customers are ready to call.",
+    },
+    { type: "divider" },
+    {
+      type: "heading2",
+      text: "Step 1: Claim or Create Your Listing",
+    },
+    {
+      type: "paragraph",
+      text: "Go to business.google.com and sign in with a Google account you control. Search for your business name. If Google has already created a listing for your business (this happens automatically based on web data), claim it. If not, create a new one.",
+    },
+    {
+      type: "paragraph",
+      text: "Choose your primary business category carefully. For a plumbing company, select \u201cPlumber\u201d as the primary category. You can add secondary categories like \u201cDrain Cleaning Service\u201d or \u201cWater Heater Repair Service\u201d once the profile is live.",
+    },
+    {
+      type: "list",
+      items: [
+        {
+          bold: "If you have a physical office or shop:",
+          rest: " Enter your address. Customers can then see your location on the map.",
+        },
+        {
+          bold: "If you\u2019re a mobile-only plumbing business:",
+          rest: " You can hide your address and just show your service area. Google allows this for service-area businesses.",
+        },
+      ],
+    },
+    { type: "divider" },
+    {
+      type: "heading2",
+      text: "Step 2: Verify Your Business",
+    },
+    {
+      type: "paragraph",
+      text: "Google requires verification before your profile goes live in search results. The most common method is a postcard mailed to your business address with a 5-digit code. This usually takes 5\u201310 business days.",
+    },
+    {
+      type: "paragraph",
+      text: "Some businesses qualify for instant verification by phone or email \u2014 Google will show you the options available for your account. Complete verification as soon as you get the code; an unverified profile doesn\u2019t appear in Maps or search results.",
+    },
+    { type: "divider" },
+    {
+      type: "heading2",
+      text: "Step 3: Fill Out Every Field \u2014 Completely",
+    },
+    {
+      type: "paragraph",
+      text: "Google rewards completeness. A fully filled-out profile ranks higher than a sparse one. Here\u2019s what to prioritize:",
+    },
+    {
+      type: "list",
+      items: [
+        {
+          bold: "Business name.",
+          rest: " Use your real business name exactly as it appears on your license. Don\u2019t keyword-stuff it (e.g., \u201cABC Plumbing \u2014 Best Plumber in Chicago\u201d) \u2014 Google can suspend listings for this.",
+        },
+        {
+          bold: "Phone number.",
+          rest: " Use your primary business number. Make sure it matches what\u2019s on your website and other directories.",
+        },
+        {
+          bold: "Website URL.",
+          rest: " Link to your main website homepage. If you don\u2019t have a professional website, this is the single biggest gap to fix.",
+        },
+        {
+          bold: "Hours of operation.",
+          rest: " Including emergency or after-hours availability. If you take emergency calls, say so here.",
+        },
+        {
+          bold: "Service area.",
+          rest: " List every city, town, and zip code where you actively take jobs. Google uses this to match you with nearby searches.",
+        },
+        {
+          bold: "Services.",
+          rest: " Add individual services: drain cleaning, water heater installation, pipe repair, sewer line service, etc. Each service is a keyword signal for Google.",
+        },
+        {
+          bold: "Business description.",
+          rest: " Write 2\u20133 sentences about your company in plain language. Include your city, your main services, and something that sets you apart (licensed & insured, 24/7 emergency service, family-owned for 15 years, etc.).",
+        },
+      ],
+    },
+    { type: "divider" },
+    {
+      type: "heading2",
+      text: "Step 4: Add Photos \u2014 As Many as Possible",
+    },
+    {
+      type: "paragraph",
+      text: "Profiles with photos get significantly more clicks than those without. Google\u2019s own data shows that businesses with photos receive 42% more requests for directions and 35% more click-throughs to websites.",
+    },
+    {
+      type: "list",
+      items: [
+        {
+          bold: "Logo.",
+          rest: " Upload a clean version of your company logo.",
+        },
+        {
+          bold: "Cover photo.",
+          rest: " A professional photo of your truck, your crew, or a job site. This is the main image customers see.",
+        },
+        {
+          bold: "Job photos.",
+          rest: " Before-and-after shots of work you\u2019ve completed. Water heater replacements, pipe repairs, bathroom remodels \u2014 any quality photo of real work.",
+        },
+        {
+          bold: "Team photos.",
+          rest: " A photo of you and/or your crew builds trust. Customers like putting a face to the name before inviting someone into their home.",
+        },
+      ],
+    },
+    {
+      type: "paragraph",
+      text: "Aim for at least 10 photos when you launch, and add new ones every month or two.",
+    },
+    { type: "divider" },
+    {
+      type: "heading2",
+      text: "Step 5: Get Your First Reviews",
+    },
+    {
+      type: "paragraph",
+      text: "Reviews are the single biggest factor in whether customers choose you over a competitor who also shows up in the Map Pack. A plumber with 45 reviews and a 4.8 rating will get more calls than one with 5 reviews and a 4.9.",
+    },
+    {
+      type: "paragraph",
+      text: "After every completed job, send a simple follow-up text or email asking for a Google review. Include a direct link \u2014 Google provides a short review link in your Business Profile dashboard. Most customers won\u2019t think to leave a review unless you make it easy and ask.",
+    },
+    {
+      type: "paragraph",
+      text: "Never buy reviews, offer discounts for reviews, or ask in bulk from past customers all at once. Google\u2019s algorithm detects unnatural review patterns and can suppress or suspend your listing.",
+    },
+    { type: "divider" },
+    {
+      type: "heading2",
+      text: "Step 6: Use Google Posts to Stay Active",
+    },
+    {
+      type: "paragraph",
+      text: "Google lets you publish short posts directly to your Business Profile \u2014 these appear in your listing when someone finds you in search. Use them to announce seasonal offers (spring drain cleaning specials, water heater efficiency upgrades), share a recent job photo, or post a quick tip.",
+    },
+    {
+      type: "paragraph",
+      text: "Posting once or twice a month signals to Google that your business is active, which is a minor but real ranking factor. It also gives customers more information to see before they call.",
+    },
+    { type: "divider" },
+    {
+      type: "heading2",
+      text: "The Missing Piece: A Website That Backs Up Your Profile",
+    },
+    {
+      type: "paragraph",
+      text: "Your Google Business Profile and your website work together. A strong profile gets you into the Map Pack. Your website is what turns that click into a call.",
+    },
+    {
+      type: "paragraph",
+      text: "When someone clicks through to your website, they need to see a professional, fast-loading page with your services, your service area, your phone number front and center, and a way to request a quote or book. If your site looks outdated or takes 10 seconds to load, the profile work you did doesn\u2019t matter \u2014 they\u2019ll go back and call the next plumber.",
+    },
+    {
+      type: "paragraph",
+      text: "GroundWork gives plumbing companies a website that\u2019s built to convert those Map Pack clicks into real customers. Local SEO built in, click-to-call on every page, lead capture forms, and review request tools \u2014 everything that works alongside your Google Business Profile.",
+    },
+    {
+      type: "cta",
+      linkText: "Get a plumber website built to convert Google traffic \u2192",
+      href: "/for/plumbers",
+    },
+    { type: "divider" },
+    {
+      type: "heading2",
+      text: "FAQ: Google Business Profile for Plumbers",
+    },
+    {
+      type: "list",
+      items: [
+        {
+          bold: "How long does it take to show up in Google Maps after verifying?",
+          rest: " After verification, your listing typically becomes visible within a few days. But ranking in the Map Pack for competitive terms like \u201cplumber near me\u201d takes time \u2014 it depends on the number of reviews, your website\u2019s quality, and how complete your profile is. Most plumbers see meaningful improvement within 60\u201390 days of a fully optimized profile.",
+        },
+        {
+          bold: "What if there\u2019s already a listing for my business that I didn\u2019t create?",
+          rest: " Google sometimes auto-generates listings from public data. Claim it rather than creating a duplicate. Search for your business in Google Maps, click \u201cClaim this business,\u201d and go through the verification process. Duplicate listings split your reviews and rankings \u2014 always claim and merge rather than creating a new one.",
+        },
+        {
+          bold: "Do I need a Google Business Profile if I already have a website?",
+          rest: " Yes. They serve different purposes. Your website tells your full story and converts visitors. Your Google Business Profile gets you into local search results and Maps \u2014 which is where most local plumbing searches happen. You need both working together.",
+        },
+      ],
+    },
+    { type: "divider" },
+    {
+      type: "cta",
+      linkText:
+        "Build your plumbing website with GroundWork \u2014 free trial, no credit card needed.",
+      href: "/for/plumbers",
+    },
+  ],
+};
+
+const bestWebsiteBuilderElectricians2026Post: BlogPost = {
+  slug: "best-website-builder-for-electricians-2026",
+  title: "The Best Website Builder for Electricians in 2026",
+  metaTitle:
+    "Best Website Builder for Electricians in 2026: Compared | GroundWork",
+  metaDescription:
+    "Comparing the best website builders for electricians in 2026. See which tools are actually built for electrical contractors \u2014 and which waste your time with features you don\u2019t need.",
+  publishedAt: "2026-04-15",
+  excerpt:
+    "Wix, Squarespace, WordPress, and GroundWork all claim to be the best website builder. But only one is built specifically for electricians. Here\u2019s how they actually compare for a working electrical contractor.",
+  sections: [
+    {
+      type: "heading2",
+      text: "Why the Right Website Builder Matters for Electricians",
+    },
+    {
+      type: "paragraph",
+      text: "Most electricians don\u2019t need a complicated website. They need a fast, professional site that shows up in local searches, makes it easy to call or request a quote, and builds credibility before a customer ever picks up the phone.",
+    },
+    {
+      type: "paragraph",
+      text: "The problem is that most website builders are designed for everyone \u2014 online stores, bloggers, designers, restaurants. When an electrician tries to use them, they spend hours wrestling with features they don\u2019t need and missing features they do.",
+    },
+    {
+      type: "paragraph",
+      text: "Here\u2019s an honest comparison of the most popular options in 2026, with a focus on what actually matters for running an electrical contracting business.",
+    },
+    { type: "divider" },
+    {
+      type: "heading2",
+      text: "What Electricians Actually Need in a Website Builder",
+    },
+    {
+      type: "list",
+      items: [
+        {
+          bold: "Fast, mobile-friendly pages.",
+          rest: " Most searches for electricians happen on phones. Your site needs to load in under 3 seconds and look sharp on a small screen.",
+        },
+        {
+          bold: "Local SEO built in.",
+          rest: " \u201cElectrician near me\u201d and \u201celectrician in [city]\u201d are the searches that pay. The right builder handles the technical SEO \u2014 structured data, fast load speeds, and proper page structure \u2014 without requiring you to configure plugins.",
+        },
+        {
+          bold: "Lead capture forms and click-to-call.",
+          rest: " Every page should make it obvious how to reach you. A working contact form that sends inquiries to your phone or email is non-negotiable.",
+        },
+        {
+          bold: "Service area pages.",
+          rest: " If you work in multiple towns or zip codes, you need a page for each one. Generic builders require workarounds to set this up. Purpose-built tools do it automatically.",
+        },
+        {
+          bold: "Simple content management.",
+          rest: " You should be able to update your services, add a photo, or change your phone number without calling a developer or watching tutorials.",
+        },
+      ],
+    },
+    { type: "divider" },
+    {
+      type: "heading2",
+      text: "Wix for Electricians",
+    },
+    {
+      type: "paragraph",
+      text: "Wix is the most heavily advertised website builder and one of the most widely used. It has hundreds of templates and a drag-and-drop editor that lets you put almost anything anywhere.",
+    },
+    {
+      type: "paragraph",
+      text: "For electricians, the flexibility is also the problem. There are no electrician-specific templates that include the right sections out of the box \u2014 service listings, license display, service area coverage, quote request forms. You\u2019re building from a generic template and adding all of it yourself.",
+    },
+    {
+      type: "list",
+      items: [
+        { bold: "Pricing:", rest: " $17\u2013$159/month" },
+        {
+          bold: "Pros:",
+          rest: " Wide template selection, easy visual editor, good for non-technical users",
+        },
+        {
+          bold: "Cons:",
+          rest: " No trade-specific features, SEO requires manual setup or apps, not optimized for local service businesses",
+        },
+        {
+          bold: "Best for:",
+          rest: " Electricians who want maximum design flexibility and are willing to spend time configuring it",
+        },
+      ],
+    },
+    { type: "divider" },
+    {
+      type: "heading2",
+      text: "Squarespace for Electricians",
+    },
+    {
+      type: "paragraph",
+      text: "Squarespace is known for beautiful design templates \u2014 it\u2019s the go-to for photographers, restaurants, and creative businesses. The templates are polished and the editor is fairly intuitive.",
+    },
+    {
+      type: "paragraph",
+      text: "But beautiful design templates optimized for food and lifestyle aren\u2019t what an electrical contractor needs. Squarespace doesn\u2019t have service area pages, doesn\u2019t have built-in review request tools, and has limited local SEO capabilities compared to purpose-built options.",
+    },
+    {
+      type: "list",
+      items: [
+        { bold: "Pricing:", rest: " $25\u2013$65/month" },
+        {
+          bold: "Pros:",
+          rest: " Clean, professional designs out of the box",
+        },
+        {
+          bold: "Cons:",
+          rest: " Designed for creative and lifestyle brands, not local service businesses; SEO is weak for local search",
+        },
+        {
+          bold: "Best for:",
+          rest: " Electricians who prioritize design aesthetics over local SEO performance",
+        },
+      ],
+    },
+    { type: "divider" },
+    {
+      type: "heading2",
+      text: "WordPress for Electricians",
+    },
+    {
+      type: "paragraph",
+      text: "WordPress powers over 40% of the internet. It\u2019s the most flexible option available \u2014 there\u2019s a plugin for almost anything. For SEO, plugins like Yoast or RankMath are industry standards.",
+    },
+    {
+      type: "paragraph",
+      text: "The catch: WordPress requires meaningful technical investment. You\u2019ll need to find hosting, install WordPress, choose a theme, configure plugins, keep everything updated, and handle security. For a working electrician, this is either a significant time investment or a developer cost of $1,500\u2013$5,000 for a custom build.",
+    },
+    {
+      type: "list",
+      items: [
+        { bold: "Pricing:", rest: " $5\u201325/month for hosting, plus theme and plugin costs" },
+        {
+          bold: "Pros:",
+          rest: " Maximum flexibility, powerful SEO potential, massive plugin ecosystem",
+        },
+        {
+          bold: "Cons:",
+          rest: " Steep learning curve, requires ongoing maintenance, needs a developer for best results",
+        },
+        {
+          bold: "Best for:",
+          rest: " Electricians willing to hire a developer for a custom site or invest significant time learning the platform",
+        },
+      ],
+    },
+    { type: "divider" },
+    {
+      type: "heading2",
+      text: "GroundWork for Electricians",
+    },
+    {
+      type: "paragraph",
+      text: "GroundWork is built specifically for service businesses \u2014 electricians, plumbers, HVAC companies, contractors, cleaners. Every feature is designed around what local service businesses actually need.",
+    },
+    {
+      type: "list",
+      items: [
+        {
+          bold: "Trade-specific templates:",
+          rest: " Designed for electrical contractors, with the right sections in the right places \u2014 license display, services, service areas, and lead capture.",
+        },
+        {
+          bold: "Local SEO baked in:",
+          rest: " Proper structured data, service area targeting, and page speed optimization are handled automatically. No plugins to configure.",
+        },
+        {
+          bold: "Lead capture forms:",
+          rest: " Contact forms and quote request forms that send directly to your email or phone. No setup required.",
+        },
+        {
+          bold: "Review request tools:",
+          rest: " After each job, GroundWork can automatically prompt customers to leave a Google review \u2014 the single highest-leverage thing you can do for local search.",
+        },
+        {
+          bold: "Live in under 10 minutes:",
+          rest: " No developer, no design experience, no technical configuration. Enter your business info, pick a layout, go live.",
+        },
+      ],
+    },
+    {
+      type: "list",
+      items: [
+        { bold: "Pricing:", rest: " Starts at $49/month" },
+        {
+          bold: "Pros:",
+          rest: " Built for the trades, fast to set up, local SEO and lead capture built in",
+        },
+        {
+          bold: "Cons:",
+          rest: " Less design flexibility than Wix or Squarespace; focused on function over visual customization",
+        },
+        {
+          bold: "Best for:",
+          rest: " Electricians who want to get found in local search and convert visitors into calls \u2014 without spending hours on setup or paying a developer",
+        },
+      ],
+    },
+    { type: "divider" },
+    {
+      type: "heading2",
+      text: "The Bottom Line",
+    },
+    {
+      type: "paragraph",
+      text: "If design flexibility is your top priority and you\u2019re willing to invest time in setup, Wix or WordPress can work. If you want the fastest path to a professional site that shows up in local search and converts visitors into calls, GroundWork is built for exactly that.",
+    },
+    {
+      type: "paragraph",
+      text: "Most electricians don\u2019t need a beautiful website. They need a website that works \u2014 shows up when someone searches for an electrician in their area, loads fast, and makes it easy to call or request a quote. That\u2019s what GroundWork is designed to do.",
+    },
+    {
+      type: "cta",
+      linkText: "Try GroundWork free \u2014 your electrician website, live in minutes \u2192",
+      href: "/for/electricians",
+    },
+    { type: "divider" },
+    {
+      type: "heading2",
+      text: "FAQ: Website Builders for Electricians",
+    },
+    {
+      type: "list",
+      items: [
+        {
+          bold: "Do I need a separate website if I already have a Google Business Profile?",
+          rest: " Yes. Your Google Business Profile gets you into local search results and Maps. Your website is what converts those clicks into calls \u2014 it\u2019s where customers learn about your services, see your credentials, and decide to contact you. They work together, not as substitutes for each other.",
+        },
+        {
+          bold: "How important is page speed for an electrician website?",
+          rest: " Very. Google uses page speed as a ranking factor, and customers abandon slow sites fast \u2014 studies show that 53% of mobile users leave a page that takes more than 3 seconds to load. If your site is slow, you lose leads before they ever see your content. GroundWork\u2019s sites are optimized for speed by default.",
+        },
+        {
+          bold: "Can I build my own electrician website for free?",
+          rest: " There are free tiers on some builders (Wix, Google Sites), but they come with limitations: ads on your site, no custom domain, and very limited SEO features. For a professional electrical business, the credibility cost of a free website is higher than the $25\u201349/month investment in a proper one.",
+        },
+      ],
+    },
+    { type: "divider" },
+    {
+      type: "cta",
+      linkText:
+        "Build your electrician website with GroundWork \u2014 free trial, no credit card needed.",
+      href: "/for/electricians",
+    },
+  ],
+};
+
+const hvacMarketingGetMoreServiceCallsPost: BlogPost = {
+  slug: "hvac-marketing-get-more-service-calls",
+  title: "HVAC Marketing: How to Get More Service Calls From Google",
+  metaTitle:
+    "HVAC Marketing: How to Get More Service Calls From Google | GroundWork",
+  metaDescription:
+    "A practical guide to HVAC marketing through Google. Learn how to set up Google Business Profile, optimize your HVAC website for local SEO, and turn searches into service calls.",
+  publishedAt: "2026-04-15",
+  excerpt:
+    "HVAC is one of the highest-intent local search categories. When someone\u2019s AC dies in July, they call the first legitimate business they find. Here\u2019s how to make sure that\u2019s you.",
+  sections: [
+    {
+      type: "heading2",
+      text: "Why Google Is the Most Important Marketing Channel for HVAC",
+    },
+    {
+      type: "paragraph",
+      text: "HVAC emergencies don\u2019t wait. When a furnace dies at 11 PM in January, the homeowner isn\u2019t opening Angi or asking Facebook friends for recommendations. They\u2019re typing \u201cemergency HVAC near me\u201d into Google and calling the first company that looks legitimate.",
+    },
+    {
+      type: "paragraph",
+      text: "That moment of high urgency, high intent search is where HVAC businesses win or lose. Google is the single most important marketing channel for HVAC companies \u2014 not Facebook, not yard signs, not the phone book. The businesses that dominate local Google results build sustainable, growing businesses. The ones who don\u2019t are chasing referrals and hoping word-of-mouth carries them.",
+    },
+    {
+      type: "paragraph",
+      text: "This guide covers exactly how to get more service calls from Google \u2014 starting with the free channels that work before you spend a dollar on ads.",
+    },
+    { type: "divider" },
+    {
+      type: "heading2",
+      text: "1. Claim and Optimize Your Google Business Profile",
+    },
+    {
+      type: "paragraph",
+      text: "Your Google Business Profile (GBP) is what gets you into the Map Pack \u2014 the three businesses highlighted at the top of local search results. This is the highest-traffic real estate in local search, and it\u2019s free.",
+    },
+    {
+      type: "list",
+      items: [
+        {
+          bold: "Claim your listing",
+          rest: " at business.google.com if you haven\u2019t already.",
+        },
+        {
+          bold: "Fill out every field:",
+          rest: " business description, hours (including emergency availability), service list, service area, and website URL.",
+        },
+        {
+          bold: "Add photos:",
+          rest: " Your truck, your team, job photos. Listings with photos get significantly more engagement than those without.",
+        },
+        {
+          bold: "Publish Google Posts regularly:",
+          rest: " A seasonal tune-up offer, a tip about energy efficiency, a recent job photo. Consistent activity signals an active business.",
+        },
+        {
+          bold: "Respond to every review:",
+          rest: " Thank customers for positive reviews. For negative ones, respond professionally with an offer to resolve the issue. Future customers read how you respond as much as they read the review itself.",
+        },
+      ],
+    },
+    { type: "divider" },
+    {
+      type: "heading2",
+      text: "2. Get More Google Reviews \u2014 Consistently",
+    },
+    {
+      type: "paragraph",
+      text: "Reviews are the single biggest factor in who gets called from the Map Pack. An HVAC company with 60 reviews and a 4.7 rating will get more calls than one with 8 reviews and a perfect 5.0.",
+    },
+    {
+      type: "paragraph",
+      text: "The best practice is to ask after every completed job. Send a text or email with a direct link to your Google review page within 24 hours of the job closing. Most customers won\u2019t leave a review unless you make it easy and ask at the right moment.",
+    },
+    {
+      type: "paragraph",
+      text: "GroundWork includes built-in review request tools that send automated follow-up messages after a job \u2014 so you never forget to ask and the timing is always right.",
+    },
+    { type: "divider" },
+    {
+      type: "heading2",
+      text: "3. Build an HVAC Website That Converts Searches Into Calls",
+    },
+    {
+      type: "paragraph",
+      text: "Your Google Business Profile gets customers to click. Your website is what gets them to call.",
+    },
+    {
+      type: "paragraph",
+      text: "An HVAC website needs to do a few things extremely well:",
+    },
+    {
+      type: "list",
+      items: [
+        {
+          bold: "Load fast on mobile.",
+          rest: " Most HVAC searches happen on phones, often in emergencies. A slow site loses customers before they read a word.",
+        },
+        {
+          bold: "Make the phone number obvious.",
+          rest: " On mobile, your number should be a tappable click-to-call button at the top of every page.",
+        },
+        {
+          bold: "List your services explicitly.",
+          rest: " AC installation, heating repair, furnace replacement, duct cleaning, heat pump service \u2014 each service should be named. Google uses this to understand what you do and match you with relevant searches.",
+        },
+        {
+          bold: "Cover your service area.",
+          rest: " A page for each city or major area you serve dramatically improves local rankings. \u201cHVAC company in [city]\u201d is one of the highest-converting searches in the trades.",
+        },
+        {
+          bold: "Display your credentials.",
+          rest: " NATE certification, EPA 608 license, state licensing, insurance. Trust signals reduce the hesitation that kills conversions.",
+        },
+      ],
+    },
+    { type: "divider" },
+    {
+      type: "heading2",
+      text: "4. Target Seasonal Search Peaks",
+    },
+    {
+      type: "paragraph",
+      text: "HVAC has predictable search peaks: AC-related searches spike in June\u2013August, heating-related searches spike in October\u2013December. Smart HVAC marketers prepare content and promotions in advance of these peaks.",
+    },
+    {
+      type: "list",
+      items: [
+        {
+          bold: "Spring (March\u2013May):",
+          rest: " Publish content around AC tune-ups, spring HVAC maintenance, and pre-summer system checks.",
+        },
+        {
+          bold: "Fall (September\u2013November):",
+          rest: " Publish content around furnace inspections, fall HVAC maintenance, and heating system efficiency.",
+        },
+        {
+          bold: "Year-round:",
+          rest: " Emergency HVAC searches happen year-round. Make sure \u201cemergency HVAC\u201d or \u201c24/7 HVAC\u201d appears on your site if you offer it.",
+        },
+      ],
+    },
+    {
+      type: "paragraph",
+      text: "The businesses that publish seasonal content 4\u20136 weeks before the season hits are the ones that rank when demand is highest.",
+    },
+    { type: "divider" },
+    {
+      type: "heading2",
+      text: "5. Use Google Local Services Ads for Immediate Visibility",
+    },
+    {
+      type: "paragraph",
+      text: "Google Local Services Ads (LSAs) appear at the very top of search results \u2014 above regular Google Ads and above the Map Pack. They show your name, rating, and a \u201cGoogle Screened\u201d badge for verified businesses. You pay per lead, not per click.",
+    },
+    {
+      type: "paragraph",
+      text: "For HVAC companies, LSAs are one of the most cost-effective paid channels available. The catch: you need a verified Google Business Profile, a strong review rating (aim for 4.0+), and Google\u2019s background check clearance. Start with your organic presence, then layer in LSAs once your profile is strong.",
+    },
+    { type: "divider" },
+    {
+      type: "heading2",
+      text: "How GroundWork Fits Into Your HVAC Marketing Stack",
+    },
+    {
+      type: "paragraph",
+      text: "Everything in this guide works better with a professional website as the foundation. Your Google Business Profile links to your website. Your LSAs link to your website. Customers who see your yard signs look you up \u2014 and land on your website.",
+    },
+    {
+      type: "paragraph",
+      text: "GroundWork gives HVAC companies a website purpose-built for local search: fast-loading, mobile-optimized, with service area pages, lead capture forms, and review request tools built in. It\u2019s designed to be set up once and work for you automatically while you\u2019re on the job.",
+    },
+    {
+      type: "cta",
+      linkText: "Get your HVAC company website started with GroundWork \u2192",
+      href: "/for/hvac",
+    },
+    { type: "divider" },
+    {
+      type: "heading2",
+      text: "FAQ: HVAC Marketing on Google",
+    },
+    {
+      type: "list",
+      items: [
+        {
+          bold: "How long does it take to start ranking on Google as an HVAC company?",
+          rest: " Organic ranking for competitive terms typically takes 3\u20136 months from when you have a fully optimized website and active Google Business Profile. Google Maps rankings tend to improve faster, especially as you accumulate reviews. Starting now means you\u2019re building equity that compounds over time.",
+        },
+        {
+          bold: "Should I run Google Ads or focus on organic SEO?",
+          rest: " Most HVAC companies benefit from both, but prioritize organic first. A well-optimized Google Business Profile with strong reviews can get you substantial traffic for free. Once your organic foundation is solid, Google Local Services Ads are often the best paid channel to add because you pay per lead rather than per click.",
+        },
+        {
+          bold: "How many reviews do I need to compete in my market?",
+          rest: " It varies by market. In a rural area, 20\u201330 reviews with a 4.5+ rating may be enough to compete. In a major metro, the top HVAC companies may have 200+ reviews. Search your top keywords in your market and look at how many reviews the Map Pack results have \u2014 that\u2019s your competitive benchmark.",
+        },
+      ],
+    },
+    { type: "divider" },
+    {
+      type: "cta",
+      linkText:
+        "Build your HVAC website with GroundWork \u2014 free trial, no credit card needed.",
+      href: "/for/hvac",
+    },
+  ],
+};
+
+const cleaningBusinessNeedsWebsiteNotFacebookPost: BlogPost = {
+  slug: "why-cleaning-business-needs-website-not-just-facebook",
+  title: "Why Your Cleaning Business Needs a Website (Not Just Facebook)",
+  metaTitle:
+    "Why Your Cleaning Business Needs a Website, Not Just Facebook | GroundWork",
+  metaDescription:
+    "Relying on Facebook alone for your cleaning business limits your growth. Here\u2019s why a website gets you found on Google, builds more trust, and captures more leads than a Facebook page ever will.",
+  publishedAt: "2026-04-15",
+  excerpt:
+    "A Facebook page is free and easy to set up \u2014 so most cleaning businesses start there. But Google doesn\u2019t rank Facebook pages the same way it ranks websites. Here\u2019s what you\u2019re leaving on the table without a real website.",
+  sections: [
+    {
+      type: "heading2",
+      text: "Why Cleaning Businesses Default to Facebook",
+    },
+    {
+      type: "paragraph",
+      text: "When you\u2019re starting or growing a cleaning business, a Facebook page makes sense. It\u2019s free, you can set it up in 20 minutes, your existing friends and family can share it, and you can post photos of your work right away.",
+    },
+    {
+      type: "paragraph",
+      text: "For the first few clients, it often works. But there\u2019s a ceiling, and most cleaning business owners hit it sooner than they expect: the referral network runs thin, Facebook reach drops, and suddenly growth stops.",
+    },
+    {
+      type: "paragraph",
+      text: "The reason is simple: Facebook is a closed network. A website is discoverable by anyone searching on Google. Those are two very different growth channels \u2014 and only one of them scales.",
+    },
+    { type: "divider" },
+    {
+      type: "heading2",
+      text: "The Problem With Facebook-Only for Cleaning Businesses",
+    },
+    {
+      type: "list",
+      items: [
+        {
+          bold: "Google doesn\u2019t rank Facebook pages for local service searches.",
+          rest: " When someone searches \u201chouse cleaner near me\u201d or \u201ccleaning service in [city],\u201d the results are websites \u2014 not Facebook pages. Your Facebook page is essentially invisible to people who don\u2019t already know you exist.",
+        },
+        {
+          bold: "You don\u2019t own your audience.",
+          rest: " Facebook can change its algorithm, reduce your organic reach, or suspend your account. A website is yours. Your customer emails are yours. You\u2019re not dependent on a platform\u2019s decisions.",
+        },
+        {
+          bold: "Organic reach is declining.",
+          rest: " Facebook has been reducing organic reach for business pages for years. Posts that once reached hundreds of people now reach dozens unless you pay for ads. The free reach that built early businesses is much smaller now.",
+        },
+        {
+          bold: "Trust signals are weaker.",
+          rest: " A professional website with your services, pricing, photos, reviews, and a booking form signals a real, established business. A Facebook page alone can look like a side hustle \u2014 even if you\u2019re running a serious operation.",
+        },
+        {
+          bold: "No 24/7 lead capture.",
+          rest: " Facebook messages are great for conversations, but they rely on someone finding your page and actively reaching out. A website with a contact form or booking widget captures leads while you\u2019re sleeping, on a job, or not checking your phone.",
+        },
+      ],
+    },
+    { type: "divider" },
+    {
+      type: "heading2",
+      text: "What a Website Does That Facebook Can\u2019t",
+    },
+    {
+      type: "paragraph",
+      text: "A professional cleaning business website isn\u2019t just a different place to post photos. It\u2019s a fundamentally different marketing asset.",
+    },
+    {
+      type: "list",
+      items: [
+        {
+          bold: "Shows up in Google search.",
+          rest: " A properly built website can rank for searches like \u201chouse cleaning service in [your city],\u201d \u201cdeep cleaning near me,\u201d and \u201cmove-out cleaning [zip code].\u201d These are people actively looking to hire a cleaner \u2014 not scrolling through a social feed.",
+        },
+        {
+          bold: "Builds credibility before the first conversation.",
+          rest: " Customers are inviting you into their home. A website with real photos of your work, customer testimonials, a clear services list, and your contact information makes you look like the professional you are.",
+        },
+        {
+          bold: "Captures leads automatically.",
+          rest: " A contact form or quote request form on your website works around the clock. You wake up to new inquiries instead of waiting for a Facebook message.",
+        },
+        {
+          bold: "Converts Google traffic into bookings.",
+          rest: " When your Google Business Profile shows up in Maps, it links to your website. That website is what turns a Map Pack click into a booked job.",
+        },
+        {
+          bold: "Tells the full story.",
+          rest: " Your services, your coverage area, your prices or pricing range, your cleaning process, your guarantees, your reviews. A website can hold all of it in a structured way that builds trust and answers questions before a customer even calls.",
+        },
+      ],
+    },
+    { type: "divider" },
+    {
+      type: "heading2",
+      text: "Facebook and a Website: Use Both",
+    },
+    {
+      type: "paragraph",
+      text: "This isn\u2019t an either/or. Facebook is useful for staying connected with past customers, posting job photos, and running local ads. Keep your Facebook page active.",
+    },
+    {
+      type: "paragraph",
+      text: "But your website is your anchor. It\u2019s the asset that Google indexes, that your Google Business Profile links to, that customers land on after they search. Facebook supports your business. A website grows it.",
+    },
+    {
+      type: "paragraph",
+      text: "The good news: getting a professional cleaning business website no longer requires hiring a web designer or spending thousands of dollars. GroundWork is purpose-built for cleaning businesses \u2014 you can be live in under 10 minutes.",
+    },
+    { type: "divider" },
+    {
+      type: "heading2",
+      text: "What a Good Cleaning Business Website Needs",
+    },
+    {
+      type: "list",
+      items: [
+        {
+          bold: "Clear services list.",
+          rest: " Standard cleaning, deep cleaning, move-in/move-out, commercial, Airbnb turnover \u2014 list what you offer explicitly.",
+        },
+        {
+          bold: "Service area.",
+          rest: " Which cities or zip codes do you cover? This helps Google match you with local searches.",
+        },
+        {
+          bold: "Photos of your work.",
+          rest: " Before-and-after photos are the most convincing content a cleaning business can publish. They show the outcome \u2014 which is the only thing customers actually care about.",
+        },
+        {
+          bold: "Customer reviews.",
+          rest: " Cleaning is a trust business. Show Google and Facebook reviews directly on your site.",
+        },
+        {
+          bold: "Contact form or booking option.",
+          rest: " Make it easy to request a quote or schedule a visit. A form that sends directly to your email or phone is sufficient.",
+        },
+        {
+          bold: "Your phone number everywhere.",
+          rest: " Don\u2019t make people hunt for it. Prominent phone number on every page, click-to-call on mobile.",
+        },
+      ],
+    },
+    {
+      type: "paragraph",
+      text: "GroundWork gives cleaning businesses all of this \u2014 templates built for the industry, local SEO features baked in, lead capture forms, and review request tools that automatically follow up with customers after each job.",
+    },
+    {
+      type: "cta",
+      linkText:
+        "Get your cleaning business website started today \u2192",
+      href: "/for/cleaners",
+    },
+    { type: "divider" },
+    {
+      type: "heading2",
+      text: "FAQ: Cleaning Business Websites vs. Facebook",
+    },
+    {
+      type: "list",
+      items: [
+        {
+          bold: "I already get clients from Facebook referrals. Do I really need a website?",
+          rest: " If your Facebook referral pipeline is sustaining the business at the size you want, that\u2019s great. But if you want to grow \u2014 take on more clients, hire cleaners, expand your coverage area \u2014 Facebook referrals have a ceiling. A website gives you an always-on lead source that compounds over time as you build up search rankings and reviews.",
+        },
+        {
+          bold: "How much does a cleaning business website cost?",
+          rest: " A custom site from a web designer runs $1,500\u2013$5,000 and takes weeks. GroundWork is a flat monthly subscription \u2014 fraction of the cost, live in minutes, no developer needed. Most cleaning businesses find it pays for itself with one or two additional clients per month.",
+        },
+        {
+          bold: "Can I run Facebook ads and have a website?",
+          rest: " Absolutely \u2014 in fact, it\u2019s more effective. Facebook ads work best when they drive traffic to a website with a clear CTA (a quote form, a booking widget). Without a website as the landing destination, your Facebook ad spend is less efficient. A website makes every marketing channel you use work better.",
+        },
+      ],
+    },
+    { type: "divider" },
+    {
+      type: "cta",
+      linkText:
+        "Build your cleaning business website with GroundWork \u2014 free trial, no credit card needed.",
+      href: "/for/cleaners",
+    },
+  ],
+};
+
+const contractorWebsiteExamplesPost: BlogPost = {
+  slug: "contractor-website-examples-what-works",
+  title: "Contractor Website Examples: What Works for Local Businesses",
+  metaTitle:
+    "Contractor Website Examples: What Actually Works for Local Businesses | GroundWork",
+  metaDescription:
+    "What makes a great contractor website? Real examples and breakdown of what works \u2014 and what doesn\u2019t \u2014 for general contractors, electricians, plumbers, and other local service businesses.",
+  publishedAt: "2026-04-15",
+  excerpt:
+    "The best contractor websites all have something in common: they\u2019re built to get the phone ringing, not to win design awards. Here\u2019s a breakdown of what works \u2014 and what to avoid \u2014 based on what drives leads for local service businesses.",
+  sections: [
+    {
+      type: "heading2",
+      text: "What Actually Makes a Contractor Website Work",
+    },
+    {
+      type: "paragraph",
+      text: "Most contractor websites fail not because of bad design \u2014 they fail because they\u2019re not built to convert. They look like online brochures: a home page with a logo, a services list that\u2019s too vague, and a contact page buried in the navigation.",
+    },
+    {
+      type: "paragraph",
+      text: "The best contractor websites have one goal: get the phone to ring. Every element \u2014 the headline, the photos, the layout, the CTAs \u2014 is in service of that goal.",
+    },
+    {
+      type: "paragraph",
+      text: "Here\u2019s a breakdown of what the highest-converting contractor websites do right, with examples of each element.",
+    },
+    { type: "divider" },
+    {
+      type: "heading2",
+      text: "Element 1: A Clear, Benefit-Driven Headline",
+    },
+    {
+      type: "paragraph",
+      text: "The first thing a visitor sees when they land on your homepage should immediately answer: \u201cwhat do you do and where do you do it?\u201d",
+    },
+    {
+      type: "list",
+      items: [
+        {
+          bold: "Weak headline:",
+          rest: ' "Welcome to Smith & Sons Construction." This tells the customer nothing useful.',
+        },
+        {
+          bold: "Strong headline:",
+          rest: ' "Kitchen Remodels, Additions & Full Renovations in [City] \u2014 Licensed, Insured, and Family-Owned Since 2008." This answers who you are, what you do, where you work, and why to trust you \u2014 in one sentence.',
+        },
+      ],
+    },
+    {
+      type: "paragraph",
+      text: "The best contractor headlines include the trade, the geography, and a trust signal. That\u2019s three pieces of information in one line \u2014 and it\u2019s what makes visitors stay instead of hitting the back button.",
+    },
+    { type: "divider" },
+    {
+      type: "heading2",
+      text: "Element 2: A Phone Number You Can\u2019t Miss",
+    },
+    {
+      type: "paragraph",
+      text: "On mobile, your phone number should be at the top of every page as a large, tappable click-to-call button. On desktop, it should be in the top right corner of the header.",
+    },
+    {
+      type: "paragraph",
+      text: "Customers searching for a contractor are often in decision mode. They\u2019ve already done some research. When they land on your site and the phone number is obvious, the conversion is easy. When they have to hunt for it, you lose them.",
+    },
+    {
+      type: "paragraph",
+      text: "The best contractor websites have their number visible within 2 seconds of landing on any page \u2014 no scrolling required.",
+    },
+    { type: "divider" },
+    {
+      type: "heading2",
+      text: "Element 3: A Project Portfolio with Real Photos",
+    },
+    {
+      type: "paragraph",
+      text: "Before-and-after photos are the single most powerful content a contractor can have on their website. They show the outcome \u2014 which is the only thing customers actually care about.",
+    },
+    {
+      type: "list",
+      items: [
+        {
+          bold: "Kitchen remodels:",
+          rest: " Before photo showing outdated cabinets and counters. After photo showing the completed renovation. No text needed \u2014 the photo does the work.",
+        },
+        {
+          bold: "Deck additions:",
+          rest: " The backyard before (bare or with an old rotting deck), then after with the new build. Shows scale, quality, and capability.",
+        },
+        {
+          bold: "Bathroom renovations:",
+          rest: " Before and after is even more dramatic in smaller spaces. A well-done tile job and vanity swap is a compelling before/after.",
+        },
+      ],
+    },
+    {
+      type: "paragraph",
+      text: "You don\u2019t need a professional photographer. Clean, well-lit phone photos of completed jobs are enough. The content matters more than the camera.",
+    },
+    { type: "divider" },
+    {
+      type: "heading2",
+      text: "Element 4: An Explicit Services List",
+    },
+    {
+      type: "paragraph",
+      text: "Many contractor websites list their services as: \u201cResidential. Commercial. Remodeling.\u201d That\u2019s too vague to be useful.",
+    },
+    {
+      type: "paragraph",
+      text: "The best contractor sites list services explicitly: kitchen remodels, bathroom renovations, deck construction, room additions, basement finishing, siding replacement, window installation. Each service is a keyword Google uses to understand what you do \u2014 and what searchers use to find you.",
+    },
+    {
+      type: "paragraph",
+      text: "Ideally, each major service has its own page. That page can rank separately in Google for that specific service and city combination. \u201cDeck contractor in [city]\u201d is a very different searcher than \u201ckitchen remodel in [city]\u201d \u2014 and both are worth targeting.",
+    },
+    { type: "divider" },
+    {
+      type: "heading2",
+      text: "Element 5: A Quote Request Form on Every Page",
+    },
+    {
+      type: "paragraph",
+      text: "Not every customer wants to call. Many prefer to fill out a short form and wait for a callback \u2014 especially if they\u2019re reaching out after hours. A quote request form that goes directly to your email or phone captures leads that would otherwise bounce.",
+    },
+    {
+      type: "paragraph",
+      text: "Keep it short: name, phone or email, type of job, and any additional notes. Five fields maximum. More than that, and people abandon the form.",
+    },
+    {
+      type: "paragraph",
+      text: "The form should appear on your homepage, your services pages, and your contact page. If someone has to navigate to find it, you\u2019re losing conversions.",
+    },
+    { type: "divider" },
+    {
+      type: "heading2",
+      text: "Element 6: Customer Reviews and Testimonials",
+    },
+    {
+      type: "paragraph",
+      text: "Homeowners hiring a contractor for a $10,000+ project are going to look for social proof. Reviews are that proof.",
+    },
+    {
+      type: "paragraph",
+      text: "The best contractor websites embed or display their Google reviews directly on the homepage and services pages. A row of 4\u20135 star reviews with real customer names and project descriptions is one of the most effective trust signals a contractor can have.",
+    },
+    {
+      type: "paragraph",
+      text: "If you don\u2019t have many Google reviews yet, start collecting them after every completed job. Send a direct review link via text within 24 hours of job completion \u2014 that\u2019s when customers are most likely to respond.",
+    },
+    { type: "divider" },
+    {
+      type: "heading2",
+      text: "Element 7: Service Area Coverage",
+    },
+    {
+      type: "paragraph",
+      text: "One of the biggest missed opportunities on contractor websites is the service area. Most contractors list a vague \u201cserving [county] and surrounding areas\u201d in small text at the bottom of the page.",
+    },
+    {
+      type: "paragraph",
+      text: "The best contractor websites have dedicated pages for each major city or town they serve: \u201cGeneral Contractor in [City 1],\u201d \u201cKitchen Remodeling in [City 2],\u201d etc. These pages rank for local searches in each city and bring in leads from areas you serve but don\u2019t have a physical address in.",
+    },
+    {
+      type: "paragraph",
+      text: "GroundWork builds these service area pages automatically \u2014 you enter your coverage area and the right pages are created for each location.",
+    },
+    { type: "divider" },
+    {
+      type: "heading2",
+      text: "The Common Thread: Built to Convert, Not Just Look Good",
+    },
+    {
+      type: "paragraph",
+      text: "Every element above has one thing in common: it\u2019s designed to get a customer to take action \u2014 call you, fill out a form, or click to learn more about a service. The best contractor websites aren\u2019t trying to win design awards. They\u2019re trying to get the phone ringing.",
+    },
+    {
+      type: "paragraph",
+      text: "GroundWork is built around this principle. Every template is designed for local service businesses \u2014 with the right sections, the right CTAs, and local SEO built in. You get a website that works like the examples above, without needing to build it yourself.",
+    },
+    {
+      type: "cta",
+      linkText: "Build a contractor website that converts with GroundWork \u2192",
+      href: "/for/contractors",
+    },
+    { type: "divider" },
+    {
+      type: "heading2",
+      text: "FAQ: Contractor Website Examples and Best Practices",
+    },
+    {
+      type: "list",
+      items: [
+        {
+          bold: "How many photos should I have on my contractor website?",
+          rest: " Aim for at least 10\u201315 project photos when you launch, and add more over time. Each project you complete is a marketing asset. The more real work you show, the more trust you build. Organize them by project type so visitors can quickly find examples relevant to their job.",
+        },
+        {
+          bold: "Should I show pricing on my contractor website?",
+          rest: " Most general contractors don\u2019t list prices because every job is different. That\u2019s fine. What you should have is a clear way to request a quote. A \u201cGet a Free Estimate\u201d button or form does more than a price list \u2014 it starts a conversation. If you do have standard pricing for smaller jobs, listing ranges (\u201cDeck builds typically start at $8,000\u201d) can qualify leads and save you time on calls.",
+        },
+        {
+          bold: "How important is mobile optimization for a contractor website?",
+          rest: " Critical. Over 60% of local service searches happen on mobile devices. If your site doesn\u2019t load fast and look clean on a phone, you\u2019re losing leads to competitors whose sites do. Google also uses mobile performance as a ranking factor \u2014 a poor mobile site will rank lower in search results regardless of your other SEO efforts.",
+        },
+      ],
+    },
+    { type: "divider" },
+    {
+      type: "cta",
+      linkText:
+        "Try GroundWork free \u2014 no credit card needed.",
+      href: "/for/contractors",
+    },
+  ],
+};
+
 export const allPosts: BlogPost[] = [
   plumbersPost,
   landscapersPost,
@@ -2620,6 +3709,11 @@ export const allPosts: BlogPost[] = [
   bestWebsiteBuilderForElectriciansPost,
   howToGetRoofingBusinessOnGooglePost,
   howToAdvertisePressureWashingForFreePost,
+  googleBusinessProfileForPlumbersPost,
+  bestWebsiteBuilderElectricians2026Post,
+  hvacMarketingGetMoreServiceCallsPost,
+  cleaningBusinessNeedsWebsiteNotFacebookPost,
+  contractorWebsiteExamplesPost,
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
