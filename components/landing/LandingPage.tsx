@@ -594,6 +594,7 @@ function FeaturesSection() {
             alt="Rivera Plumbing mobile website on phone"
             width={480}
             height={720}
+            loading="lazy"
             className="w-full max-w-xs mx-auto block"
           />
         </div>
@@ -742,6 +743,7 @@ function HowItWorksSection() {
             alt="3-step onboarding: enter name, pick trade, go live"
             width={920}
             height={400}
+            loading="lazy"
             className="w-full max-w-4xl mx-auto block"
           />
         </div>
