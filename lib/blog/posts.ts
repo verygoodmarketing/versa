@@ -3614,6 +3614,696 @@ const howLandscapingCompaniesGetCustomersOnlinePost: BlogPost = {
   ],
 };
 
+const hvacMobileWebsitePost: BlogPost = {
+  slug: "why-hvac-companies-need-a-mobile-first-website",
+  title: "Why HVAC Companies Need a Mobile-First Website in 2026",
+  metaTitle: "Why HVAC Companies Need a Mobile-First Website in 2026 | GroundWork",
+  metaDescription:
+    "Most HVAC leads come from smartphone searches. If your website isn't built for mobile, you're losing jobs to competitors. Here's what a mobile-first HVAC site needs.",
+  publishedAt: "2026-04-15",
+  excerpt:
+    "When a homeowner's air conditioner stops working in July, they're not opening a laptop. They're on their phone, sweating, and calling the first HVAC company that looks trustworthy.",
+  sections: [
+    {
+      type: "heading2",
+      text: "Where HVAC Calls Actually Come From",
+    },
+    {
+      type: "paragraph",
+      text: "When a homeowner's air conditioner stops working in July, they're not opening a laptop. They're on their phone, sweating, and calling the first HVAC company that looks trustworthy. Over 70% of local service searches happen on mobile — and HVAC is one of the highest-intent categories.",
+    },
+    {
+      type: "paragraph",
+      text: "If your website takes 6 seconds to load on a phone, has tiny text, or requires pinching and zooming to find your phone number, that lead is gone. They hit the back button and call your competitor.",
+    },
+    {
+      type: "divider",
+    },
+    {
+      type: "heading2",
+      text: "What Mobile-First Actually Means",
+    },
+    {
+      type: "paragraph",
+      text: "Mobile-first doesn't just mean your site \"works\" on a phone. It means the site was designed to perform on a phone first, desktop second. In practice, that means:",
+    },
+    {
+      type: "list",
+      items: [
+        {
+          bold: "Fast load time.",
+          rest: " Under 3 seconds on a 4G connection. Every extra second costs you roughly 20% of visitors.",
+        },
+        {
+          bold: "Tap-to-call button above the fold.",
+          rest: " Your phone number should be visible without scrolling, and it should be a clickable link that dials immediately.",
+        },
+        {
+          bold: "Large, readable text.",
+          rest: " No squinting or zooming. A minimum 16px body font renders cleanly on any screen size.",
+        },
+        {
+          bold: "Simple navigation.",
+          rest: " On mobile, a single hamburger menu or sticky header with just the essentials — Services, About, Contact — reduces friction.",
+        },
+        {
+          bold: "Short contact form.",
+          rest: " Name, phone, and \"What do you need?\" is enough. Long forms get abandoned on mobile.",
+        },
+      ],
+    },
+    {
+      type: "divider",
+    },
+    {
+      type: "heading2",
+      text: "Google Rewards Mobile-Friendly HVAC Sites",
+    },
+    {
+      type: "paragraph",
+      text: "Since 2019, Google uses mobile-first indexing. That means Google's bots crawl and rank your site based on the mobile version, not the desktop version. If your mobile site is slow or hard to use, it directly hurts your Google ranking — even for desktop searches.",
+    },
+    {
+      type: "paragraph",
+      text: "For HVAC companies competing in local search, this is critical. A fast, clean mobile site with proper local SEO signals (business name, city, service keywords) ranks higher in the local map pack than a slow desktop-only site, even if the desktop version looks great.",
+    },
+    {
+      type: "divider",
+    },
+    {
+      type: "heading2",
+      text: "The 5 Pages Every HVAC Website Needs",
+    },
+    {
+      type: "orderedList",
+      items: [
+        {
+          bold: "Homepage.",
+          rest: " Clear headline stating what you do and where. Prominent phone number. One CTA (call now or request a quote).",
+        },
+        {
+          bold: "Services page.",
+          rest: " AC installation, heating repair, maintenance plans — listed clearly with brief descriptions. Google reads these to understand what you offer.",
+        },
+        {
+          bold: "Service area page.",
+          rest: " List every city and neighborhood you serve. This is how you rank in nearby towns without separate websites.",
+        },
+        {
+          bold: "About page.",
+          rest: " Name, years in business, licenses, and a photo. Trust signals that convert skeptical homeowners.",
+        },
+        {
+          bold: "Contact / Request a Quote page.",
+          rest: " Short form. Estimated response time. The easier you make it to reach you, the more leads convert.",
+        },
+      ],
+    },
+    {
+      type: "divider",
+    },
+    {
+      type: "heading2",
+      text: "Common Mobile Mistakes HVAC Websites Make",
+    },
+    {
+      type: "list",
+      items: [
+        "Phone number buried in the footer, not clickable",
+        "Large background images that slow mobile load times dramatically",
+        "Pop-up chat widgets that cover the screen on mobile",
+        "No SSL certificate (Google marks these as \"Not Secure\" — a conversion killer)",
+        "Outdated copyright years (customers notice and wonder if you're still in business)",
+      ],
+    },
+    {
+      type: "divider",
+    },
+    {
+      type: "heading2",
+      text: "The Fastest Way to Get a Mobile-First HVAC Site Live",
+    },
+    {
+      type: "paragraph",
+      text: "Building a mobile-first website from scratch takes weeks and costs thousands if you hire an agency. Most HVAC owners don't have that kind of time or budget — and frankly, they shouldn't need to.",
+    },
+    {
+      type: "paragraph",
+      text: "Groundwork is built specifically for local service businesses like HVAC companies. Every template is mobile-first by default, loads in under 2 seconds, and includes the local SEO setup built in. You can have a professional site live in under an hour.",
+    },
+    {
+      type: "cta",
+      linkText: "Build your HVAC website for free with Groundwork →",
+      href: "/for/hvac",
+    },
+  ],
+};
+
+const landscapingMarketingPost: BlogPost = {
+  slug: "landscaping-business-marketing-compete-against-big-companies",
+  title: "Landscaping Business Marketing: How to Compete Against the Big Guys",
+  metaTitle: "Landscaping Business Marketing: How to Compete Against Bigger Companies | GroundWork",
+  metaDescription:
+    "Small landscaping businesses can out-market large companies with the right strategy. Here's how to win local customers without a big budget.",
+  publishedAt: "2026-04-15",
+  excerpt:
+    "Large landscaping companies have big marketing budgets and name recognition. But small, local operators have something they don't — a real relationship with the neighborhood.",
+  sections: [
+    {
+      type: "heading2",
+      text: "The Small Landscaping Business Advantage",
+    },
+    {
+      type: "paragraph",
+      text: "Large landscaping companies have big marketing budgets and name recognition. But small, local operators have something they don't: a real relationship with the neighborhood, faster response times, and the ability to deliver personalized service. The key is making sure potential customers can actually find you and see that difference.",
+    },
+    {
+      type: "divider",
+    },
+    {
+      type: "heading2",
+      text: "1. Own Your Google Business Profile",
+    },
+    {
+      type: "paragraph",
+      text: "Your Google Business Profile (formerly Google My Business) is the single most important free marketing tool for a local landscaping company. When someone searches \"landscaping near me\" or \"lawn care in [city],\" Google shows a map pack with 3 businesses. The ones that appear there get 70%+ of the clicks.",
+    },
+    {
+      type: "paragraph",
+      text: "To maximize your Google Business Profile: add real photos of your work, fill out every service category, collect reviews consistently, and post updates at least monthly. A fully optimized profile outranks competitors with bigger websites.",
+    },
+    {
+      type: "divider",
+    },
+    {
+      type: "heading2",
+      text: "2. Build a Website That Ranks for \"Near Me\" Searches",
+    },
+    {
+      type: "paragraph",
+      text: "Large companies rank for broad terms like \"landscaping company.\" Small local operators can beat them by ranking for specific local searches: \"landscaping company [your city],\" \"lawn care [neighborhood],\" \"spring cleanup [county].\" These searches have commercial intent — the person is ready to hire.",
+    },
+    {
+      type: "paragraph",
+      text: "Your website needs dedicated pages for each city and service you offer. A page titled \"Lawn Care in Springfield, OH\" with your business name, phone number, and service description will rank for that term within 30–60 days on a new site.",
+    },
+    {
+      type: "divider",
+    },
+    {
+      type: "heading2",
+      text: "3. Let Your Work Sell Itself",
+    },
+    {
+      type: "paragraph",
+      text: "Before and after photos are the most powerful marketing asset for a landscaping business. Post them everywhere:",
+    },
+    {
+      type: "list",
+      items: [
+        "Google Business Profile posts (weekly if possible)",
+        "Facebook and Nextdoor (neighborhood-level reach is perfect for landscaping)",
+        "Your website's gallery or homepage",
+        "Instagram if your target customers are homeowners under 45",
+      ],
+    },
+    {
+      type: "paragraph",
+      text: "You don't need a professional photographer. A clean, well-lit photo from your phone is enough. The before-and-after format works exceptionally well because it shows the transformation — the exact outcome customers are paying for.",
+    },
+    {
+      type: "divider",
+    },
+    {
+      type: "heading2",
+      text: "4. Get Reviews Like a System, Not an Afterthought",
+    },
+    {
+      type: "paragraph",
+      text: "Large companies struggle to collect reviews at scale because their crews aren't personally invested. You can beat them simply by asking every satisfied customer for a Google review, right after the job is done while the experience is fresh.",
+    },
+    {
+      type: "paragraph",
+      text: "The easiest method: save a short text message template with your Google review link. After finishing a job, send it to the customer: \"Thanks for having us out today! If you have 60 seconds, a Google review helps us a lot: [link].\" A 20–30% response rate is typical for a warm, direct ask.",
+    },
+    {
+      type: "divider",
+    },
+    {
+      type: "heading2",
+      text: "5. Target Adjacent Services for Recurring Revenue",
+    },
+    {
+      type: "paragraph",
+      text: "Big landscaping companies win on volume. You win on margin and relationships. Offer service packages that lock in recurring revenue: monthly lawn maintenance contracts, seasonal cleanups, annual mulching and edging. Customers who sign up for recurring service are far more valuable than one-time jobs.",
+    },
+    {
+      type: "paragraph",
+      text: "Market these packages on your website and to your existing customer list. A simple email to past customers in early spring — \"We're now booking spring cleanups for April and May. Reply to reserve your date\" — can fill your schedule before you spend a dollar on advertising.",
+    },
+    {
+      type: "divider",
+    },
+    {
+      type: "heading2",
+      text: "Put It All Together",
+    },
+    {
+      type: "paragraph",
+      text: "The formula for a small landscaping business to out-market larger competitors:",
+    },
+    {
+      type: "list",
+      items: [
+        "Google Business Profile — optimized and updated regularly",
+        "Website with local SEO — service + city pages that rank in your area",
+        "Before/after photos — posted consistently on social and your site",
+        "Review system — every job, every time",
+        "Recurring service packages — lock in steady revenue",
+      ],
+    },
+    {
+      type: "paragraph",
+      text: "You don't need a marketing agency or a big budget. You need consistency. The local operator who shows up everywhere — Google, Nextdoor, with strong reviews — wins the neighborhood regardless of company size.",
+    },
+    {
+      type: "cta",
+      linkText: "Build your landscaping website for free with Groundwork →",
+      href: "/for/landscapers",
+    },
+  ],
+};
+
+const bestCrmForElectricalContractorsPost: BlogPost = {
+  slug: "best-crm-for-small-electrical-contractors",
+  title: "The Best CRM for Small Electrical Contractors in 2026",
+  metaTitle: "Best CRM for Small Electrical Contractors 2026 | GroundWork",
+  metaDescription:
+    "Looking for the best CRM for your electrical contracting business? Here's what small electrical contractors actually need — and what to avoid when evaluating tools.",
+  publishedAt: "2026-04-15",
+  excerpt:
+    "Most CRMs are built for software sales teams, not electricians. Here's how to find a tool that actually fits the way an electrical contracting business works.",
+  sections: [
+    {
+      type: "heading2",
+      text: "Why Electrical Contractors Need a CRM (And Why Most Don't Use One)",
+    },
+    {
+      type: "paragraph",
+      text: "Most small electrical contractors run their business from a combination of text messages, a notes app, and memory. It works — until it doesn't. A missed follow-up on a quote costs you the job. A customer you forgot to call back leaves a bad review. A referral falls through because no one tracked it.",
+    },
+    {
+      type: "paragraph",
+      text: "A CRM (customer relationship manager) solves this by giving you one place to track every lead, quote, job, and customer interaction. The challenge is that most CRMs are designed for software sales teams — not for an electrician running jobs and managing a crew.",
+    },
+    {
+      type: "divider",
+    },
+    {
+      type: "heading2",
+      text: "What Small Electrical Contractors Actually Need",
+    },
+    {
+      type: "list",
+      items: [
+        {
+          bold: "Lead tracking.",
+          rest: " See every new inquiry, where it came from, and what stage it's in — from first contact to quote sent to job completed.",
+        },
+        {
+          bold: "Quote follow-ups.",
+          rest: " Automatic reminders to follow up 2–3 days after sending a quote. Most jobs are won or lost in the follow-up.",
+        },
+        {
+          bold: "Customer history.",
+          rest: " Quick access to what work you've done for each customer, so you can provide context on callbacks and upsell maintenance.",
+        },
+        {
+          bold: "Mobile access.",
+          rest: " You're not at a desk. The tool needs to work from a phone on the job site.",
+        },
+        {
+          bold: "Simple, not overwhelming.",
+          rest: " You need something you'll actually use, not a 50-field database that takes 3 hours to set up.",
+        },
+      ],
+    },
+    {
+      type: "divider",
+    },
+    {
+      type: "heading2",
+      text: "Top CRM Options for Small Electrical Contractors",
+    },
+    {
+      type: "paragraph",
+      text: "Here are the tools most commonly used by small electrical contracting businesses:",
+    },
+    {
+      type: "heading2",
+      text: "Jobber",
+    },
+    {
+      type: "paragraph",
+      text: "Jobber is purpose-built for home service businesses including electricians. It handles quoting, scheduling, invoicing, and customer management in one place. The mobile app is solid. It's more expensive than generic CRMs ($49–$99/mo depending on features) but saves significant admin time for operators doing 10+ jobs per month.",
+    },
+    {
+      type: "heading2",
+      text: "ServiceTitan",
+    },
+    {
+      type: "paragraph",
+      text: "ServiceTitan is the enterprise option — powerful, feature-rich, and expensive. Better suited for electrical contractors with 5+ technicians and a dispatcher. Overkill for a solo operator or a two-person shop. Pricing starts around $125/mo and scales up quickly with add-ons.",
+    },
+    {
+      type: "heading2",
+      text: "HubSpot CRM (Free Tier)",
+    },
+    {
+      type: "paragraph",
+      text: "HubSpot's free CRM is a solid option for a very small electrical operation that mainly needs lead tracking and follow-up reminders. It's not built for trades (no quoting or scheduling), but it's free and easy to use. Best for solo operators or businesses just starting to organize leads.",
+    },
+    {
+      type: "heading2",
+      text: "Housecall Pro",
+    },
+    {
+      type: "paragraph",
+      text: "Housecall Pro sits between Jobber and ServiceTitan in features and price. Good mobile experience, solid quoting, and decent customer communication tools. Popular among electricians with 1–4 technicians who want more than a basic CRM but less than an enterprise system.",
+    },
+    {
+      type: "divider",
+    },
+    {
+      type: "heading2",
+      text: "The Layer Most Contractors Miss: Online Presence",
+    },
+    {
+      type: "paragraph",
+      text: "A CRM manages leads after they arrive. But most small electrical contractors have a bigger problem: not enough leads in the first place. The highest-leverage investment for a small electrical business is usually fixing the top of the funnel — specifically, making sure you show up when customers search for an electrician in your area.",
+    },
+    {
+      type: "paragraph",
+      text: "That means a professional website optimized for local search, a complete Google Business Profile, and a working lead capture form. Without these, even the best CRM won't help much — there's nothing to manage.",
+    },
+    {
+      type: "paragraph",
+      text: "Groundwork handles the website, local SEO, and lead form for electrical contractors in under an hour, starting at $49/mo. Pair it with Jobber or Housecall Pro once your lead volume justifies it.",
+    },
+    {
+      type: "cta",
+      linkText: "Build your electrical contractor website for free with Groundwork →",
+      href: "/for/electricians",
+    },
+  ],
+};
+
+const cleaningEmailMarketingPost: BlogPost = {
+  slug: "how-cleaning-services-can-use-email-marketing-to-get-repeat-clients",
+  title: "How Cleaning Services Can Use Email Marketing to Get Repeat Clients",
+  metaTitle: "Email Marketing for Cleaning Services: Get More Repeat Clients | GroundWork",
+  metaDescription:
+    "Email marketing is one of the most cost-effective ways for cleaning businesses to fill their schedule. Here's a simple system that works.",
+  publishedAt: "2026-04-15",
+  excerpt:
+    "A cleaning business lives on repeat clients. Email marketing is the most reliable way to stay top-of-mind with past customers and turn one-time cleanings into recurring revenue.",
+  sections: [
+    {
+      type: "heading2",
+      text: "Why Email Works Especially Well for Cleaning Businesses",
+    },
+    {
+      type: "paragraph",
+      text: "A cleaning business lives on repeat clients. Acquiring a new customer costs 5–7x more than keeping an existing one. Email marketing is the most reliable, low-cost way to stay top-of-mind with past customers and turn one-time cleanings into recurring bookings.",
+    },
+    {
+      type: "paragraph",
+      text: "Unlike social media, where posts reach only a fraction of your followers, email goes directly to your list. Open rates for small local service businesses routinely hit 35–45% — far higher than the 2–5% organic reach on Facebook.",
+    },
+    {
+      type: "divider",
+    },
+    {
+      type: "heading2",
+      text: "Step 1: Build Your List",
+    },
+    {
+      type: "paragraph",
+      text: "You don't need a big list to see results — you need the right list. Start by collecting email addresses from every customer:",
+    },
+    {
+      type: "list",
+      items: [
+        "Add an email field to your booking form or intake process",
+        "Ask in person when confirming appointments",
+        "Collect emails when sending invoices or receipts",
+        "Offer a small discount or free add-on for first-time subscribers",
+      ],
+    },
+    {
+      type: "paragraph",
+      text: "Even 50–100 past customers on a list is enough to fill schedule gaps and generate recurring bookings through email. The list compounds over time.",
+    },
+    {
+      type: "divider",
+    },
+    {
+      type: "heading2",
+      text: "Step 2: Send These 4 Types of Emails",
+    },
+    {
+      type: "orderedList",
+      items: [
+        {
+          bold: "Re-engagement email.",
+          rest: " Sent to customers who haven't booked in 60–90 days: \"It's been a while — we'd love to get your home back in order. Book this week and we'll include a bathroom deep-clean at no extra charge.\"",
+        },
+        {
+          bold: "Seasonal reminder.",
+          rest: " Spring cleaning, post-holiday cleanup, back-to-school refresh — there's always a seasonal reason to reach out. These emails feel timely and relevant, not spammy.",
+        },
+        {
+          bold: "Recurring plan offer.",
+          rest: " Email your one-time customers an offer to lock in a recurring schedule: \"Save 15% when you book bi-weekly or monthly cleanings. Reply to this email to reserve your regular slot.\"",
+        },
+        {
+          bold: "Referral ask.",
+          rest: " \"Know someone who could use a clean home? Send them our way and you'll both get $20 off your next booking.\" Referral emails to existing customers generate some of the highest-quality new leads.",
+        },
+      ],
+    },
+    {
+      type: "divider",
+    },
+    {
+      type: "heading2",
+      text: "Step 3: Keep It Simple",
+    },
+    {
+      type: "paragraph",
+      text: "You don't need fancy email software or complicated automations to start. A simple tool like Mailchimp (free up to 500 contacts), Gmail with mail merge, or even personal emails to small batches of customers will work for a cleaning business under 200 clients.",
+    },
+    {
+      type: "paragraph",
+      text: "The most important thing is consistency. One email per month to your customer list is enough to meaningfully increase your rebooking rate. Two to three per month during peak seasons (spring, fall) is even better.",
+    },
+    {
+      type: "divider",
+    },
+    {
+      type: "heading2",
+      text: "What to Say (Template)",
+    },
+    {
+      type: "paragraph",
+      text: "Here's a re-engagement email template that works for cleaning businesses:",
+    },
+    {
+      type: "paragraph",
+      text: "Subject: It's been a while — ready for a fresh start?\n\nHi [Name],\n\nIt's been a few months since we last cleaned your home. We'd love to come back.\n\nThis week we're offering past clients a free kitchen deep-clean with any full-home booking. Just reply to this email or use the link below to get on the schedule.\n\n[Book Now]\n\nThanks for trusting us with your home.\n\n[Your Name]\n[Your Business Name]",
+    },
+    {
+      type: "divider",
+    },
+    {
+      type: "heading2",
+      text: "Pair Email With a Professional Website",
+    },
+    {
+      type: "paragraph",
+      text: "Email marketing is most effective when it links back to a professional website with an easy booking flow. If your emails are sending people to a Facebook page or a confusing contact form, you're losing conversions.",
+    },
+    {
+      type: "paragraph",
+      text: "Groundwork gives cleaning businesses a professional website with a built-in lead capture form, optimized for local search, in under an hour. When your email campaign sends a customer to book, make sure you're sending them somewhere that converts.",
+    },
+    {
+      type: "cta",
+      linkText: "Build your cleaning business website for free with Groundwork →",
+      href: "/for/cleaners",
+    },
+  ],
+};
+
+const googleBusinessProfileForServiceBusinessPost: BlogPost = {
+  slug: "how-to-get-leads-from-google-business-profile-service-business",
+  title: "How to Get More Leads from Your Google Business Profile (For Local Service Businesses)",
+  metaTitle: "How to Get Leads from Google Business Profile | Local Service Business | GroundWork",
+  metaDescription:
+    "Your Google Business Profile is a lead generation machine if you set it up right. Here's the complete guide for local service businesses — plumbers, HVAC, electricians, cleaners.",
+  publishedAt: "2026-04-15",
+  excerpt:
+    "Most service businesses have a Google Business Profile. Few have it set up in a way that actually drives calls and bookings. Here's how to fix that.",
+  sections: [
+    {
+      type: "heading2",
+      text: "Your Google Business Profile Is Free Advertising",
+    },
+    {
+      type: "paragraph",
+      text: "Most service businesses have a Google Business Profile. Few have it set up in a way that actually drives calls and bookings. A fully optimized profile can generate 20–50% of your inbound leads at zero cost — more than many paid advertising campaigns.",
+    },
+    {
+      type: "paragraph",
+      text: "The difference between a profile that gets calls and one that gets ignored comes down to completeness, consistency, and activity. Here's how to maximize each.",
+    },
+    {
+      type: "divider",
+    },
+    {
+      type: "heading2",
+      text: "Step 1: Complete Every Section",
+    },
+    {
+      type: "paragraph",
+      text: "Google rewards completeness. Profiles that fill out every available field rank higher in local search than incomplete profiles, even with fewer reviews. Make sure you have:",
+    },
+    {
+      type: "list",
+      items: [
+        {
+          bold: "Business name.",
+          rest: " Use your actual business name — not stuffed with keywords. \"Smith Plumbing\" not \"Smith Plumbing Emergency 24/7 Best Prices.\"",
+        },
+        {
+          bold: "Category.",
+          rest: " Choose the most specific primary category that matches your business. Add secondary categories for each service type you offer.",
+        },
+        {
+          bold: "Service area.",
+          rest: " List every city, town, and neighborhood you serve. This directly affects where you appear in local search.",
+        },
+        {
+          bold: "Services.",
+          rest: " Add every service you offer with a description. Google uses these to match your profile to relevant searches.",
+        },
+        {
+          bold: "Hours.",
+          rest: " Keep hours accurate and updated. Profiles with incorrect hours get flagged by customers and lose trust.",
+        },
+        {
+          bold: "Phone number.",
+          rest: " Use your direct business line. Google will display this prominently in the map pack.",
+        },
+        {
+          bold: "Website link.",
+          rest: " Link to your actual website, not a Facebook page. This boosts both your profile's authority and your site's local SEO.",
+        },
+      ],
+    },
+    {
+      type: "divider",
+    },
+    {
+      type: "heading2",
+      text: "Step 2: Add Real Photos Consistently",
+    },
+    {
+      type: "paragraph",
+      text: "Profiles with 10+ photos get 35% more clicks than profiles with fewer than 5. Add photos of:",
+    },
+    {
+      type: "list",
+      items: [
+        "Completed jobs (before and after when possible)",
+        "Your van or truck with your business name visible",
+        "Your team in uniform",
+        "Your equipment or tools",
+        "Your business card or logo",
+      ],
+    },
+    {
+      type: "paragraph",
+      text: "Add at least 2–3 new photos per month. Profiles that are actively updated rank higher than static ones. You don't need a photographer — phone photos are fine.",
+    },
+    {
+      type: "divider",
+    },
+    {
+      type: "heading2",
+      text: "Step 3: Get Reviews Systematically",
+    },
+    {
+      type: "paragraph",
+      text: "Google reviews are the single highest-impact factor for local map pack rankings. The businesses at the top of local search typically have 50–200+ reviews with a 4.5+ star average.",
+    },
+    {
+      type: "paragraph",
+      text: "The fastest way to build reviews: ask every customer immediately after completing a job. Send a text message with a direct link to your Google review form. A direct link (not just \"find us on Google\") reduces friction and dramatically increases response rate.",
+    },
+    {
+      type: "paragraph",
+      text: "To get your direct review link: go to your Google Business Profile, click \"Get more reviews,\" and copy the shareable link. Save it in your phone to send after every job.",
+    },
+    {
+      type: "divider",
+    },
+    {
+      type: "heading2",
+      text: "Step 4: Post Updates Weekly",
+    },
+    {
+      type: "paragraph",
+      text: "Google Business Profile has a Posts feature that most businesses ignore. It works like a mini social media feed, visible in your profile when customers find you on Google. Regular posts signal that your business is active — which Google uses as a ranking signal.",
+    },
+    {
+      type: "paragraph",
+      text: "What to post: seasonal promotions, before/after photos, service spotlights, or simply a message like \"Scheduling spring AC tune-ups — book this week.\" Even one post per week makes a measurable difference in profile visibility.",
+    },
+    {
+      type: "divider",
+    },
+    {
+      type: "heading2",
+      text: "Step 5: Respond to Every Review",
+    },
+    {
+      type: "paragraph",
+      text: "Responding to reviews — positive and negative — signals to Google that you're an engaged business. For positive reviews, a short, genuine thank-you is enough. For negative reviews, respond calmly and offer to resolve the issue offline. Potential customers read your responses and judge your professionalism accordingly.",
+    },
+    {
+      type: "divider",
+    },
+    {
+      type: "heading2",
+      text: "Connect Your Profile to a Professional Website",
+    },
+    {
+      type: "paragraph",
+      text: "Your Google Business Profile and your website work together. A strong profile drives clicks to your site. A strong site converts those clicks into booked jobs and sends trust signals back to Google. If your profile links to a slow, outdated, or mobile-unfriendly website, you lose those leads at the last step.",
+    },
+    {
+      type: "paragraph",
+      text: "Groundwork gives local service businesses a fast, professional, mobile-optimized website with built-in local SEO — set up in under an hour, starting at $49/mo.",
+    },
+    {
+      type: "cta",
+      linkText: "Build your local service business website for free with Groundwork →",
+      href: "/demo",
+    },
+  ],
+};
+
 export const allPosts: BlogPost[] = [
   plumbersPost,
   landscapersPost,
@@ -3635,6 +4325,11 @@ export const allPosts: BlogPost[] = [
   howToGetMoreCallsFromPlumbingWebsitePost,
   freeWebsiteForSmallBusinessWhatIsTheCatchPost,
   howLandscapingCompaniesGetCustomersOnlinePost,
+  hvacMobileWebsitePost,
+  landscapingMarketingPost,
+  bestCrmForElectricalContractorsPost,
+  cleaningEmailMarketingPost,
+  googleBusinessProfileForServiceBusinessPost,
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
