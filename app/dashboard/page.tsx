@@ -177,7 +177,7 @@ export default async function DashboardPage() {
               locked: !business.site?.isPublished,
               proFeature: false,
             },
-            { icon: Settings, label: "Settings", href: "#", locked: false, proFeature: false },
+            { icon: Settings, label: "Settings", href: "/dashboard/settings", locked: false, proFeature: false },
             {
               icon: MessageSquare,
               label: "Contacts",
