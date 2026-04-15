@@ -2,13 +2,36 @@ import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 
 /**
- * Supabase auth proxy — refreshes sessions and protects routes.
- * Runs on every request (except static assets).
+ * Next.js proxy (edge middleware) — handles two concerns:
+ *
+ * 1. Subdomain routing: requests to {slug}.groundworklocal.com are rewritten
+ *    to /sites/{slug} so the public site-rendering route can serve the business
+ *    site without redirecting the user away from their custom subdomain.
+ *
+ * 2. Supabase auth proxy: refreshes sessions and protects dashboard/onboarding
+ *    routes for requests to the main app domain.
  *
  * When Supabase env vars are not configured (e.g. during initial deployment
  * before credentials are set), the proxy passes through without auth checks.
  */
 export async function proxy(request: NextRequest) {
+  const host = request.headers.get("host") ?? "";
+
+  // ── Subdomain routing ──────────────────────────────────────────────────────
+  // Matches {slug}.groundworklocal.com but NOT www.groundworklocal.com
+  const subdomainMatch = host.match(
+    /^(?!www\.)([a-z0-9-]+)\.groundworklocal\.com(?::\d+)?$/i
+  );
+
+  if (subdomainMatch) {
+    const slug = subdomainMatch[1];
+    const url = request.nextUrl.clone();
+    // Preserve any path after the root (e.g. for future multi-page sites)
+    url.pathname = `/sites/${slug}${url.pathname === "/" ? "" : url.pathname}`;
+    return NextResponse.rewrite(url);
+  }
+
+  // ── Supabase auth proxy ────────────────────────────────────────────────────
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
