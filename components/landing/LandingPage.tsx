@@ -1084,6 +1084,7 @@ function Footer() {
               <ul className="space-y-2.5 text-sm">
                 <li><a href="/about" className="hover:text-brand-400 transition-colors">About</a></li>
                 <li><Link href="/blog" className="hover:text-brand-400 transition-colors">Blog</Link></li>
+                <li><Link href="/customers" className="hover:text-brand-400 transition-colors">Customers</Link></li>
                 <li><a href="#waitlist" className="hover:text-brand-400 transition-colors">Contact</a></li>
               </ul>
             </div>
