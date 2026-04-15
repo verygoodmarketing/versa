@@ -3,6 +3,7 @@ import Image from "next/image";
 import { FileX, RefreshCcw, Clock } from "lucide-react";
 import { UrgencyBanner } from "@/components/UrgencyBanner";
 import { PlanCTAButton } from "@/components/pricing/PlanCTAButton";
+import { PricingNavCTA } from "@/components/pricing/PricingNavCTA";
 import { ExitIntentPopup } from "@/components/ExitIntentPopup";
 
 type Plan = {
@@ -167,12 +168,7 @@ export function PricingPage({ plans }: Props) {
                 priority
               />
             </Link>
-            <Link
-              href="/onboarding/step-1"
-              className="bg-brand-600 text-white text-sm font-semibold px-4 py-2 rounded-xl hover:bg-brand-700 transition-colors"
-            >
-              Get started free
-            </Link>
+            <PricingNavCTA />
           </div>
         </div>
       </nav>

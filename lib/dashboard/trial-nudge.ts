@@ -26,7 +26,13 @@ export function computeBannerState(opts: {
 }): BannerState {
   const { onboardingComplete, onboardingStep, subscriptionStatus, businessCreatedAt } = opts;
 
-  const isOnTrial = subscriptionStatus === "TRIAL";
+  // Treat null/undefined status OR explicit TRIAL as on-trial.
+  // New users are created with no subscriptionStatus (null) — they are implicitly on trial
+  // until they subscribe, cancel, or go past-due.
+  const isOnTrial =
+    subscriptionStatus === "TRIAL" ||
+    subscriptionStatus === null ||
+    subscriptionStatus === undefined;
 
   if (isOnTrial) {
     const now = new Date();
