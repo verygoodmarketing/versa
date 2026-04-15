@@ -12,7 +12,7 @@ import { Resend } from "resend";
 import { buildEmailContent, type EmailTemplate, type TemplateData } from "./templates";
 
 const FROM_EMAIL =
-  process.env.RESEND_FROM_EMAIL ?? "noreply@verygoodmarketing.com";
+  process.env.RESEND_FROM_EMAIL ?? "hello@groundworklocal.com";
 
 let _resend: Resend | null = null;
 
