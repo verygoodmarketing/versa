@@ -126,7 +126,7 @@ export default async function DashboardPage() {
         {/* Welcome */}
         <div>
           <h1 className="font-display text-2xl font-bold text-[var(--foreground)]">
-            Welcome back{business.name ? `, ${business.name}` : ""}
+            Welcome{business.name ? `, ${business.name}` : ""}
           </h1>
           <p className="text-surface-400 font-body mt-1">
             {hasActiveSub ? (
@@ -141,27 +141,45 @@ export default async function DashboardPage() {
                   {siteUrl.replace("https://", "")}
                 </a>
               </>
+            ) : isOnTrial ? (
+              trialDaysRemaining > 0 ? (
+                <>
+                  You&apos;re on a{" "}
+                  <span className="text-brand-400 font-medium">14-day free trial</span>
+                  {" "}—{" "}{trialDaysRemaining} day{trialDaysRemaining === 1 ? "" : "s"} remaining. No credit card required.
+                </>
+              ) : (
+                "Your free trial has ended. Subscribe to keep your site live."
+              )
             ) : (
-              "Start your subscription to publish your website and access all features."
+              "Subscribe to publish your website and access all features."
             )}
           </p>
         </div>
 
-        {/* Upgrade prompt for free/no subscription */}
+        {/* Free trial CTA — shown when user has no active subscription */}
         {!hasActiveSub && !isPastDue && (
           <div className="rounded-xl bg-gradient-to-br from-brand-600 to-emerald-700 p-6 text-white">
-            <h2 className="font-display text-xl font-bold mb-2">
-              Activate your subscription
-            </h2>
+            <div className="flex items-start justify-between gap-4 mb-3">
+              <h2 className="font-display text-xl font-bold">
+                You&apos;re on your free trial
+              </h2>
+              <span className="text-xs font-semibold bg-white/20 text-white px-2.5 py-1 rounded-full whitespace-nowrap">
+                {trialDaysRemaining > 0
+                  ? `${trialDaysRemaining} day${trialDaysRemaining === 1 ? "" : "s"} left`
+                  : "Trial ended"}
+              </span>
+            </div>
             <p className="text-brand-100 text-sm mb-4">
-              Choose a plan to publish your website, capture leads, and start growing your business. 14-day free trial — no credit card required.
+              Subscribe to publish your website and start winning customers.
+              No credit card required to start — choose a plan when you&apos;re ready.
             </p>
             <Link
               href="/pricing"
               className="inline-flex items-center gap-2 bg-white text-brand-700 font-semibold px-5 py-2.5 rounded-xl hover:bg-brand-50 transition-colors text-sm"
             >
               <CreditCard className="w-4 h-4" />
-              View plans
+              Choose a plan — no credit card required
             </Link>
           </div>
         )}

@@ -16,6 +16,11 @@ type Props = {
  * Client-only interactive CTA button for pricing plan cards.
  * Handles auth check + Stripe checkout session creation.
  * Extracted from PricingPage so the rest of the page can be server-rendered.
+ *
+ * CTA label adapts to auth state:
+ *   - Authenticated: "Start my free trial" (they already have an account)
+ *   - Unauthenticated: uses the `cta` prop (default: "Start free trial")
+ *   - Loading: spinner
  */
 export function PlanCTAButton({ planKey, cta, highlighted }: Props) {
   const [isAuthenticated, setIsAuthenticated] = useState<boolean | null>(null);
@@ -57,6 +62,9 @@ export function PlanCTAButton({ planKey, cta, highlighted }: Props) {
 
   const buttonDisabled = isLoading || createCheckoutSession.isPending || isAuthenticated === null;
 
+  // When authenticated, override the label to be more direct/contextual
+  const ctaLabel = isAuthenticated ? "Start my free trial" : cta;
+
   return (
     <>
       {error && (
@@ -97,7 +105,7 @@ export function PlanCTAButton({ planKey, cta, highlighted }: Props) {
             Redirecting…
           </span>
         ) : (
-          cta
+          ctaLabel
         )}
       </button>
     </>
