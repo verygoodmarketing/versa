@@ -19,7 +19,6 @@ import {
   HardHat,
   Camera,
   Clock,
-  UserX,
   Store,
   CreditCard,
 } from "lucide-react";
@@ -175,28 +174,28 @@ const HOW_IT_WORKS = [
 
 const TRUST_STATS = [
   {
-    id: "setup-time",
-    Icon: Clock,
-    headline: "Set up in under an hour",
-    detail: "No developer, no agency — just you and a simple setup wizard.",
+    id: "built-for-trades",
+    Icon: Store,
+    headline: "Built for plumbers, HVAC, electricians, cleaners, and contractors",
+    detail: "Every feature is designed around winning local service jobs — not generic websites.",
     colorBg: "bg-brand-50",
     colorIcon: "text-brand-600",
     colorRing: "ring-brand-200",
   },
   {
-    id: "no-dev",
-    Icon: UserX,
-    headline: "No developer needed",
-    detail: "Built for business owners, not engineers. Zero coding required.",
+    id: "setup-time",
+    Icon: Clock,
+    headline: "Live in under an hour — no developer or design skills needed",
+    detail: "Pick a template, add your info, and you're online. No agency, no code.",
     colorBg: "bg-blue-50",
     colorIcon: "text-blue-600",
     colorRing: "ring-blue-200",
   },
   {
-    id: "built-for-local",
-    Icon: Store,
-    headline: "Built for local service businesses",
-    detail: "Every feature is designed around winning local jobs — not generic websites.",
+    id: "local-seo",
+    Icon: MapPin,
+    headline: "Local SEO baked in \u2014 optimized for \u201cservice near me\u201d searches",
+    detail: "Auto-generated meta tags, sitemaps, and Google Business Profile integration from day one.",
     colorBg: "bg-violet-50",
     colorIcon: "text-violet-600",
     colorRing: "ring-violet-200",
@@ -204,8 +203,8 @@ const TRUST_STATS = [
   {
     id: "free-trial",
     Icon: CreditCard,
-    headline: "14-day free trial",
-    detail: "No credit card required to start. Try everything risk-free.",
+    headline: "14-day free trial — no credit card required",
+    detail: "Try everything risk-free. Cancel anytime, no questions asked.",
     colorBg: "bg-amber-50",
     colorIcon: "text-amber-600",
     colorRing: "ring-amber-200",
@@ -463,14 +462,14 @@ function HeroSection() {
               className="text-4xl sm:text-5xl xl:text-6xl font-extrabold text-white leading-[1.05] mb-6"
               style={{ letterSpacing: "-0.03em", fontFamily: "var(--font-display)" }}
             >
-              Your business deserves{" "}
+              A professional website + Google ranking —{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-emerald-400">
-                to be found online.
+                built for local trades, live in 48 hours
               </span>
             </h1>
 
             <p className="text-xl text-[#c9d1d9] mb-8 leading-relaxed max-w-lg">
-              GroundWork helps local service businesses — plumbers, cleaners, landscapers, photographers, and more — get a professional website live in under an hour. No tech skills. No agencies. No nonsense.
+              Groundwork handles the website, the local SEO, and the lead capture form. Everything a plumber, electrician, or HVAC tech needs to win online — starting at $49/mo.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 mb-6">
@@ -479,7 +478,7 @@ function HeroSection() {
                 className="inline-flex items-center justify-center gap-2 bg-brand-600 text-white font-semibold text-lg px-8 py-4 rounded-xl hover:bg-brand-700 transition-colors shadow-xl shadow-brand-600/30 active:scale-95"
                 style={{ fontFamily: "var(--font-display)" }}
               >
-                Start for free — build my site
+                Start your 14-day free trial
                 <svg aria-hidden="true" className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
@@ -501,7 +500,7 @@ function HeroSection() {
                 <svg aria-hidden="true" className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                See it in action — try the live demo
+                See a live demo
               </a>
             </div>
 
