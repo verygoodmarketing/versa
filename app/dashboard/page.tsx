@@ -44,6 +44,7 @@ export default async function DashboardPage() {
   // Trial days remaining — trial is 14 days from business creation, no subscription yet
   const TRIAL_LENGTH_DAYS = 14;
   const isOnTrial = !hasActiveSub && !isPastDue;
+  // eslint-disable-next-line react-hooks/purity -- server component, Date.now() runs on server not during client re-renders
   const msElapsed = Date.now() - business.createdAt.getTime();
   const daysElapsed = Math.floor(msElapsed / (1000 * 60 * 60 * 24));
   const trialDaysRemaining = Math.max(0, TRIAL_LENGTH_DAYS - daysElapsed);

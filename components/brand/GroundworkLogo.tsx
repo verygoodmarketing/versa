@@ -86,6 +86,7 @@ export function GroundworkWordmark({
   width = 200,
   height = 52,
   className = "",
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   color = "dark",
 }: {
   width?: number;

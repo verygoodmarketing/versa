@@ -19,6 +19,7 @@ const SUBJECT =
 const PREVIEW_TEXT =
   "Most service businesses lose leads before they even know the lead existed.";
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function buildHtml(email: string): string {
   // No first name in waitlist — use generic greeting
   return `<!DOCTYPE html>
