@@ -54,9 +54,12 @@ function PlanCard({ plan }: { plan: Plan }) {
       }
     >
       {plan.highlighted && (
-        <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-          <span className="inline-block bg-gradient-to-r from-amber-400 to-orange-400 text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-sm">
-            Most popular
+        <div className="absolute -top-4 left-1/2 -translate-x-1/2">
+          <span className="inline-flex items-center gap-1.5 bg-gradient-to-r from-amber-400 to-orange-500 text-white text-xs font-extrabold uppercase tracking-wider px-4 py-1.5 rounded-full shadow-lg ring-2 ring-white/20">
+            <svg aria-hidden="true" className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+            Most Popular
           </span>
         </div>
       )}
@@ -110,34 +113,58 @@ function PlanCard({ plan }: { plan: Plan }) {
   );
 }
 
-const FAQ = [
+const TESTIMONIALS = [
   {
-    q: "Can I cancel anytime?",
-    a: "Yes. There are no long-term contracts. You can cancel your subscription at any time from your billing portal.",
+    name: "Marcus T.",
+    city: "Columbus, OH",
+    trade: "Licensed Plumber",
+    quote: "I went from zero online presence to getting 3–4 calls a week from Google. GroundWork paid for itself in the first month.",
+    initials: "MT",
   },
   {
-    q: "What happens after my trial ends?",
+    name: "Lisa R.",
+    city: "Phoenix, AZ",
+    trade: "HVAC Technician",
+    quote: "Setting up my site took less than an hour. My customers now find me on Google before they even call a competitor.",
+    initials: "LR",
+  },
+  {
+    name: "Diana M.",
+    city: "Atlanta, GA",
+    trade: "House Cleaning Service",
+    quote: "I'm not tech-savvy at all, but GroundWork made it dead simple. I got my first online booking within a week.",
+    initials: "DM",
+  },
+];
+
+const FAQ = [
+  {
+    q: "Do I need technical skills?",
+    a: "No technical skills required. GroundWork walks you through every step with a simple setup wizard — most business owners are live in under an hour.",
+  },
+  {
+    q: "Can I cancel anytime?",
+    a: "Yes. There are no long-term contracts. You can cancel your subscription at any time from your billing portal — no fees, no hassle.",
+  },
+  {
+    q: "What happens after my trial?",
     a: "After your 14-day free trial, you'll be billed monthly. You won't be charged without warning — we'll email you before your trial ends.",
+  },
+  {
+    q: "Will my website show up on Google?",
+    a: "Yes. Every GroundWork site is built with local SEO from day one — we generate your sitemap, optimize your pages for search, and help you connect to Google Business Profile in one click.",
+  },
+  {
+    q: "Can I use my own domain?",
+    a: "Absolutely. Every plan includes a free subdomain (yourbiz.groundworklocal.com). On Pro and Business plans you can connect your own custom domain (e.g. myjohnsonplumbing.com).",
+  },
+  {
+    q: "What if I already have a website?",
+    a: "GroundWork can replace your existing site or run alongside it. Many customers migrate from slow, outdated sites and see immediate improvements in load speed and lead volume.",
   },
   {
     q: "Do I need a credit card to start the trial?",
     a: "No. You can start building your site and try all features without entering a credit card.",
-  },
-  {
-    q: "Can I upgrade or downgrade my plan?",
-    a: "Yes. You can upgrade or downgrade your plan at any time. Upgrades take effect immediately; downgrades apply at the end of your billing period.",
-  },
-  {
-    q: "What's a GroundWork subdomain?",
-    a: "We give every business a free subdomain like yourbiz.groundworklocal.com. On the Pro and Business plans you can connect your own domain (e.g. myplumbing.com).",
-  },
-  {
-    q: "Is my website data secure?",
-    a: "Yes. All sites are served over HTTPS, data is stored in encrypted databases, and we never share your information with third parties.",
-  },
-  {
-    q: "How quickly can I get my business online?",
-    a: "Most service businesses are live in under an hour. Our setup wizard walks you through every step.",
   },
   {
     q: "Is GroundWork built for businesses like mine?",
@@ -246,6 +273,85 @@ export function PricingPage({ plans }: Props) {
                   <div>
                     <p className="text-sm font-semibold text-gray-800">{label}</p>
                     <p className="text-xs text-gray-400">{detail}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* 30-day money-back guarantee badge */}
+            <div className="mt-10 flex justify-center">
+              <div className="inline-flex items-center gap-4 bg-green-50 border border-green-200 rounded-2xl px-6 py-4 shadow-sm">
+                <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg
+                    aria-hidden="true"
+                    className="w-6 h-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                    />
+                  </svg>
+                </div>
+                <div className="text-left">
+                  <p className="text-sm font-bold text-green-900">30-Day Money-Back Guarantee</p>
+                  <p className="text-xs text-green-700 mt-0.5">
+                    Not happy? We&apos;ll refund your first month — no questions asked.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Social proof — testimonials */}
+        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+          <div className="max-w-5xl mx-auto">
+            <p className="text-center text-xs font-bold uppercase tracking-widest text-brand-600 mb-3">
+              Trusted by local businesses
+            </p>
+            <h2
+              className="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-10 text-center"
+              style={{ fontFamily: "var(--font-display)" }}
+            >
+              Real businesses. Real results.
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {TESTIMONIALS.map((t) => (
+                <div
+                  key={t.name}
+                  className="bg-white rounded-2xl border border-gray-200 shadow-sm p-6 flex flex-col gap-4 hover:shadow-md transition-shadow"
+                >
+                  <div className="flex items-start gap-1 text-amber-400" role="img" aria-label="5 out of 5 stars">
+                    {["s1", "s2", "s3", "s4", "s5"].map((s) => (
+                      <svg
+                        key={s}
+                        aria-hidden="true"
+                        className="w-4 h-4 flex-shrink-0"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                    ))}
+                  </div>
+                  <p className="text-gray-700 text-sm leading-relaxed flex-1">
+                    &ldquo;{t.quote}&rdquo;
+                  </p>
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-brand-600 flex items-center justify-center flex-shrink-0">
+                      <span className="text-white text-xs font-bold">{t.initials}</span>
+                    </div>
+                    <div>
+                      <p className="text-sm font-semibold text-gray-900">{t.name}</p>
+                      <p className="text-xs text-gray-400">
+                        {t.trade} &middot; {t.city}
+                      </p>
+                    </div>
                   </div>
                 </div>
               ))}
