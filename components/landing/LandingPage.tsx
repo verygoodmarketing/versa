@@ -31,6 +31,7 @@ import {
 } from "@/components/brand/GroundworkLogo";
 import { LeadMagnetOptIn } from "@/components/landing/LeadMagnetOptIn";
 import { UrgencyBanner } from "@/components/UrgencyBanner";
+import { ExitIntentPopup } from "@/components/ExitIntentPopup";
 
 // ─── Copy constants (easy for CMO/UX to update later) ────────────────────────
 
@@ -1108,6 +1109,7 @@ function Footer() {
 export function LandingPage() {
   return (
     <div className="min-h-screen flex flex-col">
+      <ExitIntentPopup />
       <UrgencyBanner />
       <Navbar />
       <main className="flex-1">
