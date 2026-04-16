@@ -3,6 +3,7 @@ import { router, protectedProcedure, publicProcedure } from "@/server/trpc";
 import { TRPCError } from "@trpc/server";
 import { track } from "@vercel/analytics/server";
 import { linkReferredBusiness, getReferralCodeRecord } from "@/lib/referral/utils";
+import { addVercelDomain } from "@/lib/vercel-domains";
 
 export const businessRouter = router({
   /**
@@ -88,6 +89,15 @@ export const businessRouter = router({
       } catch (err) {
         // Referral attribution failure must never block business creation
         console.error("[business.create] referral attribution failed:", err);
+      }
+
+      // Provision the per-slug Vercel subdomain so the wildcard CNAME on
+      // Cloudflare resolves correctly via Vercel's edge network.
+      // Failure is non-blocking — the business record already exists.
+      try {
+        await addVercelDomain(business.slug);
+      } catch (err) {
+        console.error("[business.create] Vercel domain provisioning failed:", err);
       }
 
       return business;
