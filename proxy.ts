@@ -14,8 +14,36 @@ import { NextResponse, type NextRequest } from "next/server";
  * When Supabase env vars are not configured (e.g. during initial deployment
  * before credentials are set), the proxy passes through without auth checks.
  */
+// ── Pre-launch mode gate ────────────────────────────────────────────────────
+// When PRE_LAUNCH_MODE=true, only the homepage (/) and the /api/waitlist
+// endpoint are accessible. All other routes redirect to / so visitors only
+// see the waitlist landing page.
+const PRE_LAUNCH_ROUTES_ALLOWLIST = [
+  "/",
+  "/api/waitlist",
+];
+
+function isPreLaunchAllowed(pathname: string): boolean {
+  if (PRE_LAUNCH_ROUTES_ALLOWLIST.includes(pathname)) return true;
+  // Allow Next.js internals and static assets through
+  if (pathname.startsWith("/_next/")) return true;
+  if (pathname.startsWith("/brand/")) return true;
+  if (pathname.startsWith("/public/")) return true;
+  return false;
+}
+
 export async function proxy(request: NextRequest) {
   const host = request.headers.get("host") ?? "";
+
+  // ── Pre-launch gate ────────────────────────────────────────────────────────
+  if (process.env.PRE_LAUNCH_MODE === "true") {
+    const { pathname } = request.nextUrl;
+    if (!isPreLaunchAllowed(pathname)) {
+      const url = request.nextUrl.clone();
+      url.pathname = "/";
+      return NextResponse.redirect(url);
+    }
+  }
 
   // ── Subdomain routing ──────────────────────────────────────────────────────
   // Matches {slug}.groundworklocal.com but NOT www.groundworklocal.com

@@ -1,12 +1,24 @@
 import Stripe from "stripe";
 
-if (!process.env.STRIPE_SECRET_KEY) {
-  throw new Error("STRIPE_SECRET_KEY is not set");
+// Lazy initializer — throws at call time rather than module load time so the
+// build succeeds even when STRIPE_SECRET_KEY is not set in the build env.
+function createStripeClient(): Stripe {
+  if (!process.env.STRIPE_SECRET_KEY) {
+    throw new Error("STRIPE_SECRET_KEY is not set");
+  }
+  return new Stripe(process.env.STRIPE_SECRET_KEY, {
+    apiVersion: "2025-04-30.basil",
+    typescript: true,
+  });
 }
 
-export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
-  apiVersion: "2025-04-30.basil",
-  typescript: true,
+let _stripe: Stripe | undefined;
+
+export const stripe: Stripe = new Proxy({} as Stripe, {
+  get(_target, prop) {
+    if (!_stripe) _stripe = createStripeClient();
+    return (_stripe as unknown as Record<string | symbol, unknown>)[prop];
+  },
 });
 
 /**

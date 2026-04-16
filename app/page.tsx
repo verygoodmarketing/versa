@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { LandingPage } from "@/components/landing/LandingPage";
+import { PreLaunchPage } from "@/components/pre-launch/PreLaunchPage";
 
 const APP_URL =
   process.env.NEXT_PUBLIC_APP_URL ?? "https://groundworklocal.com";
@@ -34,5 +35,8 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+  if (process.env.PRE_LAUNCH_MODE === "true") {
+    return <PreLaunchPage />;
+  }
   return <LandingPage />;
 }
