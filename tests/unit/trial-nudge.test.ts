@@ -4,7 +4,7 @@
  * Critical regression prevention: covers trial expiry logic, banner state
  * computation, and days-remaining calculation.
  */
-import { describe, it, expect, vi, afterEach } from "vitest";
+import { describe, it, expect } from "vitest";
 import {
   isTrialExpired,
   computeBannerState,

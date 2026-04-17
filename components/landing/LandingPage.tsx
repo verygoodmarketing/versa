@@ -524,12 +524,13 @@ function HeroSection() {
           {/* Right: dashboard mockup */}
           <div className="hidden lg:block">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl ring-1 ring-gray-200 mx-auto max-w-5xl">
-              <img
+              <Image
                 src="/mockups/groundwork-dashboard-mockup.svg"
                 alt="GroundWork dashboard showing Rivera Plumbing stats"
                 width={900}
                 height={580}
                 className="w-full"
+                unoptimized
               />
             </div>
           </div>
@@ -602,13 +603,14 @@ function FeaturesSection() {
 
         {/* Mobile mockup preview */}
         <div className="mt-16 flex justify-center">
-          <img
+          <Image
             src="/mockups/groundwork-mobile-mockup.svg"
             alt="Rivera Plumbing mobile website on phone"
             width={480}
             height={720}
             loading="lazy"
             className="w-full max-w-xs mx-auto block"
+            unoptimized
           />
         </div>
       </div>
@@ -751,13 +753,14 @@ function HowItWorksSection() {
 
         {/* Onboarding mockup */}
         <div className="mt-16">
-          <img
+          <Image
             src="/mockups/groundwork-onboarding-mockup.svg"
             alt="3-step onboarding: enter name, pick trade, go live"
             width={920}
             height={400}
             loading="lazy"
             className="w-full max-w-4xl mx-auto block"
+            unoptimized
           />
         </div>
 

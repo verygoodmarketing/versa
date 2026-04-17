@@ -4,7 +4,7 @@
  * Tests the URL construction in email templates and verifies that all
  * templates render without throwing, and critical links are correct.
  */
-import { describe, it, expect, beforeEach, afterEach, vi } from "vitest";
+import { describe, it, expect } from "vitest";
 import { buildEmailContent, type EmailTemplate } from "@/lib/email/templates";
 
 const TEMPLATES: EmailTemplate[] = [
@@ -96,7 +96,8 @@ describe("buildEmailContent — content correctness", () => {
   });
 
   it("onboarding_paid_day7 falls back to dashboard when no referralLink", () => {
-    const { referralLink: _, ...dataNoRef } = BASE_DATA;
+    const { referralLink, ...dataNoRef } = BASE_DATA;
+    void referralLink;
     const content = buildEmailContent("onboarding_paid_day7", dataNoRef);
     // fallback is appUrl/dashboard
     expect(content.text).toContain("https://app.example.com/dashboard");

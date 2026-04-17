@@ -58,7 +58,6 @@ export default async function DashboardPage() {
 
   const siteUrl = `https://${business.slug}.groundworklocal.com`;
 
-  // eslint-disable-next-line react-hooks/purity -- server component, Date.now() runs on server
   const trialDaysRemaining = getTrialDaysRemaining(business.createdAt);
   const isOnTrial = !hasActiveSub && !isPastDue;
   const trialStatusLabel = isOnTrial

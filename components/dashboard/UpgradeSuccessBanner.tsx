@@ -37,21 +37,26 @@ export function UpgradeSuccessBanner(): React.ReactElement | null {
     const checkout = params.get("checkout");
     const plan = params.get("plan");
 
-    if (checkout === "success") {
+    if (checkout !== "success") return undefined;
+
+    // Defer setState so it is not synchronous with the effect body (react-hooks/set-state-in-effect).
+    const raf = requestAnimationFrame(() => {
       setPlanName(PLAN_DISPLAY[plan ?? ""] ?? "Starter");
       setVisible(true);
+    });
 
-      // Clean URL — remove checkout params without triggering a navigation
-      const url = new URL(window.location.href);
-      url.searchParams.delete("checkout");
-      url.searchParams.delete("plan");
-      nav.replace(url.pathname + url.search, { scroll: false });
+    // Clean URL — remove checkout params without triggering a navigation
+    const url = new URL(window.location.href);
+    url.searchParams.delete("checkout");
+    url.searchParams.delete("plan");
+    nav.replace(url.pathname + url.search, { scroll: false });
 
-      // Auto-dismiss after 8 s
-      const timer = setTimeout(() => setVisible(false), 8000);
-      return () => clearTimeout(timer);
-    }
-    return undefined;
+    // Auto-dismiss after 8 s
+    const timer = setTimeout(() => setVisible(false), 8000);
+    return () => {
+      cancelAnimationFrame(raf);
+      clearTimeout(timer);
+    };
   }, []);
 
   if (!visible) return null;

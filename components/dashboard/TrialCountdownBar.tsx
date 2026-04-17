@@ -9,46 +9,21 @@ interface TrialCountdownBarProps {
   daysLeft: number;
 }
 
-/**
- * TrialCountdownBar — sticky top bar shown when ≤7 days remain in the trial.
- *
- * Urgency tier (0–2 days): red, non-dismissable.
- * Warning tier (3–7 days): amber, dismissable once per day via localStorage.
- */
-export function TrialCountdownBar({ daysLeft }: TrialCountdownBarProps): React.ReactElement | null {
-  const isUrgent = daysLeft <= 2;
-  const [dismissed, setDismissed] = useState<boolean | null>(null);
-
-  useEffect(() => {
-    if (isUrgent) {
-      setDismissed(false);
-      return;
-    }
-    const stored = localStorage.getItem("trial_countdown_bar_dismissed_at");
-    if (stored) {
-      const dismissedAt = new Date(stored);
-      const msSince = Date.now() - dismissedAt.getTime();
-      setDismissed(msSince < 24 * 60 * 60 * 1000);
-    } else {
-      setDismissed(false);
-    }
-  }, [isUrgent]);
-
-  // Not yet hydrated
-  if (dismissed === null) return null;
-  if (dismissed) return null;
-
+function TrialBarContent({
+  daysLeft,
+  isUrgent,
+  onDismiss,
+}: {
+  daysLeft: number;
+  isUrgent: boolean;
+  onDismiss?: () => void;
+}): React.ReactElement {
   const label =
     daysLeft === 0
       ? "Your trial expires today"
       : daysLeft === 1
-      ? "1 day left in your trial — upgrade to keep your site live"
-      : `${daysLeft} days left in your trial — upgrade to keep your site live`;
-
-  function handleDismiss() {
-    localStorage.setItem("trial_countdown_bar_dismissed_at", new Date().toISOString());
-    setDismissed(true);
-  }
+        ? "1 day left in your trial — upgrade to keep your site live"
+        : `${daysLeft} days left in your trial — upgrade to keep your site live`;
 
   return (
     <div
@@ -69,10 +44,10 @@ export function TrialCountdownBar({ daysLeft }: TrialCountdownBarProps): React.R
       >
         Upgrade now
       </Link>
-      {!isUrgent && (
+      {!isUrgent && onDismiss && (
         <button
           type="button"
-          onClick={handleDismiss}
+          onClick={onDismiss}
           aria-label="Dismiss trial countdown bar"
           className="shrink-0 opacity-70 hover:opacity-100 transition-opacity ml-1"
         >
@@ -81,4 +56,53 @@ export function TrialCountdownBar({ daysLeft }: TrialCountdownBarProps): React.R
       )}
     </div>
   );
+}
+
+/**
+ * Warning tier (3–7 days): amber, dismissable once per day via localStorage.
+ */
+function DismissibleTrialCountdownBar({ daysLeft }: { daysLeft: number }): React.ReactElement | null {
+  const [dismissed, setDismissed] = useState<boolean | null>(null);
+
+  useEffect(() => {
+    queueMicrotask(() => {
+      const stored = localStorage.getItem("trial_countdown_bar_dismissed_at");
+      if (stored) {
+        const dismissedAt = new Date(stored);
+        const msSince = Date.now() - dismissedAt.getTime();
+        setDismissed(msSince < 24 * 60 * 60 * 1000);
+      } else {
+        setDismissed(false);
+      }
+    });
+  }, []);
+
+  // Not yet hydrated
+  if (dismissed === null) return null;
+  if (dismissed) return null;
+
+  function handleDismiss() {
+    localStorage.setItem("trial_countdown_bar_dismissed_at", new Date().toISOString());
+    setDismissed(true);
+  }
+
+  return (
+    <TrialBarContent daysLeft={daysLeft} isUrgent={false} onDismiss={handleDismiss} />
+  );
+}
+
+/**
+ * TrialCountdownBar — sticky top bar shown when ≤7 days remain in the trial.
+ *
+ * Urgency tier (0–2 days): red, non-dismissable.
+ * Warning tier (3–7 days): amber, dismissable once per day via localStorage.
+ */
+export function TrialCountdownBar({ daysLeft }: TrialCountdownBarProps): React.ReactElement | null {
+  const isUrgent = daysLeft <= 2;
+
+  if (isUrgent) {
+    return <TrialBarContent daysLeft={daysLeft} isUrgent />;
+  }
+
+  return <DismissibleTrialCountdownBar daysLeft={daysLeft} />;
 }

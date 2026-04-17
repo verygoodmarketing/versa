@@ -117,7 +117,7 @@ const seoPages = [
 ];
 
 for (const { path, label } of seoPages) {
-  test.describe(`SEO landing page: ${path}`, () => {
+  test.describe(`SEO landing page: ${label} (${path})`, () => {
     test(`loads without errors`, async ({ page }) => {
       const response = await page.goto(path);
       expect(response?.status()).toBeLessThan(400);
