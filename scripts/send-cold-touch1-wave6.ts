@@ -202,7 +202,7 @@ const TARGETS: Target[] = [
 ];
 
 function buildSubject(_t: Target): string {
-  return `Your next customer is searching right now`;
+  return `Does your business show up at 9pm?`;
 }
 
 function buildHtml(t: Target): string {
