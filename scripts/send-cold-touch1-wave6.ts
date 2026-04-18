@@ -202,11 +202,10 @@ const TARGETS: Target[] = [
 ];
 
 function buildSubject(_t: Target): string {
-  return `Does your business show up at 9pm?`;
+  return `Does your business show up after 5pm?`;
 }
 
 function buildHtml(t: Target): string {
-  const firstName = t.firstName === "Owner" ? "there" : t.firstName;
   return `<!DOCTYPE html>
 <html>
 <head>
@@ -220,10 +219,10 @@ function buildHtml(t: Target): string {
         <p style="margin:0 0 24px 0;">
           <img src="https://groundworklocal.com/brand/logo-horizontal-light.png" alt="GroundWork" width="160" style="display:block;" />
         </p>
-        <p style="margin:0 0 16px 0;font-size:16px;line-height:26px;color:#333333;">Hi ${firstName},</p>
+        <p style="margin:0 0 16px 0;font-size:16px;line-height:26px;color:#333333;">Hi,</p>
 
         <p style="margin:0 0 16px 0;font-size:16px;line-height:26px;color:#333333;">
-          Quick question: when someone searches for a ${t.trade} in ${t.city} at 5pm on a Tuesday — does your business show up? And if they land on your site, can they request a quote without calling?
+          Quick question: when someone searches for a ${t.trade} in ${t.city} after 5pm on a Tuesday — does your business show up? And if they land on your site, can they request a quote without calling?
         </p>
 
         <p style="margin:0 0 16px 0;font-size:16px;line-height:26px;color:#333333;">
@@ -267,10 +266,9 @@ function buildHtml(t: Target): string {
 }
 
 function buildText(t: Target): string {
-  const firstName = t.firstName === "Owner" ? "there" : t.firstName;
-  return `Hi ${firstName},
+  return `Hi,
 
-Quick question: when someone searches for a ${t.trade} in ${t.city} at 5pm on a Tuesday — does your business show up? And if they land on your site, can they request a quote without calling?
+Quick question: when someone searches for a ${t.trade} in ${t.city} after 5pm on a Tuesday — does your business show up? And if they land on your site, can they request a quote without calling?
 
 Most local service businesses can't answer yes to both. Those leads quietly go to the next result. You never knew they were there.
 

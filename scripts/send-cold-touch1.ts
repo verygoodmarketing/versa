@@ -69,8 +69,6 @@ function buildSubject(_t: Target): string {
 }
 
 function buildHtml(t: Target): string {
-  const greeting =
-    t.firstName === "Owner" ? "Hi there" : `Hi ${t.firstName}`;
   return `<!DOCTYPE html>
 <html>
 <head>
@@ -84,7 +82,7 @@ function buildHtml(t: Target): string {
         <p style="margin:0 0 24px 0;">
           <img src="https://groundworklocal.com/brand/logo-horizontal-light.png" alt="GroundWork" width="160" style="display:block;" />
         </p>
-        <p style="margin:0 0 16px 0;font-size:16px;line-height:26px;color:#333333;">${greeting},</p>
+        <p style="margin:0 0 16px 0;font-size:16px;line-height:26px;color:#333333;">Hi,</p>
 
         <p style="margin:0 0 16px 0;font-size:16px;line-height:26px;color:#333333;">
           78% of people search Google before hiring a local service provider. Right now, someone in ${t.city} is searching for a ${t.trade} — if your business isn't showing up when they do, they're calling someone else.
@@ -123,9 +121,7 @@ function buildHtml(t: Target): string {
 }
 
 function buildText(t: Target): string {
-  const greeting =
-    t.firstName === "Owner" ? "Hi there" : `Hi ${t.firstName}`;
-  return `${greeting},
+  return `Hi,
 
 78% of people search Google before hiring a local service provider. Right now, someone in ${t.city} is searching for a ${t.trade} — if your business isn't showing up when they do, they're calling someone else.
 
